@@ -26,5 +26,13 @@
               <?php endforeach ?>
           </h1>
       </div>
+
+      <h1>Submit Your name </h1>
+      <form method="POST" action="/emazon/names">
+          <input name="name"/>
+          <button type="submit">Submit</button>
+      </form>
+
+
   </body>
 </html>

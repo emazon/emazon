@@ -1,6 +1,6 @@
 <?php
 
-$result = $app['database'] -> selectAll('todo');
+$result = App::get('database') -> selectAll('todo');
 
 
 $greet = [
