@@ -1,0 +1,3 @@
+#if the request does not end with .gif,.png or jpg
+RewriteCond %{REQUEST_URI} !(\.gif|\.jpg|\.png)$ [NC]
+RewriteRule ^index.html$ index.php [NC]

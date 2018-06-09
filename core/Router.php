@@ -15,7 +15,7 @@ class Router
     $router = new static;
 
     require $file;
-    
+
     return $router;
   }
 
@@ -40,6 +40,7 @@ class Router
   {
       if(array_key_exists($url, $this-> routes[$requestType]))
       {
+          $image = explode("/", $url);
           return $this-> routes[$requestType][$url];
       }
 
