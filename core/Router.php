@@ -38,9 +38,11 @@ class Router
   public function direct($url, $requestType)
 
   {
+
+      
       if(array_key_exists($url, $this-> routes[$requestType]))
       {
-          $image = explode("/", $url);
+
           return $this-> routes[$requestType][$url];
       }
 

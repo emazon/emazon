@@ -384,7 +384,8 @@
                                                                 category_filter_url = '&filter_category_id=' + encodeURIComponent(category_filter);
                                                             }
                                                             $.ajax({
-                                                                url: 'index.php?route=search/autocomplete&filter_name=' + encodeURIComponent(request.term) + category_filter_url,
+                                                                url: 'emazon/search?route=search/autocomplete&filter_name=' + encodeURIComponent(request.term) + category_filter_url,
+                                                                type : 'POST',
                                                                 dataType: 'json',
                                                                 success: function (json) {
                                                                     response($.map(json, function (item) {

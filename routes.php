@@ -9,12 +9,16 @@
 //
 // ]);
 
-$router -> get('Project', 'controllers/index.php');
+$router -> get('emazon', 'controllers/index.php');
+$router -> get('emazon/login', 'controllers/login.php');
+
+$router -> post('emazon/search', 'controllers/search.php');
+
 $router -> get('emazon/about', 'controllers/about.php');
 $router -> get('emazon/about/culture', 'controllers/about-culture.php');
 $router -> post('emazon/names', 'controllers/add-names.php');
 
 
-//var_dump($router-> routes);
+// var_dump($router-> routes);
 
 ?>

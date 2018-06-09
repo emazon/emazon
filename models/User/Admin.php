@@ -15,12 +15,12 @@
 
       }
 
-      public function addProductGroup()
+      public function addProductGroup($productGroupName)
       {
 
       }
 
-      public function deleteProductGroup(){
+      public function deleteProductGroup($productGroupName){
 
       }
 
