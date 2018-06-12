@@ -333,8 +333,8 @@
             <script type="text/javascript" src="http://localhost/emazonResource/js/jquery/datetimepicker/moment.js"></script>
             <script type="text/javascript" src="http://localhost/emazonResource/js/jquery/datetimepicker/bootstrap-datetimepicker.min.js"></script>
             <script type="text/javascript" src="http://localhost/emazonResource/js/mf/direction_14e09.js?v2.0.5.5.1"></script>
-            <script type="text/javascript" src="http://localhost/emazonResource/js/jquery-ui.min4e09.js?v2.0.5.5.1"></script>
-            <script type="text/javascript" src="http://localhost/emazonResource/js/jquery-plugins4e09.js?v2.0.5.5.1"></script>
+            <!-- <script type="text/javascript" src="http://localhost/emazonResource/js/jquery-ui.min4e09.js?v2.0.5.5.1"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/jquery-plugins4e09.js?v2.0.5.5.1"></script> -->
             <script type="text/javascript" src="http://localhost/emazonResource/js/mf/hammer4e09.js?v2.0.5.5.1"></script>
             <script type="text/javascript" src="http://localhost/emazonResource/js/mf/iscroll4e09.js?v2.0.5.5.1"></script>
             <script type="text/javascript" src="http://localhost/emazonResource/js/mf/livefilter4e09.js?v2.0.5.5.1"></script>
