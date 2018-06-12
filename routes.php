@@ -11,8 +11,11 @@
 
 $router -> get('emazon', 'controllers/index.php');
 $router -> get('emazon/login', 'controllers/login.php');
+$router -> get('emazon/products','controllers/index.php');
 
-$router -> post('emazon/search', 'controllers/search.php');
+$router -> get('emazon/search', 'controllers/search.php');
+$router -> get('emazon/search_product', 'controllers/productSearch.php');
+$router -> get('emazon/product', 'controllers/productDetail.php');
 
 $router -> get('emazon/about', 'controllers/about.php');
 $router -> get('emazon/about/culture', 'controllers/about-culture.php');
@@ -20,5 +23,6 @@ $router -> post('emazon/names', 'controllers/add-names.php');
 
 
 // var_dump($router-> routes);
+
 
 ?>

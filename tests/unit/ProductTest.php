@@ -37,4 +37,69 @@
       $this -> product -> setProductPrice(986.63);
       $this -> assertEquals($this -> product -> getProductPrice(), 986.63);
     }
+
+		/** @test */
+		public function testProductQuantity()
+		{
+			$this -> product -> setProductQuantity(5);
+			$this -> assertEquals($this -> product -> getProductQuantity(), 5);
+		}
+
+		/** @test */
+		public function testProductImportDate()
+		{
+			$tomorrowDate = strtotime("tomorrow");
+			$this -> product -> setProductImportDate($tomorrowDate);
+			$this -> assertEquals($this -> product -> getProductImportDate(), $tomorrowDate);
+		}
+
+		/** @test */
+		public function testProductFrontmage()
+		{
+			$this -> product -> setProductFrontmage("http://localhost/emazonResource/images/version-04/menu-01.png");
+			$this -> assertEquals($this -> product -> getProductFrontImage(), "http://localhost/emazonResource/images/version-04/menu-01.png");
+		}
+
+		/** @test */
+		public function testProductCategory()
+		{
+			$this -> product -> setProductCategory("Electronics");
+			$this -> assertEquals($this -> product -> getProductCategory(), 'Electronics');
+		}
+
+		/** @test */
+		public function testProductManufacturer()
+		{
+			$this -> product -> setProductManufacturer("Apple");
+			$this -> assertEquals($this -> product -> getProductManufacturer(), "Apple");
+		}
+
+		/** @test */
+		public function testProductcode()
+		{
+			$this -> product -> setProductCode("EMA-87#21");
+			$this -> assertNotNull($this -> product -> getProductCode());
+		}
+
+		/** @test */
+		public function testProductRating()
+		{
+			$this -> product -> setProductRating(3.6);
+			$this -> assertEquals($this -> product -> getProductRating(), 3.6);
+		}
+
+		/** @test */
+		public function testProductColor()
+		{
+			$this -> product -> setProductColor("Blue");
+			$this -> assertNotNull($this -> product -> getProductColor());
+		}
+
+		/** @test */
+		public function testProductSize()
+		{
+			$this -> product -> setProductSize("Medium");
+			$this -> assertNotNull($this -> product -> getProductSize());
+		}
+
 	}

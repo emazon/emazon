@@ -32,6 +32,237 @@
 
     <link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/css/cache_css.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/css/style.css">
+    <style type="text/css">
+  		a:hover,
+  		.blog-latest-posts .readmore,
+  		.shipping-info li i,
+  		#main .posts .button-more,
+  		#main .post .meta>li a,
+  		.copyright p .ri-li,
+  		.product-filter .options .button-group button:hover,
+  		.product-filter .options .button-group .active,
+  		.like-bnr h4 {
+  			color: #f12a43;
+  		}
+
+  		#main .posts .button-more:hover,
+  		.tagcloud a:hover {
+  			color: #fff;
+  		}
+
+  		#main .posts .post .tags a,
+  		#main .posts .button-more:hover,
+  		.news .media-body .tags a,
+  		.tagcloud a,
+  		#main .post .tags a,
+  		.camera_wrap .owl-controls .owl-pagination .active span,
+  		.box-product .owl-pagination>div.active,
+  		.tab-content .prev-button:hover,
+  		.tab-content .next-button:hover,
+  		.box>.prev:hover,
+  		.box>.next:hover,
+  		.product-info .thumbnails-carousel .owl-buttons .owl-prev:hover,
+  		.product-info .thumbnails-carousel .owl-buttons .owl-next:hover,
+  		div.pagination-results ul li.active,
+  		.about-us .progress-bar,
+  		.about-us .heading hr:before,
+  		.box2 .box-heading:after,
+  		.dropdown-menu>li>a:hover,
+  		.dropdown-menu>li>a:focus {
+  			background: #f12a43;
+  		}
+
+  		.box-product .owl-pagination>div.active,
+  		.tab-content .prev-button:hover,
+  		.tab-content .next-button:hover,
+  		.box>.prev:hover,
+  		.box>.next:hover,
+  		.product-info .thumbnails-carousel .owl-buttons .owl-prev:hover,
+  		.product-info .thumbnails-carousel .owl-buttons .owl-next:hover,
+  		div.pagination-results ul li.active {
+  			border-color: #f12a43;
+  		}
+
+  		.filter-product2 .filter-tabs ul li.active a,
+  		#main .mfilter-slider-slider .ui-slider-handle,
+  		#main #mfilter-price-slider .ui-slider-handle {
+  			background: #f12a43 !important;
+  			border-color: #f12a43 !important;
+  		}
+
+  		.filter-product2 .filter-tabs ul li.active a:before {
+  			color: #f12a43 !important;
+  		}
+
+
+  		.product-grid .product .name a,
+  		.product-list .name-desc .name a {
+  			color: #555555;
+  		}
+
+  		.product-grid .product .add-to-cart:hover {
+  			background: #f12a43;
+  		}
+
+  		.sale {
+  			background: #f73232;
+  		}
+
+  		.box .box-heading:after,
+  		.filter-product .filter-tabs ul>li.active>a,
+  		.filter-product .filter-tabs ul>li.active>a:hover,
+  		.filter-product .filter-tabs ul>li.active>a:focus,
+  		.htabs a.selected:before,
+  		.filter-product .filter-tabs ul>li>a:hover {
+  			background: #f12a43;
+  		}
+
+  		.button,
+  		.btn {
+  			background: #f12a43;
+  		}
+
+  		.button:hover,
+  		.btn:hover {
+  			background: #333;
+  		}
+
+  		.buttons .left .button,
+  		.buttons .center .button,
+  		.btn-default,
+  		.input-group-btn .btn-primary {
+  			background: #bbb;
+  		}
+
+  		.buttons .left .button:hover,
+  		.buttons .center .button:hover,
+  		.btn-default:hover,
+  		.input-group-btn .btn-primary:hover {
+  			background: #333;
+  		}
+
+  		#top-bar .background {
+  			background: #d8263c;
+  			border: none;
+  		}
+
+  		#top-bar,
+  		#top-bar .header-links li a,
+  		#top-bar .dropdown>a,
+  		#top-bar .social-top a {
+  			color: #fff;
+  		}
+
+  		#top-bar .dropdown .caret {
+  			border-top-color: #fff;
+  		}
+
+
+  		#top-bar .header-links li:before,
+  		#top-bar .social-top:before,
+  		#top-bar .dropdown:before {
+  			background: #da5d6d;
+  		}
+
+  		#top .background {
+  			background: #f12a43;
+  		}
+
+  		#top #cart_block .cart-heading .itm-cont {
+  			background: #d41f35;
+  		}
+
+  		#top #cart_block .cart-heading .flaticon-shopping-bag {
+  			background: #fff;
+  		}
+
+  		#top #cart_block .cart-heading p {
+  			color: #fff;
+  		}
+
+  		.menu-background,
+  		.megamenu-wrapper,
+  		.fixed-header,
+  		.megamenuToogle-wrapper {
+  			background: #fff;
+  		}
+
+  		ul.megamenu>li>a:hover,
+  		ul.megamenu>li.active>a,
+  		ul.megamenu>li.home>a,
+  		ul.megamenu>li:hover>a {
+  			background: #fff;
+  		}
+
+  		ul.megamenu>li>a,
+  		ul.megamenu>li.with-sub-menu>a:after,
+  		.megamenuToogle-wrapper .container {
+  			color: #141414;
+  		}
+
+  		.megamenuToogle-wrapper .container>div span {
+  			background: #141414;
+  		}
+
+  		ul.megamenu>li:hover>a,
+  		ul.megamenu>li.with-sub-menu:hover>a:after {
+  			color: #f12a43;
+  		}
+
+
+  		#slider .background {
+  			background-color: #f1f1f1;
+  		}
+
+  		.footer .background {
+  			background-color: #333333;
+  		}
+
+  		.footer .pattern {
+  			color: #888888;
+  		}
+
+  		.footer .pattern a {
+  			color: #888888;
+  		}
+
+  		.footer .pattern a:hover {
+  			color: #fff;
+  		}
+
+  		.footer h4 {
+  			color: #fff;
+  		}
+
+  		.footer h4 {
+  			position: relative;
+  		}
+
+  		.footer h4:after {
+  			content: '';
+  			position: absolute;
+  			bottom: 18px;
+  			left: 0;
+  			width: 70px;
+  			height: 2px;
+  			background: #f12a43;
+  		}
+
+  		.footer-newsletter .subscribe,
+  		.footer-newsletter2 .subscribe {
+  			background: #cd2036;
+  		}
+
+  		.copyright .background,
+  		.standard-body .copyright .background {
+  			background: #2e2e2e;
+  		}
+
+  		.copyright .background,
+  		.standard-body .copyright .background {
+  			color: #888888;
+  		}
+  	</style>
 
     <style type="text/css">
         #slider .background {
@@ -46,6 +277,15 @@
 
 
     <link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/js/jquery/magnific/magnific-popup.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/css/jquery-ui.min.css" media="screen" />
+  	<link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/css/mega_filter.css" media="screen" />
+  	<link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/css/mf/style-24e09.css?v2.0.5.5.1" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/js/jquery/datetimepicker/bootstrap-datetimepicker.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/css/jquery-ui.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/css/mega_filter.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/mf/style-24e09.css?v2.0.5.5.1" media="screen" />
+
 
     <style type="text/css">
         .standard-body .full-width .container {
@@ -58,6 +298,16 @@
         }
     </style>
 
+    <script type="text/javascript" src="http://localhost/emazonResource/js/jquery.min.js"></script>
+  	<script type="text/javascript" src="http://localhost/emazonResource/js/mf/direction_14e09.js?v2.0.5.5.1"></script>
+  	<script type="text/javascript" src="http://localhost/emazonResource/js/mf/jquery-ui.min4e09.js?v2.0.5.5.1"></script>
+  	<script type="text/javascript" src="http://localhost/emazonResource/js/mf/jquery-plugins4e09.js?v2.0.5.5.1"></script>
+  	<script type="text/javascript" src="http://localhost/emazonResource/js/mf/hammer4e09.js?v2.0.5.5.1"></script>
+  	<script type="text/javascript" src="http://localhost/emazonResource/js/mf/iscroll4e09.js?v2.0.5.5.1"></script>
+  	<script type="text/javascript" src="http://localhost/emazonResource/js/mf/livefilter4e09.js?v2.0.5.5.1"></script>
+  	<script type="text/javascript" src="http://localhost/emazonResource/js/mf/selectpicker4e09.js?v2.0.5.5.1"></script>
+  	<script type="text/javascript" src="http://localhost/emazonResource/js/mf/mega_filter4e09.js?v2.0.5.5.1"></script>
+
     <script type="text/javascript" src="http://localhost/emazonResource/js/cache_js.js"></script>
 
     <script type="text/javascript" src="http://localhost/emazonResource/js/owl.carousel.min.js"></script>
@@ -69,10 +319,31 @@
     <script type="text/javascript">
         var responsive_design = 'yes';
     </script>
+    <script type="text/javascript">
+  		function display_MFP(view) {
+
+  			if (localStorage.getItem('display') == 'list') {
+  				display('list');
+  			} else {
+  				display('grid');
+  			}
+  		}
+  	</script>
+
+            <script type="text/javascript" src="http://localhost/emazonResource/js/jquery/datetimepicker/moment.js"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/jquery/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/mf/direction_14e09.js?v2.0.5.5.1"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/jquery-ui.min4e09.js?v2.0.5.5.1"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/jquery-plugins4e09.js?v2.0.5.5.1"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/mf/hammer4e09.js?v2.0.5.5.1"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/mf/iscroll4e09.js?v2.0.5.5.1"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/mf/livefilter4e09.js?v2.0.5.5.1"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/mf/selectpicker4e09.js?v2.0.5.5.1"></script>
+            <script type="text/javascript" src="http://localhost/emazonResource/js/mf/mega_filter4e09.js?v2.0.5.5.1"></script>
 
     <!--[if lt IE 9]>
 		<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<script src="catalog/view/theme/cyberwire/js/respond.min.js"></script>
+		<script src="http://localhost/emazonResource/js/respond.min.js"></script>
 	<![endif]-->
 
 </head>
@@ -106,7 +377,7 @@
                                                 <li class=''>
                                                     <p class='close-menu'></p>
                                                     <p class='open-menu'></p>
-                                                    <a href='#' class='clearfix'>
+                                                    <a href="#" class='clearfix'>
                                                         <span>
                                                             <strong>
                                                                 <img src="http://localhost/emazonResource/images/version-04/menu-01.png" alt="">TV &amp; Audios</strong>
@@ -304,7 +575,7 @@
                                     <!-- Logo -->
                                     <div class="logo">
                                         <a href="#">
-                                            <img src="http://localhost/emazonResource/images/eMazon_logo.png"  title="Your Store" alt="Your Store"
+                                            <img src="http://localhost/emazonResource/images/emazon_logo_new2.png"  title="Your Store" alt="Your Store"
                                             />
                                         </a>
                                     </div>
@@ -385,7 +656,7 @@
                                                             }
                                                             $.ajax({
                                                                 url: 'emazon/search?route=search/autocomplete&filter_name=' + encodeURIComponent(request.term) + category_filter_url,
-                                                                type : 'POST',
+                                                                type : 'GET',
                                                                 dataType: 'json',
                                                                 success: function (json) {
                                                                     response($.map(json, function (item) {
@@ -473,9 +744,8 @@
                                                             <li class=''>
                                                                 <p class='close-menu'></p>
                                                                 <p class='open-menu'></p>
-                                                                <a href='#'
+                                                                <a href='/emazon/search_product?category=tv_audio'
                                                                     class='clearfix'>
-                                                                    <span>
                                                                         <strong>
                                                                             <img src="http://localhost/emazonResource/images/version-04/menu-01.png" alt="">TV &amp; Audios</strong>
                                                                     </span>
@@ -484,7 +754,7 @@
                                                             <li class=''>
                                                                 <p class='close-menu'></p>
                                                                 <p class='open-menu'></p>
-                                                                <a href='#'
+                                                                <a href='/emazon/search_product?category=smartphones'
                                                                     class='clearfix'>
                                                                     <span>
                                                                         <strong>
@@ -495,7 +765,7 @@
                                                             <li class=''>
                                                                 <p class='close-menu'></p>
                                                                 <p class='open-menu'></p>
-                                                                <a href='#'
+                                                                <a href='/emazon/search_product?category=desk_laptop'
                                                                     class='clearfix'>
                                                                     <span>
                                                                         <strong>
@@ -506,7 +776,7 @@
                                                             <li class=''>
                                                                 <p class='close-menu'></p>
                                                                 <p class='open-menu'></p>
-                                                                <a href='#'
+                                                                <a href='/emazon/search_product?category=game_console'
                                                                     class='clearfix'>
                                                                     <span>
                                                                         <strong>
@@ -517,7 +787,7 @@
                                                             <li class=''>
                                                                 <p class='close-menu'></p>
                                                                 <p class='open-menu'></p>
-                                                                <a href='#'
+                                                                <a href='/emazon/search_product?category=watches'
                                                                     class='clearfix'>
                                                                     <span>
                                                                         <strong>
@@ -528,7 +798,7 @@
                                                             <li class=''>
                                                                 <p class='close-menu'></p>
                                                                 <p class='open-menu'></p>
-                                                                <a href='#'
+                                                                <a href='/emazon/search_product?category=accessories'
                                                                     class='clearfix'>
                                                                     <span>
                                                                         <strong>
