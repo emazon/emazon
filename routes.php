@@ -11,7 +11,12 @@
 
 $router -> get('emazon', 'controllers/index.php');
 $router -> get('emazon/login', 'controllers/login.php');
+$router -> get('emazon/signup', 'controllers/signup.php');
 $router -> get('emazon/products','controllers/index.php');
+$router -> get('emazon/checkout', 'controllers/checkout.php');
+$router -> get('emazon/orders', 'controllers/orders.php');
+//route=account/wishlist
+$router -> get('emazon/wishlist', 'controllers/wishlist.php');
 
 $router -> get('emazon/search', 'controllers/search.php');
 $router -> get('emazon/search_product', 'controllers/productSearch.php');

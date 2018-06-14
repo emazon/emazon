@@ -550,7 +550,7 @@
                                         <!-- Links -->
                                         <ul class="header-links">
                                             <li>
-                                                <a href="#">My Account</a>
+                                                <a href="/emazon/login">My Account</a>
                                             </li>
                                             <li>
                                                 <a href="#">Shopping Cart</a>
@@ -574,7 +574,7 @@
                                 <div class="container">
                                     <!-- Logo -->
                                     <div class="logo">
-                                        <a href="#">
+                                        <a href="/emazon">
                                             <img src="http://localhost/emazonResource/images/emazon_logo_new2.png"  title="Your Store" alt="Your Store"
                                             />
                                         </a>
