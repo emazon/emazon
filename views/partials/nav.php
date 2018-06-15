@@ -25,12 +25,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My Store" />
 
-    <link href="http://localhost/emazonResource/imag/cart.png" rel="icon" />
+    <link href="http://localhost/emazonResource/images/cart.png" rel="icon" />
 
     <!-- Google Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Lato:800,700,600,500,400,300" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/css/cache_css.css" media="screen" />
+
+
     <link rel="stylesheet" type="text/css" href="http://localhost/emazonResource/css/style.css">
     <style type="text/css">
   		a:hover,

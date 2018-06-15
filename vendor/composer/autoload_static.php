@@ -1304,6 +1304,7 @@ class ComposerStaticInitf382c5e0da0ed58170342502f130ea6c
         'TestIterator2' => __DIR__ . '/..' . '/phpunit/phpunit/tests/_files/TestIterator2.php',
         'TestIteratorAggregate' => __DIR__ . '/..' . '/phpunit/phpunit/tests/_files/TestIteratorAggregate.php',
         'TestIteratorAggregate2' => __DIR__ . '/..' . '/phpunit/phpunit/tests/_files/TestIteratorAggregate2.php',
+        'TestLogin' => __DIR__ . '/../..' . '/tests/web_automation_test/TestLogin.php',
         'TestSkipped' => __DIR__ . '/..' . '/phpunit/phpunit/tests/_files/TestSkipped.php',
         'TestWithTest' => __DIR__ . '/..' . '/phpunit/phpunit/tests/_files/TestWithTest.php',
         'Tests_AuthenticationPage' => __DIR__ . '/..' . '/phpunit/phpunit-selenium/Tests/Selenium2TestCase/PageObjectTest.php',

@@ -6,14 +6,19 @@ class QueryBuilder
   protected $pdo;
 
   public function __construct(PDO $pdo)
- 
+
   {
       $this -> pdo = $pdo;
   }
 
+  public function getInstance()
+  {
+    return $this -> pdo;
+  }
 
-  public function selectAll($table)
-  
+
+  public function selectAll( $table)
+
   {
     $statment = $this-> pdo -> prepare("select * from {$table}");
 
@@ -21,6 +26,15 @@ class QueryBuilder
 
     return $statment -> fetchAll(PDO::FETCH_CLASS);
 
+  }
+
+  public function select($table)
+  {
+    $statment = $this-> pdo -> prepare("select * from {$table}");
+
+    $statment -> execute();
+
+    return $statment;
   }
 
   public function insert($table , $parameters)
@@ -33,12 +47,12 @@ class QueryBuilder
         ':'.implode(', :', array_keys($parameters))
       );
 
-     try 
+     try
 
       {
         $statment = $this -> pdo -> prepare($sql);
         $statment -> execute($parameters);
-  
+
       }catch(Exception $e) {
         die("Something went wrong".$e);
       }

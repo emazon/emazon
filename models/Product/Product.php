@@ -20,6 +20,23 @@
     private $productSize;
 
 
+    public function __construct($productName,$productQuantity,$productPrice,$productImportDate,$productDescription,$productCode,
+                                $productColor,$productSize,$productImage , $rating ,  $manfacturedBy
+                                )
+    {
+        $this -> productName = $productName;
+        $this -> productQuantity = $productQuantity;
+        $this -> productPrice = $productPrice;
+        $this -> productImportDate = $productImportDate;
+        $this -> productDescription = $productDescription;
+        $this -> productCode = $productColor;
+        $this -> productSize = $productSize;
+        $this -> productFrontImage = $productImage;
+        $this -> productRating = $rating;
+        $this -> productManufacturer = $manfacturedBy;
+    }
+
+
     /* Product Id  Set & Get  ------------ */
     public function setProductId($id)
     {
@@ -65,7 +82,7 @@
     }
 
     public function getProductPrice()
-    {
+    { 
         return $this -> productPrice;
     }
     /* ------------- Product Price Ends */
@@ -177,5 +194,12 @@
         return $this -> productSize;
     }
     /* ------------- Product Size Ends */
+
+
+    public function getProducts()
+    {
+
+    }
+
 
   }

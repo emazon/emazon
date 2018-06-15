@@ -1226,6 +1226,7 @@ return array(
     'TestIterator2' => $vendorDir . '/phpunit/phpunit/tests/_files/TestIterator2.php',
     'TestIteratorAggregate' => $vendorDir . '/phpunit/phpunit/tests/_files/TestIteratorAggregate.php',
     'TestIteratorAggregate2' => $vendorDir . '/phpunit/phpunit/tests/_files/TestIteratorAggregate2.php',
+    'TestLogin' => $baseDir . '/tests/web_automation_test/TestLogin.php',
     'TestSkipped' => $vendorDir . '/phpunit/phpunit/tests/_files/TestSkipped.php',
     'TestWithTest' => $vendorDir . '/phpunit/phpunit/tests/_files/TestWithTest.php',
     'Tests_AuthenticationPage' => $vendorDir . '/phpunit/phpunit-selenium/Tests/Selenium2TestCase/PageObjectTest.php',

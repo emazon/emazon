@@ -37,7 +37,9 @@
             <h4 class="panel-title">Step 2: Billing Details</h4>
           </div>
           <div class="panel-collapse collapse" id="collapse-payment-address">
-            <div class="panel-body"></div>
+            <div class="panel-body">
+
+						</div>
           </div>
         </div>
                         <div class="panel panel-default">
@@ -93,10 +95,9 @@ $(document).on('change', 'input[name=\'account\']', function() {
 
 $(document).ready(function() {
     $.ajax({
-        url: 'index.php?route=checkout/payment_address',
-        dataType: 'html',
+        url: '/emazon/search',
         success: function(html) {
-            $('#collapse-payment-address .panel-body').html(html);
+            $('#collapse-payment-address .panel-body').html("<div class='radio'><label><input name='payment_address' value='existing' checked='checked' type='radio'>I want to use an existing address</label></div><div id='payment-existing'><select name='address_id' class='form-control'><option value='4' selected='selected'>Kirso sds, Ethiopia, Addis Ababa, Oromia, Ethiopia</option></select></div><div class='buttons clearfix'><div class='pull-right'><input value='Continue' id='button-payment-address' data-loading-text='Loading...' class='btn btn-primary' type='button'></div></div>");
 
 			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 2: Billing Details <i class="fa fa-caret-down"></i></a>');
 
@@ -111,8 +112,7 @@ $(document).ready(function() {
 // Checkout
 $(document).delegate('#button-account', 'click', function() {
     $.ajax({
-        url: 'index.php?route=checkout/' + $('input[name=\'account\']:checked').val(),
-        dataType: 'html',
+        url: '/emazon/search',
         beforeSend: function() {
         	$('#button-account').button('loading');
 		},
@@ -211,12 +211,12 @@ $(document).delegate('#button-register', 'click', function() {
 
                 if (shipping_address) {
                     $.ajax({
-                        url: 'index.php?route=checkout/shipping_method',
+                        url: '/emazon/search',
                         dataType: 'html',
                         success: function(html) {
 							// Add the shipping address
                             $.ajax({
-                                url: 'index.php?route=checkout/shipping_address',
+                                url: '/emazon/search',
                                 dataType: 'html',
                                 success: function(html) {
                                     $('#collapse-shipping-address .panel-body').html(html);
@@ -244,7 +244,7 @@ $(document).delegate('#button-register', 'click', function() {
                     });
                 } else {
                     $.ajax({
-                        url: 'index.php?route=checkout/shipping_address',
+                        url: '/emazon/search',
                         dataType: 'html',
                         success: function(html) {
                             $('#collapse-shipping-address .panel-body').html(html);
@@ -264,7 +264,7 @@ $(document).delegate('#button-register', 'click', function() {
                 }
 
                 $.ajax({
-                    url: 'index.php?route=checkout/payment_address',
+                    url: '/emazon/search',
                     dataType: 'html',
                     complete: function() {
                         $('#button-register').button('reset');
@@ -289,8 +289,7 @@ $(document).delegate('#button-register', 'click', function() {
 // Payment Address
 $(document).delegate('#button-payment-address', 'click', function() {
     $.ajax({
-        url: 'index.php?route=checkout/payment_address/save',
-        type: 'post',
+        url: '/emazon/search',
         data: $('#collapse-payment-address input[type=\'text\'], #collapse-payment-address input[type=\'date\'], #collapse-payment-address input[type=\'datetime-local\'], #collapse-payment-address input[type=\'time\'], #collapse-payment-address input[type=\'password\'], #collapse-payment-address input[type=\'checkbox\']:checked, #collapse-payment-address input[type=\'radio\']:checked, #collapse-payment-address input[type=\'hidden\'], #collapse-payment-address textarea, #collapse-payment-address select'),
         dataType: 'json',
         beforeSend: function() {
@@ -319,14 +318,15 @@ $(document).delegate('#button-payment-address', 'click', function() {
 					}
 				}
 
-				// Highlight any found errors
+				// Highlight any found errors	---- Delivery Detail --- By Yeab
 				$('.text-danger').parent().parent().addClass('has-error');
             } else {
                                 $.ajax({
-                    url: 'index.php?route=checkout/shipping_address',
+                    url: '/emazon/search',
                     dataType: 'html',
                     success: function(html) {
-                        $('#collapse-shipping-address .panel-body').html(html);
+											  $('#collapse-shipping-address .panel-body').html("<div class='radio'><label><input name='payment_address' value='existing' checked='checked' type='radio'>I want to use an existing address</label></div><div id='shipping-existing'><select name='address_id' class='form-control'><option value='4' selected='selected'>Kirso sds, Ethiopia, Addis Ababa, Oromia, Ethiopia</option><option value='5'>Yab Yabbb, Addis Ababa, Addis Ababa, Oromia, Ethiopia</option></select></div><div  class='buttons clearfix'><div class='pull-right'><input value='Continue' id='button-shipping-address' data-loading-text='Loading...' class='btn btn-primary' type='button'></div></div>");
+
 
 						$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
 
@@ -342,7 +342,7 @@ $(document).delegate('#button-payment-address', 'click', function() {
                 });
 
                 $.ajax({
-                    url: 'index.php?route=checkout/payment_address',
+                    url: '/emazon/search',
                     dataType: 'html',
                     success: function(html) {
                         $('#collapse-payment-address .panel-body').html(html);
@@ -359,11 +359,10 @@ $(document).delegate('#button-payment-address', 'click', function() {
     });
 });
 
-// Shipping Address
+// Shipping Address ------ Shipping Address Handler After Continue Button Click
 $(document).delegate('#button-shipping-address', 'click', function() {
     $.ajax({
-        url: 'index.php?route=checkout/shipping_address/save',
-        type: 'post',
+        url: '/emazon/search',
         data: $('#collapse-shipping-address input[type=\'text\'], #collapse-shipping-address input[type=\'date\'], #collapse-shipping-address input[type=\'datetime-local\'], #collapse-shipping-address input[type=\'time\'], #collapse-shipping-address input[type=\'password\'], #collapse-shipping-address input[type=\'checkbox\']:checked, #collapse-shipping-address input[type=\'radio\']:checked, #collapse-shipping-address textarea, #collapse-shipping-address select'),
         dataType: 'json',
         beforeSend: function() {
@@ -391,17 +390,17 @@ $(document).delegate('#button-shipping-address', 'click', function() {
 					}
 				}
 
-				// Highlight any found errors
+				// Highlight any found errors ---- Delivery Method Inner Handler
 				$('.text-danger').parent().parent().addClass('has-error');
             } else {
                 $.ajax({
-                    url: 'index.php?route=checkout/shipping_method',
+                    url: '/emazon/search',
                     dataType: 'html',
                     complete: function() {
                         $('#button-shipping-address').button('reset');
                     },
                     success: function(html) {
-                        $('#collapse-shipping-method .panel-body').html(html);
+                        $('#collapse-shipping-method .panel-body').html("<p>Please select the preferred shipping method to use on this order.</p><p><strong>Flat Rate</strong></p><div class='radio'><label><input name='shipping_method' value='flat.flat' checked='checked' type='radio'>Flat Shipping Rate - $5.00</label></div><p><strong>Add Comments About Your Order</strong></p><p><textarea name='comment' rows='8' class='form-control'></textarea></p><div class='buttons'><div class='pull-right'> <input value='Continue' id='button-shipping-method' data-loading-text='Loading...' class='btn btn-primary' type='button'></div></div>");
 
 						$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 4: Delivery Method <i class="fa fa-caret-down"></i></a>');
 
@@ -444,7 +443,7 @@ $(document).delegate('#button-shipping-address', 'click', function() {
     });
 });
 
-// Guest
+// Guest   -- not
 $(document).delegate('#button-guest', 'click', function() {
     $.ajax({
         url: 'index.php?route=checkout/guest/save',
@@ -612,8 +611,7 @@ $(document).delegate('#button-guest-shipping', 'click', function() {
 
 $(document).delegate('#button-shipping-method', 'click', function() {
     $.ajax({
-        url: 'index.php?route=checkout/shipping_method/save',
-        type: 'post',
+        url: '/emazon/search',
         data: $('#collapse-shipping-method input[type=\'radio\']:checked, #collapse-shipping-method textarea'),
         dataType: 'json',
         beforeSend: function() {
@@ -631,14 +629,14 @@ $(document).delegate('#button-shipping-method', 'click', function() {
                     $('#collapse-shipping-method .panel-body').prepend('<div class="alert alert-danger">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
                 }
             } else {
-                $.ajax({
-                    url: 'index.php?route=checkout/payment_method',
+                $.ajax({ // Payment Method Body
+                    url: '/emazon/search',
                     dataType: 'html',
                     complete: function() {
                         $('#button-shipping-method').button('reset');
                     },
                     success: function(html) {
-                        $('#collapse-payment-method .panel-body').html(html);
+                        //Something Here
 
 						$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 5: Payment Method <i class="fa fa-caret-down"></i></a>');
 
