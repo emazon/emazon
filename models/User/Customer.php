@@ -127,10 +127,7 @@
 
     }
 
-    public function login($username , $password)
-    {
-
-    }
+    
 
     public function updateProfile()
     {

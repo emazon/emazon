@@ -14,7 +14,7 @@
 		"phpunit/phpunit": "6.5.8",
 		"phpunit/phpunit-selenium": "^4.1",
 		"nesbot/carbon": "^1.29",
-		"jjaffeux/postmark-inbound-php": ">=2.0",
+		"jjaffeux/postmark-inbound-php": "^3.0",
     "firebase/php-jwt": "^3.0"
 	}
 }

@@ -40,4 +40,24 @@ class Utility
     }
   }
 
+  public static function hashPassword($password)
+  {
+      return password_hash($password , PASSWORD_DEFAULT);
+  }
+
+  public static function verify($password, $hash)
+  {
+      if (password_verify($password, $hash)) {
+          return true;
+      }else
+      {
+          return false;
+      }
+  }
+
+  public static function jsonEncodeThenDecode($param)
+  {
+      return json_decode( json_encode($param), true);
+  }
+
 }

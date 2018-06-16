@@ -555,10 +555,10 @@
                                                 <a href="/emazon/login">My Account</a>
                                             </li>
                                             <li>
-                                                <a href="#">Shopping Cart</a>
+                                                <a href="/emazon/cart">Shopping Cart</a>
                                             </li>
                                             <li>
-                                                <a href="#">Checkout</a>
+                                                <a href="/emazon/checkout">Checkout</a>
                                             </li>
                                         </ul>
                                     </div>

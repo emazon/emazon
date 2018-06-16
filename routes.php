@@ -10,7 +10,10 @@
 // ]);
 
 $router -> get('emazon', 'controllers/index.php');
+
 $router -> get('emazon/login', 'controllers/login.php');
+$router -> post('emazon/login', 'controllers/login.php');
+
 $router -> get('emazon/signup', 'controllers/signup.php');
 $router -> get('emazon/products','controllers/index.php');
 $router -> get('emazon/checkout', 'controllers/checkout.php');

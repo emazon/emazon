@@ -25,6 +25,10 @@ class ComposerStaticInitf382c5e0da0ed58170342502f130ea6c
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Translation\\' => 30,
         ),
+        'F' => 
+        array (
+            'Firebase\\JWT\\' => 13,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -55,6 +59,10 @@ class ComposerStaticInitf382c5e0da0ed58170342502f130ea6c
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -79,6 +87,10 @@ class ComposerStaticInitf382c5e0da0ed58170342502f130ea6c
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
+            ),
+            'Postmark' => 
+            array (
+                0 => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/lib',
             ),
         ),
     );
@@ -242,6 +254,10 @@ class ComposerStaticInitf382c5e0da0ed58170342502f130ea6c
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'Firebase\\JWT\\BeforeValidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/BeforeValidException.php',
+        'Firebase\\JWT\\ExpiredException' => __DIR__ . '/..' . '/firebase/php-jwt/src/ExpiredException.php',
+        'Firebase\\JWT\\JWT' => __DIR__ . '/..' . '/firebase/php-jwt/src/JWT.php',
+        'Firebase\\JWT\\SignatureInvalidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/SignatureInvalidException.php',
         'Foo' => __DIR__ . '/..' . '/phpunit/php-code-coverage/tests/_files/source_without_namespace.php',
         'FooInterface' => __DIR__ . '/..' . '/phpunit/php-code-coverage/tests/_files/source_with_oneline_annotations.php',
         'Foo\\BarScoped\\TestClass' => __DIR__ . '/..' . '/phpunit/php-token-stream/tests/_fixture/classInScopedNamespace.php',
@@ -316,6 +332,7 @@ class ComposerStaticInitf382c5e0da0ed58170342502f130ea6c
         'Issue74Test' => __DIR__ . '/..' . '/phpunit/phpunit/tests/Regression/GitHub/74/Issue74Test.php',
         'Issue765Test' => __DIR__ . '/..' . '/phpunit/phpunit/tests/Regression/GitHub/765/Issue765Test.php',
         'Issue797Test' => __DIR__ . '/..' . '/phpunit/phpunit/tests/Regression/GitHub/797/Issue797Test.php',
+        'JWTTest' => __DIR__ . '/..' . '/firebase/php-jwt/tests/JWTTest.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
         'MethodCallback' => __DIR__ . '/..' . '/phpunit/phpunit-mock-objects/tests/_fixture/MethodCallback.php',
         'MethodCallbackByReference' => __DIR__ . '/..' . '/phpunit/phpunit-mock-objects/tests/_fixture/MethodCallbackByReference.php',
@@ -960,6 +977,15 @@ class ComposerStaticInitf382c5e0da0ed58170342502f130ea6c
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
         'PharIo\\Version\\VersionTest' => __DIR__ . '/..' . '/phar-io/version/tests/Unit/VersionTest.php',
+        'Postmark\\Attachment' => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/lib/Postmark/Attachment.php',
+        'Postmark\\Attachments' => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/lib/Postmark/Attachments.php',
+        'Postmark\\Autoloader' => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/lib/Postmark/Autoloader.php',
+        'Postmark\\Inbound' => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/lib/Postmark/Inbound.php',
+        'Postmark\\InboundException' => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/lib/Postmark/Exception.php',
+        'Postmark_Tests_Attachments' => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/test/Postmark/Tests/AttachmentsTest.php',
+        'Postmark_Tests_AutoloaderTest' => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/test/Postmark/Tests/AutoloaderTest.php',
+        'Postmark_Tests_Exception' => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/test/Postmark/Tests/ExceptionTest.php',
+        'Postmark_Tests_Inbound' => __DIR__ . '/..' . '/jjaffeux/postmark-inbound-php/test/Postmark/Tests/InboundTest.php',
         'ProductTest' => __DIR__ . '/../..' . '/tests/unit/ProductTest.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',

@@ -35,15 +35,15 @@
     <div class="well">
       <h2>Returning Customer</h2>
       <p><strong>I am a returning customer</strong></p>
-      <form action="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/login" method="post" enctype="multipart/form-data">
+      <form action="/emazon/login" method="post" enctype="multipart/form-data">
         <div class="form-group">
           <label class="control-label" for="input-email">E-Mail Address</label>
-          <input type="text" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" />
+          <input type="text" name="username" value="" placeholder="Username " id="input-email" class="form-control" />
         </div>
         <div class="form-group" style="padding-bottom: 10px">
           <label class="control-label" for="input-password">Password</label>
           <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" />
-          <a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/forgotten">Forgotten Password</a></div>
+          <a href="#">Forgotten Password</a></div>
         <input type="submit" value="Login" class="btn btn-primary" />
               </form>
     </div>
