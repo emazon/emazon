@@ -693,7 +693,7 @@
 
                     <div class="row">
 
-                      <?php foreach(fetchProducts() as $product): ?>
+                      <?php foreach( query() as $product): ?>
 
                         <?php echo "<div class='col-sm-4  col-xs-6'>
 
@@ -1316,6 +1316,9 @@
               };
 
               jQuery().ready(function () {
+
+
+
                 jQuery('#mfilter-box-1').each(function () {
                   var _t = jQuery(this).addClass('init'),
                     _p = {};

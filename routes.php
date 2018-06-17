@@ -26,12 +26,12 @@ $router -> get('emazon/wishlist', 'controllers/wishlist.php');
 $router -> get('emazon/search_autocomplete', 'API/search_autocomplete.php');
 $router -> get('emazon/subscribe', 'API/email_subscription.php');
 $router -> get('emazon/product/mega_filter/getajaxinfo', 'API/product_mega_filter.php');
+$router -> get('emazon/addtoCart', 'API/addtoCart.php');
 
 
 $router -> get('emazon/search', 'controllers/search.php');
 $router -> get('emazon/search_product', 'controllers/productSearch.php');
 $router -> get('emazon/product', 'controllers/productDetail.php');
-$router -> get('emazon/addtoCart', 'controllers/addtoCart.php');
 
 $router -> get('emazon/about', 'controllers/about.php');
 $router -> get('emazon/about/culture', 'controllers/about-culture.php');

@@ -120,6 +120,15 @@ class QueryBuilder
     return $statment -> fetchAll(PDO::FETCH_CLASS);
   }
 
+  public function addProductToCart($table , $productCode , $price, $quantity)
+  {
+    $statment = $this -> pdo -> prepare("insert into `$table`(productCode , price, quantity) values('$productCode', '$price', '$quantity')");
+    $statment -> execute();
+
+    
+  }
+
+
 }
 
  ?>

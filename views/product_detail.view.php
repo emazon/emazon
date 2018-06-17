@@ -27,7 +27,7 @@
 
 
 <div itemscope itemtype="http://schema.org/Product">
-  <span itemprop="name" class="hidden">Teclado Inalambrico Bluetooth Con Air Mouse</span>
+  <span itemprop="name" class="hidden"></span>
   <div class="product-info">
   	<div class="row">
   	       		<div class="col-sm-12">
@@ -118,11 +118,11 @@
 			     <div itemprop="offerDetails" itemscope itemtype="http://schema.org/Offer">
 			      <h2 class="product-name"><?php echo $productsContainer[0]->getProductName(); ?></h2>
 			      			      <div class="description">
-			        			        <span>Brand:</span> <a href="indexe69c.html?route=product/manufacturer/info&amp;manufacturer_id=7" itemprop="brand">Hewlett-Packard</a><br />
-			        			        <span>Product Code:</span> <?php echo $productsContainer[0]->getProductCode(); ?><br />
+			        			        <span>Brand:</span> <a href="#" itemprop="brand"><?php echo $productsContainer[0]->getProductManufacturer(); ?></a><br />
+			        			        <span >Product Code :</span> <span id='product-code'> <?php echo $productsContainer[0]->getProductCode(); ?></span><br />
 			        			        <span>Availability:</span> In Stock</div>
 			      			      <div class="price">
-			        			        <span class="price-new"><span itemprop="price" id="price-old">$<?php echo number_format($productsContainer[0]->getProductPrice() , 2)?></span></span>
+			        			        <span class="price-new">$<span itemprop="price" id="price-old"><?php echo number_format($productsContainer[0]->getProductPrice() , 2)?></span></span>
 
 			        			        			      </div>
 			      			     </div>
@@ -523,8 +523,9 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 	<script type="text/javascript"><!--
 $('#button-cart').on('click', function() {
 
+
 	$.ajax({
-		url: '/emazon/addtoCart',
+		url: '/emazon/addtoCart?productCode=' + $('#product-code').text() + "&price=" + $('#price-old').text() + "&quantity=" +  $('#quantity_wanted').val(),
 		beforeSend: function() {
 			$('#button-cart').button('loading');
 		},
@@ -532,8 +533,7 @@ $('#button-cart').on('click', function() {
 			$('#button-cart').button('reset');
 		},
 		success: function(json) {
-
-			alert(json);
+			//alert(JSON.parse(json)[0].message);
 			$('.alert, .text-danger').remove();
 			$('.form-group').removeClass('has-error');
 
@@ -560,7 +560,7 @@ $('#button-cart').on('click', function() {
 
 			if (json) {
 				$.notify({
-					message: json['success'],
+					message: JSON.parse(json)[0].message,
 					target: '_blank'
 				},{
 					// settings
@@ -577,7 +577,7 @@ $('#button-cart').on('click', function() {
 					spacing: 10,
 					z_index: 2031,
 					delay: 5000,
-					timer: 1000,
+					timer: 100,
 					url_target: '_blank',
 					mouse_over: null,
 					animate: {
@@ -1415,6 +1415,7 @@ $('#tabs a').tabs();
 
 			MegaFilterOverrideFn[1]["beforeRequest"] = function() {
 	var self = this;
+
 };
 
 MegaFilterOverrideFn[1]["beforeRender"] = function( htmlResponse, htmlContent, json ) {
