@@ -599,12 +599,6 @@ $('#button-cart').on('click', function() {
 					'</div>'
 				});
 
-				//$('#cart_block #cart_content').load('/emazon/addtoCart');
-				 $('#cart_content').append("<div id='cart_content_ajax'><div class='mini-cart-info'><table><tbody><tr><td class='image'><a href='#'><img src='http://localhost/emazonResource/images/Product_Images/item-img-1-1-150x150.jpg' width='47px' height='47px' alt='Funda Para Ebook 7&quot; 128GB full HD' title='Funda Para Ebook 7&quot; 128GB full HD'></a></td><td class='name'><a href='#'>Funda Para Ebook 7 128GB full HD</a><div></div></td><td class='quantity'>x&nbsp;1</td><td class='total'>$122.00</td><td class='remove'><a href='javascript:;' onclick='cart.remove('63');' title='Remove'>x</a></td></tr></tbody></table></div><div class='mini-cart-total'><table><tbody><tr><td class='right'>Sub-Total:</td><td class='right'>$100.00</td></tr><tr><td class='right'>Eco Tax (-2.00):</td><td class='right'>$2.00</td></tr><tr><td class='right'>VAT (20%):</td><td class='right'>$20.00</td></tr><tr><td class='right'>Total:</td><td class='right'>$122.00</td></tr></tbody></table></div></div> <div class=checkout'><a href='http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=checkout/cart' class='button btn-default'>View Cart</a> &nbsp;<a href='http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=checkout/checkout' class='button'>Checkout</a></div>");
-				//$('.itm-cont cart-count').value('1');
-				//$('#cart_block .cart-count').load('1');
-				$('#total_count_ajax').text('7');
-
 			}
 		},
         error: function(xhr, ajaxOptions, thrownError) {

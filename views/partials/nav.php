@@ -1,13 +1,34 @@
-<!-- <nav>
+<?php
 
-    <ul>
-        <li><a href="/emazon">Home</a></li>
-        <li><a href="/emazon/about">About</a></li>
-        <li><a href="/emazon/about/culture">Culture</a></li>
-        <li><a href="/emazon/contact">Contact</a></li>
-    </ul>
+// Fetch all Products
+function getCartProducts()
+{
+  $tak = App::get('database')->selectAll("cart");
+  $data= json_decode( json_encode($tak), true);
 
-</nav> -->
+  return $data;
+}
+
+function getCartTotal()
+{
+  $products = getCartProducts();
+  $sum = 0;
+  foreach ($products as $product) {
+    // code...
+    $sum += $product['price'];
+  }
+  return $sum;
+
+}
+
+function getCartTotalWithVatIncluded($subTotal)
+{
+  return $subTotal + $subTotal * 0.20 + 2;
+}
+
+
+ ?>
+
 
 <!DOCTYPE html>
 <!--[if IE 7]> <html lang="en" class="ie7 responsive"> <![endif]-->
@@ -582,25 +603,38 @@
                                         </a>
                                     </div>
 
-
                                     <!-- Cart block -->
                                     <div id="cart_block" class="dropdown">
                                         <div class="cart-heading dropdown-toogle clearfix" data-toggle="dropdown" data-hover="dropdown">
                                             <span class="itm-cont cart-count">
-                                                <span id="total_count_ajax">0</span>
+                                                <span id="total_count_ajax"><?php echo count(getCartProducts());?></span>
+
                                             </span>
                                             <i class="flaticon-shopping-bag"></i>
                                             <p>
                                                 <strong>My Cart</strong>
                                                 <br>
-                                                <span id="cart-total">0 item(s) - $0.00</span>
+                                                <span id="cart-total"><strong><?php echo count(getCartProducts());?> item(s) -  $<?php echo getCartTotalWithVatIncluded(getCartTotal()); ?></span></strong>
                                             </p>
                                         </div>
 
                                         <div class="dropdown-menu" id="cart_content">
-                                            <div id="cart_content_ajax">
-                                                <div class="empty"></div>
-                                            </div>
+
+                                          <div id="cart_content_ajax">
+                                            <?php if(getCartProducts()): ?>
+                                              <?php foreach(getCartProducts() as $cartItem):?>
+                                                <?php echo "<div id='cart_content_ajax'><div class='mini-cart-info'><table><tbody><tr><td class='image'><a href='#'><img src='http://localhost/emazonResource/images/Product_Images/cart_image.jpg' width='47px' height='47px' alt='Funda Para Ebook 7&quot; 128GB full HD' title='Funda Para Ebook 7&quot; 128GB full HD'></a></td><td class='name'><a href='#'>Funda Para Ebook 7 128GB full HD</a><div></div></td><td class='quantity'>x&nbsp;1</td><td class='total'>$122.00</td><td class='remove'><a href='javascript:;' 'onclick='removeFromCart()''  title='Remove'>x</a></td></tr></tbody></table></div></div>"?>
+                                              <?php endforeach; ?>
+                                              <?php echo "<div class='mini-cart-total'><table><tbody><tr><td class='right'>Sub-Total:</td><td class='right'>".getCartTotal()."</td></tr><tr><td class='right'>Eco Tax (-2.00):</td><td class='right'>$2.00</td></tr><tr><td class='right'>VAT (20%):</td><td class='right'>".getCartTotal() * 0.20 ."</td></tr><tr><td class='right'>Total:</td><td class='right'>".getCartTotalWithVatIncluded(getCartTotal()) ."</td></tr></tbody></table></div>"?>
+                                              <div class='checkout'><a href='/emazon/cart' class='button btn-default'>View Cart</a> &nbsp;<a href='/emazon/checkout' class='button'>Checkout</a></div>
+                                            <?php endif;?>
+                                            <?php if(!getCartProducts()){
+                                              echo "<div class='empty'></div>";
+                                            }
+                                            ?>
+                                          </div>
+
+
                                         </div>
                                     </div>
 
