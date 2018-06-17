@@ -53,26 +53,18 @@
                                                 }
 
                                                 function Subscribe() {
-                                                    $.post('index15fb.html?route=extension/module/newsletter/subscribe',
-                                                        {
-                                                            email: $('#newsletter86260036 .email').val()
-                                                        }, function (e) {
-                                                            if (e.error === 1) {
-                                                                var r = confirm(e.message);
-                                                                if (r == true) {
-                                                                    $.post('indexa47f.html?route=extension/module/newsletter/unsubscribe', {
-                                                                        email: $('#newsletter86260036 .email').val()
-                                                                    }, function (e) {
-                                                                        $('#newsletter86260036 .email').val('');
-                                                                        alert(e.message);
-                                                                    }, 'json');
-                                                                }
-                                                            } else {
-                                                                $('#newsletter86260036 .email').val('');
-                                                                alert(e.message);
-                                                            }
-                                                        }
-                                                        , 'json');
+
+                                                  $.ajax({
+                                                      url: '/emazon/subscribe?subscriber=' + $('#newsletter86260036 .email').val(),
+                                                      type : 'GET',
+                                                      dataType: 'json',
+                                                      success: function(data){
+                                                          alert(data[0].message);
+                                                      }
+                                                    });
+
+
+
                                                 }
 
                                                 $('#newsletter86260036 .subscribe').click(Subscribe);

@@ -599,7 +599,7 @@
 
                                         <div class="dropdown-menu" id="cart_content">
                                             <div id="cart_content_ajax">
-                                                <div class="empty">Your shopping cart is empty!</div>
+                                                <div class="empty"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -657,19 +657,27 @@
                                                                 category_filter_url = '&filter_category_id=' + encodeURIComponent(category_filter);
                                                             }
                                                             $.ajax({
-                                                                url: 'emazon/search?route=search/autocomplete&filter_name=' + encodeURIComponent(request.term) + category_filter_url,
+                                                                url: '/emazon/search_autocomplete?route=search/autocomplete&filter_name=' + encodeURIComponent(request.term),
                                                                 type : 'GET',
                                                                 dataType: 'json',
                                                                 success: function (json) {
-                                                                    response($.map(json, function (item) {
-                                                                        return {
-                                                                            label: item.name,
-                                                                            value: item.product_id,
-                                                                            href: item.href,
-                                                                            thumb: item.thumb,
-                                                                            desc: item.desc,
-                                                                            price: item.price
-                                                                        }
+
+                                                                  var count = 0;
+
+                                                                  response($.map(json, function (item) {
+
+
+                                                                          return {
+                                                                              label: item.productName,
+                                                                              value: item.product_id,
+                                                                              href: item.href,
+                                                                              thumb: item.productImage,
+                                                                              desc: item.productDescription,
+                                                                              price: item.productPrice
+                                                                          }
+
+                                                                        count++;
+
                                                                     }));
                                                                 }
                                                             });
@@ -685,9 +693,12 @@
                                                         minLength: 2
                                                     })
                                                         .data("ui-autocomplete")._renderItem = function (ul, item) {
+
+
                                                             return $("<li>")
-                                                                .append("<a><img src='" + item.thumb + "' alt=''>" + item.label + "<br><span class='description'>" + item.desc + "</span><br><span class='price'>" + item.price + "</span></a>")
-                                                                .appendTo(ul);
+                                                                  .append("<a><img src='" + item.thumb + "' alt=''>" + item.label + "<br><span class='description'>" + item.desc + "</span><br><span class='price'>" + item.price + "</span></a>")
+                                                                  .appendTo(ul);
+
                                                         };
                                                 });
                                             </script>

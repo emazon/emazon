@@ -306,7 +306,7 @@
                                                   <div class="like-bnr hotdeal-bnr">
                                                       <div class="top-text">
                                                           <h5>Ultra-portable Bluetooth</h5>
-                                                          <h4>A2 Speaker</h4>
+                                                          <h4><a href="http://www.amazon.com">A2 Speaker</a></h4>
                                                           <span class="price">$170.00</span>
                                                       </div>
                                                   </div>
@@ -326,19 +326,18 @@
                                                                       <div class="border clearfix">
                                                                           <div class="left">
                                                                               <div class="image">
-                                                                                  <a href="index6320.html?route=product/product&amp;product_id=28">
+                                                                                  <a href="/emazon/product?route=product/product_id=ema_125_bitz">
                                                                                       <img src="http://localhost/emazonResource/images/blank.gif"
-                                                                                          data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-12-600x600.jpg"
-                                                                                          alt="Funda Para Ebook 7&quot; 128GB full HD"
+                                                                                          data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-7-600x600.jpg"
                                                                                       />
                                                                                   </a>
                                                                               </div>
                                                                               <script>
                                                                                   $(function () {
                                                                                       var austDay = new Date();
-                                                                                      austDay = new Date(2015, 12 - 1, 22);
+                                                                                      austDay = new Date(2018, 6, 22);
                                                                                       var date = new Date();
-                                                                                      date.setDate(date.getDate() + 10 /*days*/);
+                                                                                      date.setDate(date.getDate() + 3 /*days*/);
                                                                                       $('#countdown7491771').countdown({ until: date });
                                                                                   });
 
@@ -349,8 +348,7 @@
 
                                                                           <div class="right">
                                                                               <div class="name">
-                                                                                  <a href="index6320.html?route=product/product&amp;product_id=28">Funda Para Ebook 7&quot; 128GB
-                                                                                      full HD</a>
+                                                                                  <a href="/emazon/product?route=product/product_id=ema_125_bitz">Bitz 2018 Headphones</a>
                                                                               </div>
                                                                               <div class="rating">
                                                                                   <i class="fa fa-star-o"></i>
@@ -360,211 +358,23 @@
                                                                                   <i class="fa fa-star-o"></i>
                                                                               </div>
 
-                                                                              <div class="price">$122.00</div>
+                                                                              <div class="price">$145.00</div>
                                                                               <div class="description">
-                                                                                  HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high definition clarity for a mobile
-                                                                                  experience you never thought
-                                                                                  possible. Seductively sleek,
-                                                                                  the HTC Touch HD provides the
-                                                                                  next generation of mobile functionality,
-                                                                                  all at a simple touch. Fully
-                                                                                  integrated with Windows Mobile
-                                                                                  Professional 6.1, ultrafast 3.5G,
-                                                                                  GPS, 5MP camera, plus lots more
-                                                                                  - all delivered on a breathtakingly
-                                                                                  crisp 3.8&quot; WVGA touchscreen
-                                                                                  - you can take control of your
-                                                                                  mobile world with the HTC Touch
-                                                                                  HD. Features Processor Qualcomm&reg;
-                                                                                  MSM 7201A&trade; 528 MHz Windows
-                                                                                  Mobile&reg; 6.1 Professional
-                                                                                  Operating System Memory: 512
-                                                                                  MB ROM, 288 MB RAM Dimensions:
-                                                                                  115 mm x 62.8 mm x 12 mm / 146.4
-                                                                                  grams 3.8-inch TFT-LCD flat touch-sensitive
-                                                                                  screen with 480 x 800 WVGA resolution
-                                                                                  HSDPA/WCDMA: Europe/Asia: 900/2100
-                                                                                  MHz; Up to 2 Mbps up-link and
-                                                                                  7.2 Mbps down-link speeds Quad-band
-                                                                                  GSM/GPRS/EDGE: Europe/Asia: 850/900/1800/1900
-                                                                                  MHz (Band frequency, HSUPA availability,
-                                                                                  and data speed are operator dependent.)
-                                                                                  Device Control via HTC TouchFLO&trade;
-                                                                                  3D &amp; Touch-sensitive front
-                                                                                  panel buttons GPS and A-GPS ready
-                                                                                  Bluetooth&reg; 2.0 with Enhanced
-                                                                                  Data Rate and A2DP for wireless
-                                                                                  stereo headsets Wi-Fi&reg;: IEEE
-                                                                                  802.11 b/g HTC ExtUSB&trade;
-                                                                                  (11-pin mini-USB 2.0) 5 megapixel
-                                                                                  color camera with auto focus
-                                                                                  VGA CMOS color camera Built-in
-                                                                                  3.5 mm audio jack, microphone,
-                                                                                  speaker, and FM radio Ring tone
-                                                                                  formats: AAC, AAC+, eAAC+, AMR-NB,
-                                                                                  AMR-WB, QCP, MP3, WMA, WAV 40
-                                                                                  polyphonic and standard MIDI
-                                                                                  format 0 and 1 (SMF)/SP MIDI
-                                                                                  Rechargeable Lithium-ion or Lithium-ion
-                                                                                  polymer 1350 mAh battery Expansion
-                                                                                  Slot: microSD&trade; memory card
-                                                                                  (SD 2.0 compatible) AC Adapter
-                                                                                  Voltage range/frequency: 100
-                                                                                  ~ 240V AC, 50/60 Hz DC output:
-                                                                                  5V and 1A Special Features: FM
-                                                                                  Radio, G-Sensor
+
+                                                                                <ul>
+                                                                                  <li><strong>POWERFUL BASS: </strong>  Delivers dynamic, crystal-clear sound and deep powerful bass with Soft silicone, ergonomic earbuds block outside noise and Perfect in-ear seal blocks out external noise.</li>
+                                                                                  <li><strong>Easy TO USE: </strong> Integrated microphone and smart remote for enhanced usability and Optimised for mp3, iPod, iPhone, CD players and portable gaming systems.</li>
+                                                                                  <li><strong>UNIVERSAL : </strong> Ideal for Samsung Mobiles , Clear sound and Earburds for a comfortable fit handsfree calls.</li>
+                                                                                  <li><strong>EASY COMFORTABLE : </strong> Lightweight and comfortable, this enables you to carry on conversations while you continue to do other things.</li>
+                                                                                  <li><strong>PREMIUM COMFORT : </strong> Ear adaptors in different sizes for excellent ear canal fit and ambient noise attenuation Intuitive design - highly-aesthetic, ergonomic design.</li>
 
                                                                               </div>
-                                                                              <a onclick="cart.add('28');"
+                                                                              <a href="/emazon/product?route=product/product_id=ema_125_bitz"
                                                                                   class="button">Add to Cart</a>
                                                                           </div>
                                                                       </div>
                                                                   </div>
-                                                                  <div class="product clearfix item">
-                                                                      <div class="border clearfix">
-                                                                          <div class="left">
-                                                                              <div class="image">
-                                                                                  <a href="indexb77e.html?route=product/product&amp;product_id=48">
-                                                                                      <img src="http://localhost/emazonResource/images/blank.gif"
-                                                                                          data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-15-600x600.jpg"
-                                                                                          alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                      />
-                                                                                  </a>
-                                                                              </div>
-                                                                              <script>
-                                                                                  $(function () {
-                                                                                      var austDay = new Date();
-                                                                                      austDay = new Date(2015, 12 - 1, 22);
-                                                                                      var date = new Date();
-                                                                                      date.setDate(date.getDate() + 10 /*days*/);
-                                                                                      $('#countdown16269989').countdown({ until: date });
-                                                                                  });
 
-                                                                              </script>
-                                                                              <div id="countdown16269989" class="clearfix"></div>
-
-                                                                          </div>
-
-                                                                          <div class="right">
-                                                                              <div class="name">
-                                                                                  <a href="indexb77e.html?route=product/product&amp;product_id=48">Funda Para Ebook 7&quot; 128GB
-                                                                                      full HD</a>
-                                                                              </div>
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">$122.00</div>
-                                                                              <div class="description">
-
-
-                                                                                  More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy
-                                                                                  up to 40,000 songs or up to 200
-                                                                                  hours of video or any combination
-                                                                                  wherever you go. Cover Flow.
-                                                                                  Browse through your music collection
-                                                                                  by flipping through album art.
-                                                                                  Select an album to turn it over
-                                                                                  and see the track list. Enhanced
-                                                                                  interface. Experience a whole
-                                                                                  new way to browse and view your
-                                                                                  music and video. Sleeker design.
-                                                                                  Beautiful, durable, and sleeker
-                                                                                  than ever, iPod classic now features
-                                                                                  an anodized aluminum and polished
-                                                                                  stainless steel enclosure with
-                                                                                  rounded edges.
-
-
-                                                                              </div>
-                                                                              <a onclick="cart.add('48');"
-                                                                                  class="button">Add to Cart</a>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="product clearfix item">
-                                                                      <div class="border clearfix">
-                                                                          <div class="left">
-                                                                              <div class="image">
-                                                                                  <a href="index0f47.html?route=product/product&amp;product_id=29">
-                                                                                      <img src="http://localhost/emazonResource/images/blank.gif"
-                                                                                          data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-7-600x600.jpg"
-                                                                                          alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                      />
-                                                                                  </a>
-                                                                              </div>
-                                                                              <script>
-                                                                                  $(function () {
-                                                                                      var austDay = new Date();
-                                                                                      austDay = new Date(2015, 12 - 1, 22);
-                                                                                      var date = new Date();
-                                                                                      date.setDate(date.getDate() + 10 /*days*/);
-                                                                                      $('#countdown84246').countdown({ until: date });
-                                                                                  });
-
-                                                                              </script>
-                                                                              <div id="countdown84246" class="clearfix"></div>
-
-                                                                          </div>
-
-                                                                          <div class="right">
-                                                                              <div class="name">
-                                                                                  <a href="index0f47.html?route=product/product&amp;product_id=29">Funda Para Ebook 7&quot; 128GB
-                                                                                      full HD</a>
-                                                                              </div>
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">$337.99</div>
-                                                                              <div class="description">
-                                                                                  Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email,
-                                                                                  stay on top of appointments and
-                                                                                  contacts, and use Wi-Fi or GPS
-                                                                                  when you&rsquo;re out and about.
-                                                                                  Then watch a video on YouTube,
-                                                                                  catch up with news and sports
-                                                                                  on the web, or listen to a few
-                                                                                  songs. Balance your work and
-                                                                                  play the way you like it, with
-                                                                                  the Palm Treo Pro. Features Windows
-                                                                                  Mobile&reg; 6.1 Professional
-                                                                                  Edition Qualcomm&reg; MSM7201
-                                                                                  400MHz Processor 320x320 transflective
-                                                                                  colour TFT touchscreen HSDPA/UMTS/EDGE/GPRS/GSM
-                                                                                  radio Tri-band UMTS &mdash; 850MHz,
-                                                                                  1900MHz, 2100MHz Quad-band GSM
-                                                                                  &mdash; 850/900/1800/1900 802.11b/g
-                                                                                  with WPA, WPA2, and 801.1x authentication
-                                                                                  Built-in GPS Bluetooth Version:
-                                                                                  2.0 + Enhanced Data Rate 256MB
-                                                                                  storage (100MB user available),
-                                                                                  128MB RAM 2.0 megapixel camera,
-                                                                                  up to 8x digital zoom and video
-                                                                                  capture Removable, rechargeable
-                                                                                  1500mAh lithium-ion battery Up
-                                                                                  to 5.0 hours talk time and up
-                                                                                  to 250 hours standby MicroSDHC
-                                                                                  card expansion (up to 32GB supported)
-                                                                                  MicroUSB 2.0 for synchronization
-                                                                                  and charging 3.5mm stereo headset
-                                                                                  jack 60mm (W) x 114mm (L) x 13.5mm
-                                                                                  (D) / 133g
-
-                                                                              </div>
-                                                                              <a onclick="cart.add('29');"
-                                                                                  class="button">Add to Cart</a>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
                                                               </div>
                                                           </div>
                                                       </div>
@@ -655,7 +465,7 @@
 
                                                              <!-- Yabbb Modification -->
 
-                                                             <?php foreach ($productsContainer as $product): ?>
+                                                             <?php foreach (getProducts() as $product): ?>
 
                                                                 <?php  echo "<div class='col-sm-3 col-xs-6'>
 
@@ -665,7 +475,7 @@
 
                                                                                      <div class='image'>
 
-                                                                                         <a href='#'>
+                                                                                         <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
 
                                                                                              <img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
                                                                                                  alt=".$product->getProductName()."
@@ -675,11 +485,11 @@
                                                                                  </div>
                                                                                  <div class='right'>
                                                                                      <div class='name'>
-                                                                                         <a href='#'>".$product->getProductName()."</a>
+                                                                                         <a href='emazon/product?route=product/".$product->getProductCode()."'>'".$product->getProductName()."</a>
                                                                                      </div>
 
                                                                                      <div class='right-side'>
-                                                                                         <a onclick='cart.add('28');' class='add-to-cart'>
+                                                                                         <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
                                                                                              <i class='icon-basket-loaded'></i>
                                                                                          </a>
                                                                                      </div>
@@ -749,708 +559,72 @@
                                               <div class="carousel-inner">
                                                   <div class="active item">
                                                       <div class="product-grid">
+
                                                           <div class="row">
-                                                              <div class="col-sm-3 col-xs-6  ">
 
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
 
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-9-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('49');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $241.99 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-15-400x400.jpg"
-                                                                                      alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Funda Para Ebook 7&quot; 128GB full
-                                                                                  HD</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('48');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-3-400x400.jpg"
-                                                                                      alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Teclado Inalambrico Bluetooth Con
-                                                                                  Air Mouse</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('47');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('46');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $1,202.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="row">
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-5-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('45');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $2,000.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-4-400x400.jpg"
-                                                                                      alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Funda Para Ebook 7&quot; 128GB full
-                                                                                  HD</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('44');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $1,202.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-2-400x400.jpg"
-                                                                                      alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Teclado Inalambrico Bluetooth Con
-                                                                                  Air Mouse</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('43');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star active"></i>
-                                                                                  <i class="fa fa-star active"></i>
-                                                                                  <i class="fa fa-star active"></i>
-                                                                                  <i class="fa fa-star active"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $602.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-                                                                          <div class="sale">Sale</div>
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                                                                                      alt="Mp3 Sumergible Deportivo Slim Con 8GB"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Mp3 Sumergible Deportivo Slim Con
-                                                                                  8GB</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('42');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  <span class="price-new">$110.00</span>
-                                                                                  <span class="price-old">$122.00</span>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
                                                           </div>
                                                       </div>
                                                   </div>
                                                   <div class="item">
                                                       <div class="product-grid">
+
                                                           <div class="row">
-                                                              <div class="col-sm-3 col-xs-6  ">
+                                                            <div class="row">
 
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
+                                                               <!-- Yabbb Modification -->
 
-                                                                          <div class="image ">
+                                                               <?php foreach (getProducts() as $product): ?>
 
-                                                                              <a href="#">
+                                                                  <?php  echo "<div class='col-sm-3 col-xs-6'>
 
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-13-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
+                                                                               <!-- Product -->
+                                                                               <div class='product clearfix product-hover'>
+                                                                                   <div class='left'>
 
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('41');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
+                                                                                       <div class='image'>
 
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
+                                                                                           <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
 
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
+                                                                                               <img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+                                                                                                   alt=".$product->getProductName()."
+                                                                                                   class='' />
+                                                                                           </a>
+                                                                                       </div>
+                                                                                   </div>
+                                                                                   <div class='right'>
+                                                                                       <div class='name'>
+                                                                                           <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>".$product->getProductName()."</a>
+                                                                                       </div>
 
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
+                                                                                       <div class='right-side'>
+                                                                                           <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
+                                                                                               <i class='icon-basket-loaded'></i>
+                                                                                           </a>
+                                                                                       </div>
 
-                                                                          <div class="image ">
+                                                                                       <div class='left-side'>
+                                                                                           <div class='rating'>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                           </div>
 
-                                                                              <a href="#">
+                                                                                           <div class='price'>
+                                                                                               $".number_format($product->getProductPrice(),2)."</div>
+                                                                                       </div>
+                                                                                   </div>
+                                                                               </div>
+                                                                           </div>";
+                                                                          ?>
+                                                               <?php endforeach; ?>
 
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-14-400x400.jpg"
-                                                                                      alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Teclado Inalambrico Bluetooth Con
-                                                                                  Air Mouse</a>
-                                                                          </div>
+                                                               <!-- Yabbb Modification Ends Here -->
 
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('40');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
 
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $123.20 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-16-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('36');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-8-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('35');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="row">
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-17-400x400.jpg"
-                                                                                      alt="Mp3 Sumergible Deportivo Slim Con 8GB"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Mp3 Sumergible Deportivo Slim Con
-                                                                                  8GB</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('34');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-3-400x400.jpg"
-                                                                                      alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Teclado Inalambrico Bluetooth Con
-                                                                                  Air Mouse</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('33');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $242.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-18-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('32');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-6-400x400.jpg"
-                                                                                      alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Teclado Inalambrico Bluetooth Con
-                                                                                  Air Mouse</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('31');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $98.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
+                                                            </div>
                                                           </div>
                                                       </div>
                                                   </div>
@@ -1492,711 +666,70 @@
                                               <div class="carousel-inner">
                                                   <div class="active item">
                                                       <div class="product-grid">
+
                                                           <div class="row">
-                                                              <div class="col-sm-3 col-xs-6  ">
 
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-6-400x400.jpg"
-                                                                                      alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Teclado Inalambrico Bluetooth Con
-                                                                                  Air Mouse</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('31');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $98.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-7-400x400.jpg"
-                                                                                      alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Funda Para Ebook 7&quot; 128GB full
-                                                                                  HD</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('29');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $337.99 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-3-400x400.jpg"
-                                                                                      alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Teclado Inalambrico Bluetooth Con
-                                                                                  Air Mouse</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('47');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-17-400x400.jpg"
-                                                                                      alt="Mp3 Sumergible Deportivo Slim Con 8GB"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Mp3 Sumergible Deportivo Slim Con
-                                                                                  8GB</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('34');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="row">
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-18-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('32');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-4-400x400.jpg"
-                                                                                      alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Funda Para Ebook 7&quot; 128GB full
-                                                                                  HD</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('44');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $1,202.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-12-400x400.jpg"
-                                                                                      alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Funda Para Ebook 7&quot; 128GB full
-                                                                                  HD</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('28');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('46');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $1,202.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
                                                           </div>
                                                       </div>
                                                   </div>
                                                   <div class="item">
                                                       <div class="product-grid">
-                                                          <div class="row">
-                                                              <div class="col-sm-3 col-xs-6  ">
 
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
 
-                                                                          <div class="image ">
+                                                            <div class="row">
 
-                                                                              <a href="#">
+                                                               <!-- Yabbb Modification -->
 
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-15-400x400.jpg"
-                                                                                      alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Funda Para Ebook 7&quot; 128GB full
-                                                                                  HD</a>
-                                                                          </div>
+                                                               <?php foreach (getProducts() as $product): ?>
 
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('48');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
+                                                                  <?php  echo "<div class='col-sm-3 col-xs-6'>
 
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
+                                                                               <!-- Product -->
+                                                                               <div class='product clearfix product-hover'>
+                                                                                   <div class='left'>
 
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
+                                                                                       <div class='image'>
 
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
+                                                                                           <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
 
-                                                                          <div class="image ">
+                                                                                               <img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+                                                                                                   alt=".$product->getProductName()."
+                                                                                                   class='' />
+                                                                                           </a>
+                                                                                       </div>
+                                                                                   </div>
+                                                                                   <div class='right'>
+                                                                                       <div class='name'>
+                                                                                           <ahref='/emazon/product?route=product/product_id=".$product->getProductCode()."'>".$product->getProductName()."</a>
+                                                                                       </div>
 
-                                                                              <a href="#">
+                                                                                       <div class='right-side'>
+                                                                                           <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
+                                                                                               <i class='icon-basket-loaded'></i>
+                                                                                           </a>
+                                                                                       </div>
 
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-16-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
+                                                                                       <div class='left-side'>
+                                                                                           <div class='rating'>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                               <i class='fa fa-star-o'></i>
+                                                                                           </div>
 
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('36');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
+                                                                                           <div class='price'>
+                                                                                               $".number_format($product->getProductPrice(),2)."</div>
+                                                                                       </div>
+                                                                                   </div>
+                                                                               </div>
+                                                                           </div>";
+                                                                          ?>
+                                                               <?php endforeach; ?>
 
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
+                                                               <!-- Yabbb Modification Ends Here -->
 
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
 
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-                                                                          <div class="sale">Sale</div>
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                                                                                      alt="Mp3 Sumergible Deportivo Slim Con 8GB"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Mp3 Sumergible Deportivo Slim Con
-                                                                                  8GB</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('42');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  <span class="price-new">$110.00</span>
-                                                                                  <span class="price-old">$122.00</span>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-2-400x400.jpg"
-                                                                                      alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Teclado Inalambrico Bluetooth Con
-                                                                                  Air Mouse</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('43');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star active"></i>
-                                                                                  <i class="fa fa-star active"></i>
-                                                                                  <i class="fa fa-star active"></i>
-                                                                                  <i class="fa fa-star active"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $602.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="row">
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-8-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('35');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $122.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-14-400x400.jpg"
-                                                                                      alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Teclado Inalambrico Bluetooth Con
-                                                                                  Air Mouse</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('40');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $123.20 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-5-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('45');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  $2,000.00 </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-sm-3 col-xs-6  ">
-
-                                                                  <!-- Product -->
-                                                                  <div class="product clearfix product-hover">
-                                                                      <div class="left">
-                                                                          <div class="sale">Sale</div>
-
-                                                                          <div class="image ">
-
-                                                                              <a href="#">
-
-                                                                                  <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-10-400x400.jpg"
-                                                                                      alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                      class="" />
-                                                                              </a>
-                                                                          </div>
-                                                                      </div>
-                                                                      <div class="right">
-                                                                          <div class="name">
-                                                                              <a href="#">Reloj Inteligente Smart Watch M26
-                                                                                  Touch Bluetooh</a>
-                                                                          </div>
-
-                                                                          <div class="right-side">
-                                                                              <a onclick="cart.add('30');" class="add-to-cart">
-                                                                                  <i class="icon-basket-loaded"></i>
-                                                                              </a>
-                                                                          </div>
-
-                                                                          <div class="left-side">
-                                                                              <div class="rating">
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                                  <i class="fa fa-star-o"></i>
-                                                                              </div>
-
-                                                                              <div class="price">
-                                                                                  <span class="price-new">$98.00</span>
-                                                                                  <span class="price-old">$122.00</span>
-                                                                              </div>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
                                                           </div>
                                                       </div>
                                                   </div>
@@ -2222,28 +755,28 @@
                                               <div class="col-sm-12">
                                                   <ul class="brands clearfix">
                                                       <li>
-                                                          <a href="#">
-                                                              <img src="http://localhost/emazonResource/images/c-img-1.png" alt="">
+                                                          <a href="https://www.paypal.com/myaccount/home">
+                                                              <img src="http://localhost/emazonResource/images/paypal_logo_.png" alt="">
                                                           </a>
                                                       </li>
                                                       <li>
-                                                          <a href="#">
-                                                              <img src="http://localhost/emazonResource/images/c-img-2.png" alt="">
+                                                          <a href="https://www.paypal.com/myaccount/home">
+                                                              <img src="http://localhost/emazonResource/images/paypal_logo_.png" alt="">
                                                           </a>
                                                       </li>
                                                       <li>
-                                                          <a href="#">
-                                                              <img src="http://localhost/emazonResource/images/c-img-3.png" alt="">
+                                                          <a href="https://www.paypal.com/myaccount/home">
+                                                              <img src="http://localhost/emazonResource/images/paypal_logo_.png" alt="">
                                                           </a>
                                                       </li>
                                                       <li>
-                                                          <a href="#">
-                                                              <img src="http://localhost/emazonResource/images/c-img-4.png" alt="">
+                                                          <a href="https://www.paypal.com/myaccount/home">
+                                                              <img src="http://localhost/emazonResource/images/paypal_logo_.png" alt="">
                                                           </a>
                                                       </li>
                                                       <li>
-                                                          <a href="#">
-                                                              <img src="http://localhost/emazonResource/images/c-img-5.png" alt="">
+                                                          <a href="https://www.paypal.com/myaccount/home">
+                                                              <img src="http://localhost/emazonResource/images/paypal_logo_.png" alt="">
                                                           </a>
                                                       </li>
                                                   </ul>
@@ -2337,442 +870,59 @@
                                               <div class="active item">
                                                   <div class="product-grid">
                                                       <div class="row">
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
 
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
 
-                                                                      <div class="image ">
+                                                       <!-- Yabbb Modification -->
+
+                                                       <?php foreach (getTopSellingProducts() as $product): ?>
+
+                                                          <?php  echo "<div class='col-sm-3 col-xs-6'>
+
+                                                                       <!-- Product -->
+                                                                       <div class='product clearfix product-hover'>
+                                                                           <div class='left'>
+
+                                                                               <div class='image'>
+
+                                                                                   <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
+
+                                                                                       <img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+                                                                                           alt=".$product->getProductName()."
+                                                                                           class='' />
+                                                                                   </a>
+                                                                               </div>
+                                                                           </div>
+                                                                           <div class='right'>
+                                                                               <div class='name' id='productName'>
+                                                                                   <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>".$product->getProductName()."</a>
+                                                                               </div>
+
+                                                                               <div class='right-side'>
+                                                                                   <a  href='/emazon/product?route=product/product_id=".$product->getProductCode()."'  class='add-to-cart'>
+                                                                                       <i class='icon-basket-loaded'></i>
+                                                                                   </a>
+                                                                               </div>
+
+                                                                               <div class='left-side'>
+                                                                                   <div class='rating'>
+                                                                                       <i class='fa fa-star-o'></i>
+                                                                                       <i class='fa fa-star-o'></i>
+                                                                                       <i class='fa fa-star-o'></i>
+                                                                                       <i class='fa fa-star-o'></i>
+                                                                                       <i class='fa fa-star-o'></i>
+                                                                                   </div>
+
+                                                                                   <div class='price'>
+                                                                                       $".number_format($product->getProductPrice(),2)."</div>
+                                                                               </div>
+                                                                           </div>
+                                                                       </div>
+                                                                   </div>";
+                                                                  ?>
+                                                       <?php endforeach; ?>
+
+                                                       <!-- Yabbb Modification Ends Here -->
 
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-9-400x400.jpg"
-                                                                                  alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Reloj Inteligente Smart Watch M26 Touch
-                                                                              Bluetooh</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('49');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              $241.99 </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
-
-                                                                      <div class="image ">
-
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-15-400x400.jpg"
-                                                                                  alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Funda Para Ebook 7&quot; 128GB full HD</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('48');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              $122.00 </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
-
-                                                                      <div class="image ">
-
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-3-400x400.jpg"
-                                                                                  alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Teclado Inalambrico Bluetooth Con Air
-                                                                              Mouse</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('47');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              $122.00 </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
-
-                                                                      <div class="image ">
-
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                                                                                  alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Reloj Inteligente Smart Watch M26 Touch
-                                                                              Bluetooh</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('46');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              $1,202.00 </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 hidden-sm hidden-md">
-
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
-
-                                                                      <div class="image ">
-
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-5-400x400.jpg"
-                                                                                  alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Reloj Inteligente Smart Watch M26 Touch
-                                                                              Bluetooh</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('45');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              $2,000.00 </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="item">
-                                                  <div class="product-grid">
-                                                      <div class="row">
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
-
-                                                                      <div class="image ">
-
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-4-400x400.jpg"
-                                                                                  alt="Funda Para Ebook 7&quot; 128GB full HD"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Funda Para Ebook 7&quot; 128GB full HD</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('44');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              $1,202.00 </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
-
-                                                                      <div class="image ">
-
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-2-400x400.jpg"
-                                                                                  alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Teclado Inalambrico Bluetooth Con Air
-                                                                              Mouse</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('43');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star active"></i>
-                                                                              <i class="fa fa-star active"></i>
-                                                                              <i class="fa fa-star active"></i>
-                                                                              <i class="fa fa-star active"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              $602.00 </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
-                                                                      <div class="sale">Sale</div>
-
-                                                                      <div class="image ">
-
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                                                                                  alt="Mp3 Sumergible Deportivo Slim Con 8GB"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Mp3 Sumergible Deportivo Slim Con 8GB</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('42');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              <span class="price-new">$110.00</span>
-                                                                              <span class="price-old">$122.00</span>
-                                                                          </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
-
-                                                                      <div class="image ">
-
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-13-400x400.jpg"
-                                                                                  alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Reloj Inteligente Smart Watch M26 Touch
-                                                                              Bluetooh</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('41');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              $122.00 </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 hidden-sm hidden-md">
-
-                                                              <!-- Product -->
-                                                              <div class="product clearfix product-hover">
-                                                                  <div class="left">
-
-                                                                      <div class="image ">
-
-                                                                          <a href="#">
-
-                                                                              <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-14-400x400.jpg"
-                                                                                  alt="Teclado Inalambrico Bluetooth Con Air Mouse"
-                                                                                  class="" />
-                                                                          </a>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="right">
-                                                                      <div class="name">
-                                                                          <a href="#">Teclado Inalambrico Bluetooth Con Air
-                                                                              Mouse</a>
-                                                                      </div>
-
-                                                                      <div class="right-side">
-                                                                          <a onclick="cart.add('40');" class="add-to-cart">
-                                                                              <i class="icon-basket-loaded"></i>
-                                                                          </a>
-                                                                      </div>
-
-                                                                      <div class="left-side">
-                                                                          <div class="rating">
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                              <i class="fa fa-star-o"></i>
-                                                                          </div>
-
-                                                                          <div class="price">
-                                                                              $123.20 </div>
-                                                                      </div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
                                                       </div>
                                                   </div>
                                               </div>
@@ -2940,6 +1090,7 @@
           </div>
       </div>
   </div>
+
 
       <!-- Main Body Ends -->
 

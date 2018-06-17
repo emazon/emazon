@@ -40,6 +40,11 @@ class Utility
     }
   }
 
+  public static function check()
+  {
+    return true;
+  }
+
   public static function hashPassword($password)
   {
       return password_hash($password , PASSWORD_DEFAULT);

@@ -76,17 +76,21 @@
 				      <div class="col-sm-12">
 				      						      <div class="product-image cloud-zoom">
 
-					     	 <a href="#" title="Teclado Inalambrico Bluetooth Con Air Mouse" id="ex1" class="open-popup-image"><img src="http://localhost/emazonResource/images/Product_Images/item-img-1-11-600x600.jpg" title="Teclado Inalambrico Bluetooth Con Air Mouse" alt="Teclado Inalambrico Bluetooth Con Air Mouse" id="image" itemprop="image" data-zoom-image="http://localhost/emazonResource/images/Product_Images/item-img-1-11-1000x1000.jpg" /></a>
+					     	 <a href="#" title="Teclado Inalambrico Bluetooth Con Air Mouse" id="ex1" class="open-popup-image"><img src=<?php echo $productsContainer[0]->getProductFrontImage(); ?> title=<?php echo $productsContainer[0]->getProductName(); ?>  id='image' itemprop='image' data-zoom-image=<?php echo $productsContainer[0]->getProductFrontImage(); ?> /></a>
 					      </div>
 					  	 				      </div>
 
 				      				      <div class="col-sm-12">
 				           <div class="overflow-thumbnails-carousel">
      					      <div class="thumbnails-carousel owl-carousel">
-     					      	     					      	     <div class="item"><a href="#" class="popup-image" data-image="http://localhost/emazonResource/images/Product_Images/item-img-1-11-600x600.jpg" data-zoom-image="http://localhost/emazonResource/images/Product_Images/item-img-1-11-1000x1000.jpg"><img src="http://localhost/emazonResource/images/Product_Images/item-img-1-11-150x150.jpg" title="Teclado Inalambrico Bluetooth Con Air Mouse" alt="Teclado Inalambrico Bluetooth Con Air Mouse" /></a></div>
-     					      	     						          						         <div class="item"><a href="#" class="popup-image" data-image="http://localhost/emazonResource/images/Product_Images/item-img-1-12-1000x1000.jpg" data-zoom-image="http://localhost/emazonResource/images/Product_Images/item-img-1-12-1000x1000.jpg"><img src="http://localhost/emazonResource/images/Product_Images/item-img-1-12-150x150.jpg" title="Teclado Inalambrico Bluetooth Con Air Mouse" alt="Teclado Inalambrico Bluetooth Con Air Mouse" /></a></div>
-     						          						         <div class="item"><a href="#" class="popup-image" data-image="http://localhost/emazonResource/images/Product_Images/item-img-1-13-1000x1000.jpg" data-zoom-image="http://localhost/emazonResource/images/Product_Images/item-img-1-13-1000x1000.jpg"><img src="http://localhost/emazonResource/images/Product_Images/item-img-1-13-150x150.jpg" title="Teclado Inalambrico Bluetooth Con Air Mouse" alt="Teclado Inalambrico Bluetooth Con Air Mouse" /></a></div>
-     						          					      </div>
+
+											<!-- Products Gallery Image Here -->
+
+														  	     <!-- <div class="item"><a href="#" class="popup-image" data-image="http://localhost/emazonResource/images/Product_Images/item-img-1-11-600x600.jpg" data-zoom-image="http://localhost/emazonResource/images/Product_Images/item-img-1-11-1000x1000.jpg"><img src="http://localhost/emazonResource/images/Product_Images/item-img-1-11-150x150.jpg" title="Teclado Inalambrico Bluetooth Con Air Mouse" alt="Teclado Inalambrico Bluetooth Con Air Mouse" /></a></div>
+	      	     						          						         <div class="item"><a href="#" class="popup-image" data-image="http://localhost/emazonResource/images/Product_Images/item-img-1-12-1000x1000.jpg" data-zoom-image="http://localhost/emazonResource/images/Product_Images/item-img-1-12-1000x1000.jpg"><img src="http://localhost/emazonResource/images/Product_Images/item-img-1-12-150x150.jpg" title="Teclado Inalambrico Bluetooth Con Air Mouse" alt="Teclado Inalambrico Bluetooth Con Air Mouse" /></a></div>
+		          						         <div class="item"><a href="#" class="popup-image" data-image="http://localhost/emazonResource/images/Product_Images/item-img-1-13-1000x1000.jpg" data-zoom-image="http://localhost/emazonResource/images/Product_Images/item-img-1-13-1000x1000.jpg"><img src="http://localhost/emazonResource/images/Product_Images/item-img-1-13-150x150.jpg" title="Teclado Inalambrico Bluetooth Con Air Mouse" alt="Teclado Inalambrico Bluetooth Con Air Mouse" /></a></div> -->
+																	<!-- Ends -->
+											</div>
 					      </div>
 
 					      <script type="text/javascript">
@@ -112,17 +116,14 @@
 
 			    <div class="col-sm-6 product-center clearfix">
 			     <div itemprop="offerDetails" itemscope itemtype="http://schema.org/Offer">
-			      <h2 class="product-name">Teclado Inalambrico Bluetooth Con Air Mouse</h2>
+			      <h2 class="product-name"><?php echo $productsContainer[0]->getProductName(); ?></h2>
 			      			      <div class="description">
 			        			        <span>Brand:</span> <a href="indexe69c.html?route=product/manufacturer/info&amp;manufacturer_id=7" itemprop="brand">Hewlett-Packard</a><br />
-			        			        <span>Product Code:</span> Product 21<br />
-			        			        <span>Reward Points:</span> 300<br />
+			        			        <span>Product Code:</span> <?php echo $productsContainer[0]->getProductCode(); ?><br />
 			        			        <span>Availability:</span> In Stock</div>
 			      			      <div class="price">
-			        			        <span class="price-new"><span itemprop="price" id="price-old">$122.00</span></span>
-			        			        <br />
-			        			        <span class="price-tax">Ex Tax: <span id="price-tax">$100.00</span></span><br />
-			        			        			        <span class="reward"><small>Price in reward points: 400</small></span><br />
+			        			        <span class="price-new"><span itemprop="price" id="price-old">$<?php echo number_format($productsContainer[0]->getProductPrice() , 2)?></span></span>
+
 			        			        			      </div>
 			      			     </div>
 
@@ -155,7 +156,7 @@
 
 			        <div class="links">
 			        	<a onclick="wishlist.add('47');">Add to Wish List</a>
-			        	<a onclick="compare.add('47');">Compare this Product</a>
+			        	<!-- <a onclick="compare.add('47');">Compare this Product</a> -->
 			        </div>
 
 			        			      </div>
@@ -178,7 +179,7 @@
     <div id="tabs" class="htabs">
   	<a href="#tab-description">Description</a><a href="#tab-attribute">Specification</a><a href="#tab-review">Reviews (0)</a>  </div>
     <div id="tab-description" class="tab-content" itemprop="description"><p>
-	Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor features best-in-class performance and presentation features on a huge wide-aspect screen while letting you work as comfortably as possible - you might even forget you&#39;re at the office</p>
+					<p><?php echo $productsContainer[0]->getProductDescription(); ?></p>
 </div>
     <div id="tab-attribute" class="tab-content">
     <table class="attribute" cellspacing="0">
@@ -258,156 +259,131 @@
       	<div id="myCarousel9937785" class="carousel slide">
       		<!-- Carousel items -->
       		<div class="carousel-inner">
-      			  	    			<div class="active item"><div class="product-grid"><div class="row">  	    			  	    			<div class="col-sm-3 col-xs-6">
+      			  	    			<div class="active item">
+														<div class="product-grid">
+															<div class="row">
+																<!-- Yabbb Modification -->
 
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
+																<?php foreach (array_slice(getRelatedProducts(), 0, 3) as $product): ?>
 
-			<div class="image ">
+																	 <?php  echo "<div class='col-sm-3 col-xs-6'>
 
-				<a href="index6320.html?route=product/product&amp;product_id=28">
+																								<!-- Product -->
+																								<div class='product clearfix product-hover'>
+																										<div class='left'>
 
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-12-400x400.jpg" alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="index6320.html?route=product/product&amp;product_id=28">Funda Para Ebook 7&quot; 128GB full HD</a></div>
+																												<div class='image'>
 
-		<div class="right-side">
-						     			     <a onclick="cart.add('28');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
+																														<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
 
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+																																<img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+																																		alt=".$product->getProductName()."
+																																		class='' />
+																														</a>
+																												</div>
+																										</div>
+																										<div class='right'>
+																												<div class='name'>
+																														<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>".$product->getProductName()."</a>
+																												</div>
 
-			<div class="price">
-								$122.00							</div>
-		</div>
-	</div>
-</div>  	    			</div>
-      			  	    			  	    			  	    			<div class="col-sm-3 col-xs-6">
+																												<div class='right-side'>
+																														<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
+																																<i class='icon-basket-loaded'></i>
+																														</a>
+																												</div>
 
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
+																												<div class='left-side'>
+																														<div class='rating'>
+																																<i class='fa fa-star-o'></i>
+																																<i class='fa fa-star-o'></i>
+																																<i class='fa fa-star-o'></i>
+																																<i class='fa fa-star-o'></i>
+																																<i class='fa fa-star-o'></i>
+																														</div>
 
-			<div class="image ">
+																														<div class='price'>
+																																$".number_format($product->getProductPrice(),2)."</div>
+																												</div>
+																										</div>
+																								</div>
+																						</div>";
+																					 ?>
+																<?php endforeach; ?>
 
-				<a href="index0f47.html?route=product/product&amp;product_id=29">
+																<!-- Yabbb Modification Ends Here -->
 
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-7-400x400.jpg" alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="index0f47.html?route=product/product&amp;product_id=29">Funda Para Ebook 7&quot; 128GB full HD</a></div>
+      			  	    			  	    			</div>
+																		</div>
+															</div>
 
-		<div class="right-side">
-						     			     <a onclick="cart.add('29');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
+															<div class="item">
+																<div class="product-grid">
+																	<div class="row">
+																		<!-- Yabbb Modification -->
 
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+																		<?php foreach (array_slice(getRelatedProducts(), 3) as $product): ?>
 
-			<div class="price">
-								$337.99							</div>
-		</div>
-	</div>
-</div>  	    			</div>
-      			  	    			  	    			  	    			<div class="col-sm-3 col-xs-6">
+																			 <?php  echo "<div class='col-sm-3 col-xs-6'>
 
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
+																										<!-- Product -->
+																										<div class='product clearfix product-hover'>
+																												<div class='left'>
 
-			<div class="image ">
+																														<div class='image'>
 
-				<a href="indexc21e.html?route=product/product&amp;product_id=34">
+																																<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
 
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-17-400x400.jpg" alt="Mp3 Sumergible Deportivo Slim Con 8GB" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="indexc21e.html?route=product/product&amp;product_id=34">Mp3 Sumergible Deportivo Slim Con 8GB</a></div>
+																																		<img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+																																				alt=".$product->getProductName()."
+																																				class='' />
+																																</a>
+																														</div>
+																												</div>
+																												<div class='right'>
+																														<div class='name'>
+																																<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>".$product->getProductName()."</a>
+																														</div>
 
-		<div class="right-side">
-						     			     <a onclick="cart.add('34');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
+																														<div class='right-side'>
+																																<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
+																																		<i class='icon-basket-loaded'></i>
+																																</a>
+																														</div>
 
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+																														<div class='left-side'>
+																																<div class='rating'>
+																																		<i class='fa fa-star-o'></i>
+																																		<i class='fa fa-star-o'></i>
+																																		<i class='fa fa-star-o'></i>
+																																		<i class='fa fa-star-o'></i>
+																																		<i class='fa fa-star-o'></i>
+																																</div>
 
-			<div class="price">
-								$122.00							</div>
-		</div>
-	</div>
-</div>  	    			</div>
-      			  	    			  	    			  	    			<div class="col-sm-3 col-xs-6">
+																																<div class='price'>
+																																		$".number_format($product->getProductPrice(),2)."</div>
+																														</div>
+																												</div>
+																										</div>
+																								</div>";
+																							 ?>
+																		<?php endforeach; ?>
 
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
+																		<!-- Yabbb Modification Ends Here -->
 
-			<div class="image ">
+		      			  	    			  	    			</div>
+																				</div>
+																	</div>
 
-				<a href="indexd94c.php?route=product/product&amp;product_id=44">
 
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-4-400x400.jpg" alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="indexd94c.php?route=product/product&amp;product_id=44">Funda Para Ebook 7&quot; 128GB full HD</a></div>
 
-		<div class="right-side">
-						     			     <a onclick="cart.add('44');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$1,202.00							</div>
-		</div>
-	</div>
-</div>  	    			</div>
-      			  	    			  	    			</div></div></div><div class="item"><div class="product-grid"><div class="row">  	    			<div class="col-sm-3 col-xs-6">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-
-			<div class="image ">
-
-				<a href="indexb77e.html?route=product/product&amp;product_id=48">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-15-400x400.jpg" alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="indexb77e.html?route=product/product&amp;product_id=48">Funda Para Ebook 7&quot; 128GB full HD</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('48');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$122.00							</div>
-		</div>
-	</div>
-</div>  	    			</div>
-      			      			</div></div></div>      		</div>
+						</div>
   	  </div>
       </div>
     </div>
   </div>
+
+
 
     <script type="text/javascript">
   $(document).ready(function() {
@@ -433,8 +409,7 @@
 <script type="text/javascript"><!--
 $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 	$.ajax({
-		url: 'index.php?route=product/product/getRecurringDescription',
-		type: 'post',
+		url: '/emazon/search',
 		data: $('input[name=\'product_id\'], input[name=\'quantity\'], select[name=\'recurring_id\']'),
 		dataType: 'json',
 		beforeSend: function() {
@@ -450,13 +425,106 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 	});
 });
 //--></script>
-<script type="text/javascript"><!--
+
+<!-- <script type="text/javascript">
+
+	function addtoCart(para)
+	{
+		$.ajax({
+			url : '/emazon/addtoCart?productCode=' + para,
+			beforeSend : function()
+			{
+				$('#button-cart').button('loading');
+			}, complete: function()
+			{
+				$('#button-cart').button('reset');
+			},
+			success: function(json)
+			{
+				$('.alert, .text-danger').remove();
+				$('.form-group').removeClass('has-error');
+
+				if (json['error']) {
+					if (json['error']['option']) {
+						for (i in json['error']['option']) {
+							var element = $('#input-option' + i.replace('_', '-'));
+
+							if (element.parent().hasClass('input-group')) {
+								element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
+							} else {
+								element.after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
+							}
+						}
+					}
+
+					if (json['error']['recurring']) {
+						$('select[name=\'recurring_id\']').after('<div class="text-danger">' + json['error']['recurring'] + '</div>');
+					}
+
+					// Highlight any found errors
+					$('.text-danger').parent().addClass('has-error');
+				}
+
+				if (json) {
+					$.notify({
+						message: json['success'],
+						target: '_blank'
+					},{
+						// settings
+						element: 'body',
+						position: null,
+						type: "info",
+						allow_dismiss: true,
+						newest_on_top: false,
+						placement: {
+							from: "top",
+							align: "right"
+						},
+						offset: 20,
+						spacing: 10,
+						z_index: 2031,
+						delay: 5000,
+						timer: 1000,
+						url_target: '_blank',
+						mouse_over: null,
+						animate: {
+							enter: 'animated fadeInDown',
+							exit: 'animated fadeOutUp'
+						},
+						onShow: null,
+						onShown: null,
+						onClose: null,
+						onClosed: null,
+						icon_type: 'class',
+						template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-success" role="alert">' +
+							'<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+							'<span data-notify="message"><i class="fa fa-check-circle"></i>&nbsp; {2}</span>' +
+							'<div class="progress" data-notify="progressbar">' +
+								'<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+							'</div>' +
+							'<a href="{3}" target="{4}" data-notify="url"></a>' +
+						'</div>'
+					});
+
+
+
+					$('#cart_block .cart-count').load('1');
+				}
+			},
+	        error: function(xhr, ajaxOptions, thrownError) {
+	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+	        }
+		});
+	}
+
+</script> -->
+
+<!-- url: 'index.php?route=checkout/cart/add' -->
+	<script type="text/javascript"><!--
 $('#button-cart').on('click', function() {
+
 	$.ajax({
-		url: 'index.php?route=checkout/cart/add',
-		type: 'post',
-		data: $('#product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, #product select, #product textarea'),
-		dataType: 'json',
+		url: '/emazon/addtoCart',
 		beforeSend: function() {
 			$('#button-cart').button('loading');
 		},
@@ -464,6 +532,8 @@ $('#button-cart').on('click', function() {
 			$('#button-cart').button('reset');
 		},
 		success: function(json) {
+
+			alert(json);
 			$('.alert, .text-danger').remove();
 			$('.form-group').removeClass('has-error');
 
@@ -488,7 +558,7 @@ $('#button-cart').on('click', function() {
 				$('.text-danger').parent().addClass('has-error');
 			}
 
-			if (json['success']) {
+			if (json) {
 				$.notify({
 					message: json['success'],
 					target: '_blank'
@@ -529,9 +599,12 @@ $('#button-cart').on('click', function() {
 					'</div>'
 				});
 
-				$('#cart_block #cart_content').load('indexe061.html?route=common/cart/info#cart_content_ajax');
-				$('#cart-total').html(json['total']);
-				$('#cart_block .cart-count').load('indexe061.html?route=common/cart/info#total_count_ajax');
+				//$('#cart_block #cart_content').load('/emazon/addtoCart');
+				 $('#cart_content').append("<div id='cart_content_ajax'><div class='mini-cart-info'><table><tbody><tr><td class='image'><a href='#'><img src='http://localhost/emazonResource/images/Product_Images/item-img-1-1-150x150.jpg' width='47px' height='47px' alt='Funda Para Ebook 7&quot; 128GB full HD' title='Funda Para Ebook 7&quot; 128GB full HD'></a></td><td class='name'><a href='#'>Funda Para Ebook 7 128GB full HD</a><div></div></td><td class='quantity'>x&nbsp;1</td><td class='total'>$122.00</td><td class='remove'><a href='javascript:;' onclick='cart.remove('63');' title='Remove'>x</a></td></tr></tbody></table></div><div class='mini-cart-total'><table><tbody><tr><td class='right'>Sub-Total:</td><td class='right'>$100.00</td></tr><tr><td class='right'>Eco Tax (-2.00):</td><td class='right'>$2.00</td></tr><tr><td class='right'>VAT (20%):</td><td class='right'>$20.00</td></tr><tr><td class='right'>Total:</td><td class='right'>$122.00</td></tr></tbody></table></div></div> <div class=checkout'><a href='http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=checkout/cart' class='button btn-default'>View Cart</a> &nbsp;<a href='http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=checkout/checkout' class='button'>Checkout</a></div>");
+				//$('.itm-cont cart-count').value('1');
+				//$('#cart_block .cart-count').load('1');
+				$('#total_count_ajax').text('7');
+
 			}
 		},
         error: function(xhr, ajaxOptions, thrownError) {
@@ -1387,9 +1460,8 @@ MegaFilterOverrideFn[1]["afterRender"] = function( htmlResponse, htmlContent, js
 				'refreshDelay'			: 1000,
 				'usingButtonWithCountInfo' : false,
 				'autoScroll'			: false,
-				'ajaxGetInfoUrl'		: 'http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=module/mega_filter/getajaxinfo',
-				'ajaxResultsUrl'		: 'http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=module/mega_filter/results',
-				'ajaxGetCategoryUrl'	: 'http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=module/mega_filter/getcategories',
+				'ajaxGetInfoUrl'		: '/emazon/product/mega_filter/getajaxinfo',
+				'ajaxResultsUrl'		: '/emazon/product/mega_filter/products',
 				'priceMin'				: 98,
 				'priceMax'				: 1202,
 				'mijoshop'				: false,
@@ -1490,301 +1562,106 @@ MegaFilterOverrideFn[1]["afterRender"] = function( htmlResponse, htmlContent, js
     	<div id="myCarousel112180834" class="carousel slide">
     		<!-- Carousel items -->
     		<div class="carousel-inner">
-    				    			<div class="active item"><div class="product-grid"><div class="row">	    				    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
+					<div class="active item"><div class="product-grid">
+					<?php foreach (array_slice(getRelatedProducts(),0, 4) as $product): ?>
 
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
+						 <?php  echo "<div class='col-sm-3 col-xs-6'>
 
-			<div class="image ">
+													<!-- Product -->
+													<div class='product clearfix product-hover'>
+															<div class='left'>
 
-				<a href="index6320.html?route=product/product&amp;product_id=28">
+																	<div class='image'>
 
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-12-400x400.jpg" alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-									</a>
+																			<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
+
+																					<img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+																							alt=".$product->getProductName()."
+																							class='' />
+																			</a>
+																	</div>
+															</div>
+															<div class='right'>
+																	<div class='name'>
+																			<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>".$product->getProductName()."</a>
+																	</div>
+
+																	<div class='right-side'>
+																			<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
+																					<i class='icon-basket-loaded'></i>
+																			</a>
+																	</div>
+
+																	<div class='left-side'>
+																			<div class='rating'>
+																					<i class='fa fa-star-o'></i>
+																					<i class='fa fa-star-o'></i>
+																					<i class='fa fa-star-o'></i>
+																					<i class='fa fa-star-o'></i>
+																					<i class='fa fa-star-o'></i>
+																			</div>
+
+																			<div class='price'>
+																					$".number_format($product->getProductPrice(),2)."</div>
+																	</div>
+															</div>
+													</div>
+											</div>";
+										 ?>
+					<?php endforeach; ?>
+				</div>
 			</div>
+
+						<div class="item"><div class="product-grid">
+						<?php foreach (array_slice(getRelatedProducts(),4) as $product): ?>
+
+							 <?php  echo "<div class='col-sm-3 col-xs-6'>
+
+														<!-- Product -->
+														<div class='product clearfix product-hover'>
+																<div class='left'>
+
+																		<div class='image'>
+
+																				<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
+
+																						<img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+																								alt=".$product->getProductName()."
+																								class='' />
+																				</a>
+																		</div>
+																</div>
+																<div class='right'>
+																		<div class='name'>
+																				<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>".$product->getProductName()."</a>
+																		</div>
+
+																		<div class='right-side'>
+																				<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
+																						<i class='icon-basket-loaded'></i>
+																				</a>
+																		</div>
+
+																		<div class='left-side'>
+																				<div class='rating'>
+																						<i class='fa fa-star-o'></i>
+																						<i class='fa fa-star-o'></i>
+																						<i class='fa fa-star-o'></i>
+																						<i class='fa fa-star-o'></i>
+																						<i class='fa fa-star-o'></i>
+																				</div>
+
+																				<div class='price'>
+																						$".number_format($product->getProductPrice(),2)."</div>
+																		</div>
+																</div>
+														</div>
+												</div>";
+											 ?>
+						<?php endforeach; ?>
 					</div>
-	<div class="right">
-		<div class="name"><a href="index6320.html?route=product/product&amp;product_id=28">Funda Para Ebook 7&quot; 128GB full HD</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('28');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$122.00							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    				    				    				    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-
-			<div class="image ">
-
-				<a href="indexb77e.html?route=product/product&amp;product_id=48">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-15-400x400.jpg" alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="indexb77e.html?route=product/product&amp;product_id=48">Funda Para Ebook 7&quot; 128GB full HD</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('48');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$122.00							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    				    				    				    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-
-			<div class="image ">
-
-				<a href="index0f47.html?route=product/product&amp;product_id=29">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-7-400x400.jpg" alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="index0f47.html?route=product/product&amp;product_id=29">Funda Para Ebook 7&quot; 128GB full HD</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('29');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$337.99							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    				    				    				    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-																		<div class="sale">Sale</div>
-
-			<div class="image ">
-
-				<a href="indexbb02.html?route=product/product&amp;product_id=42">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg" alt="Mp3 Sumergible Deportivo Slim Con 8GB" class="" />
-									</a>
-			</div>
-							</div>
-	<div class="right">
-		<div class="name"><a href="indexbb02.html?route=product/product&amp;product_id=42">Mp3 Sumergible Deportivo Slim Con 8GB</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('42');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								<span class="price-new">$110.00</span> <span class="price-old">$122.00</span>
-							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    				    				    				    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 hidden-sm hidden-md">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-
-			<div class="image ">
-
-				<a href="indexc21e.html?route=product/product&amp;product_id=34">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-17-400x400.jpg" alt="Mp3 Sumergible Deportivo Slim Con 8GB" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="indexc21e.html?route=product/product&amp;product_id=34">Mp3 Sumergible Deportivo Slim Con 8GB</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('34');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$122.00							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    				    				    			</div></div></div><div class="item"><div class="product-grid"><div class="row">	    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-
-			<div class="image ">
-
-				<a href="index9144.html?route=product/product&amp;product_id=40">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-14-400x400.jpg" alt="Teclado Inalambrico Bluetooth Con Air Mouse" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="index9144.html?route=product/product&amp;product_id=40">Teclado Inalambrico Bluetooth Con Air Mouse</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('40');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$123.20							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    				    				    				    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-																		<div class="sale">Sale</div>
-
-			<div class="image ">
-
-				<a href="indexf073.html?route=product/product&amp;product_id=30">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-10-400x400.jpg" alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh" class="" />
-									</a>
-			</div>
-							</div>
-	<div class="right">
-		<div class="name"><a href="indexf073.html?route=product/product&amp;product_id=30">Reloj Inteligente Smart Watch M26 Touch Bluetooh</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('30');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								<span class="price-new">$98.00</span> <span class="price-old">$122.00</span>
-							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    				    				    				    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-
-			<div class="image ">
-
-				<a href="indexd21c.html?route=product/product&amp;product_id=47">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-11-400x400.jpg" alt="Teclado Inalambrico Bluetooth Con Air Mouse" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="indexd21c.html?route=product/product&amp;product_id=47">Teclado Inalambrico Bluetooth Con Air Mouse</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('47');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$122.00							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    				    				    				    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-
-			<div class="image ">
-
-				<a href="indexd94c.php?route=product/product&amp;product_id=44">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-4-400x400.jpg" alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="indexd94c.php?route=product/product&amp;product_id=44">Funda Para Ebook 7&quot; 128GB full HD</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('44');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$1,202.00							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    				    				    				    			<div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 hidden-sm hidden-md">
-
-<!-- Product -->
-<div class="product clearfix product-hover">
-	<div class="left">
-
-			<div class="image ">
-
-				<a href="index2ebe.html?route=product/product&amp;product_id=46">
-
-										<img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg" alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh" class="" />
-									</a>
-			</div>
-					</div>
-	<div class="right">
-		<div class="name"><a href="index2ebe.html?route=product/product&amp;product_id=46">Reloj Inteligente Smart Watch M26 Touch Bluetooh</a></div>
-
-		<div class="right-side">
-						     			     <a onclick="cart.add('46');" class="add-to-cart"><i class="icon-basket-loaded"></i></a>
-			     					</div>
-
-		<div class="left-side">
-						<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
-
-			<div class="price">
-								$1,202.00							</div>
-		</div>
-	</div>
-</div>	    			</div>
-    			    			</div></div></div>    		</div>
+				</div>
+				</div>
 		</div>
     </div>
   </div>

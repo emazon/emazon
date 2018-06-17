@@ -20,8 +20,8 @@
     private $productSize;
 
 
-    public function __construct($productName,$productQuantity,$productPrice,$productImportDate,$productDescription,$productCode,
-                                $productColor,$productSize,$productImage , $rating ,  $manfacturedBy
+    public function __construct($productName=NULL,$productQuantity=0,$productPrice=0.0,$productImportDate=NULL,$productDescription=NULL,$productCode=NULL,
+                                $productColor=NULL,$productSize=NULL,$productImage=NULL , $rating=0 ,  $manfacturedBy=NULL
                                 )
     {
         $this -> productName = $productName;
@@ -29,12 +29,13 @@
         $this -> productPrice = $productPrice;
         $this -> productImportDate = $productImportDate;
         $this -> productDescription = $productDescription;
-        $this -> productCode = $productColor;
+        $this -> productCode = $productCode;
         $this -> productSize = $productSize;
         $this -> productFrontImage = $productImage;
         $this -> productRating = $rating;
         $this -> productManufacturer = $manfacturedBy;
     }
+
 
 
     /* Product Id  Set & Get  ------------ */
@@ -82,7 +83,7 @@
     }
 
     public function getProductPrice()
-    { 
+    {
         return $this -> productPrice;
     }
     /* ------------- Product Price Ends */
