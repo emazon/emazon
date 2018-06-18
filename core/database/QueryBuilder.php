@@ -122,12 +122,19 @@ class QueryBuilder
 
   public function addProductToCart($table , $productCode , $price, $quantity)
   {
-    $statment = $this -> pdo -> prepare("insert into `$table`(productCode , price, quantity) values('$productCode', '$price', '$quantity')");
+    $statment = $this -> pdo -> prepare("insert into `$table`(cartProductCode , price, quantity) values('$productCode', '$price', '$quantity')");
     $statment -> execute();
 
-    
+
   }
 
+  public function cartItems($table)
+  {
+    $statment = $this -> pdo -> prepare("select D.productName FROM `$table` as C RIGHT JOIN `products` as D ON C.cartProductCode = D.productCode  ");
+    $statment -> execute();
+
+    return $statment -> fetchAll(PDO::FETCH_CLASS);
+  }
 
 }
 

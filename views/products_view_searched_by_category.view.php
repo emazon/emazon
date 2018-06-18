@@ -27,7 +27,7 @@
 
 
                 <div id="mfilter-content-container">
-                  <div class="category-title">Home Audio &amp; Theater</div>
+                  <div class="category-title"><?php echo getProductNameFromUrl(); ?></div>
                   <!-- Filter -->
                   <div class="product-filter clearfix">
                     <div class="options">
@@ -76,1127 +76,62 @@
                     </div>
                   </div>
 
-                  <!-- Products list -->
-                  <div class="product-list">
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="index3f41.html?route=product/product&amp;path=20&amp;product_id=44">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-4-400x400.jpg"
-                             alt="Funda Para Ebook 7&quot; 128GB full HD" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="index3f41.html?route=product/product&amp;path=20&amp;product_id=44">Funda Para Ebook 7&quot; 128GB full HD</a>
-                          </div>
-                          <div class="description">
-                            MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don&rsquo;t lose inches and pounds overnight.
-                            It&rsquo;s the result of rethinking conventions. Of multiple wireless innovations. And of breakthrough design.
-                            With MacB..</div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $1,202.00 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('44');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('44');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('44');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="index17bf.html?route=product/product&amp;path=20&amp;product_id=28">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-12-400x400.jpg"
-                             alt="Funda Para Ebook 7&quot; 128GB full HD" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="index17bf.html?route=product/product&amp;path=20&amp;product_id=28">Funda Para Ebook 7&quot; 128GB full HD</a>
-                          </div>
-                          <div class="description">
-                            HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high definition clarity for a mobile
-                            experience you never thought possible. Seductively sleek, the HTC Touch HD provides the next generation
-                            of mobile functi..</div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $122.00 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('28');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('28');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('28');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="index8d24.html?route=product/product&amp;path=20&amp;product_id=29">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-7-400x400.jpg"
-                             alt="Funda Para Ebook 7&quot; 128GB full HD" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="index8d24.html?route=product/product&amp;path=20&amp;product_id=29">Funda Para Ebook 7&quot; 128GB full HD</a>
-                          </div>
-                          <div class="description">
-                            Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email,
-                            stay on top of appointments and contacts, and use Wi-Fi or GPS when you&rsquo;re out and about. Then watch
-                            a video on YouT..</div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $337.99 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('29');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('29');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('29');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="indexccba.html?route=product/product&amp;path=20&amp;product_id=48">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-15-400x400.jpg"
-                             alt="Funda Para Ebook 7&quot; 128GB full HD" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="indexccba.html?route=product/product&amp;path=20&amp;product_id=48">Funda Para Ebook 7&quot; 128GB full HD</a>
-                          </div>
-                          <div class="description">
-
-
-                            More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy
-                            up to 40,000 songs or up to 200 hours of video or any combination wherever you go. Cover Flow. ..
-
-                          </div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $122.00 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('48');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('48');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('48');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="index7956.html?route=product/product&amp;path=20&amp;product_id=34">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-17-400x400.jpg"
-                             alt="Mp3 Sumergible Deportivo Slim Con 8GB" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="index7956.html?route=product/product&amp;path=20&amp;product_id=34">Mp3 Sumergible Deportivo Slim Con 8GB</a>
-                          </div>
-                          <div class="description">
-                            Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five
-                            colors including four new hues to make your musical fashion statement. Random meets rhythm. With iTunes
-                            a..
-                          </div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $122.00 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('34');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('34');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('34');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-                          <div class="sale">Sale</div>
-
-
-                          <a href="indexebf3.html?route=product/product&amp;path=20&amp;product_id=42">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                             alt="Mp3 Sumergible Deportivo Slim Con 8GB" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="indexebf3.html?route=product/product&amp;path=20&amp;product_id=42">Mp3 Sumergible Deportivo Slim Con 8GB</a>
-                          </div>
-                          <div class="description">
-                            The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative
-                            professional, this display provides more space for easier access to all the tools and palettes needed to
-                            edit, format and ..</div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              <span class="price-old">$122.00</span>
-                              <span class="price-new">$110.00</span>
-                            </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('42');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('42');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('42');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="index3569.html?route=product/product&amp;path=20&amp;product_id=46">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                             alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="index3569.html?route=product/product&amp;path=20&amp;product_id=46">Reloj Inteligente Smart Watch M26 Touch Bluetooh</a>
-                          </div>
-                          <div class="description">
-                            Unprecedented power. The next generation of processing technology has arrived. Built into the newest VAIO notebooks lies
-                            Intel&#39;s latest, most powerful innovation yet: Intel&reg; Centrino&reg; 2 processor technology. Boasting
-                            incredible speed, ..</div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $1,202.00 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('46');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('46');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('46');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="indexf470.php?route=product/product&amp;path=20&amp;product_id=35">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-8-400x400.jpg"
-                             alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="indexf470.php?route=product/product&amp;path=20&amp;product_id=35">Reloj Inteligente Smart Watch M26 Touch Bluetooh</a>
-                          </div>
-                          <div class="description">
-                            Product 8 ..
-                          </div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $122.00 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('35');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('35');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('35');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-                          <div class="sale">Sale</div>
-
-
-                          <a href="index8bbb.html?route=product/product&amp;path=20&amp;product_id=30">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-10-400x400.jpg"
-                             alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="index8bbb.html?route=product/product&amp;path=20&amp;product_id=30">Reloj Inteligente Smart Watch M26 Touch Bluetooh</a>
-                          </div>
-                          <div class="description">
-                            Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we're not typically too concerned
-                            with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous
-                            digital SLR ..</div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              <span class="price-old">$122.00</span>
-                              <span class="price-new">$98.00</span>
-                            </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('30');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('30');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('30');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="index4f81.html?route=product/product&amp;path=20&amp;product_id=43">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-2-400x400.jpg"
-                             alt="Teclado Inalambrico Bluetooth Con Air Mouse" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="index4f81.html?route=product/product&amp;path=20&amp;product_id=43">Teclado Inalambrico Bluetooth Con Air Mouse</a>
-                          </div>
-                          <div class="description">
-
-                            Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest
-                            ever. 1GB memory, larger hard drives The new MacBook now comes with 1GB of memory standard and larger..</div>
-                          <div class="rating">
-                            <i class="fa fa-star active"></i>
-                            <i class="fa fa-star active"></i>
-                            <i class="fa fa-star active"></i>
-                            <i class="fa fa-star active"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $602.00 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('43');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('43');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('43');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="indexce1a.html?route=product/product&amp;path=20&amp;product_id=33">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-3-400x400.jpg"
-                             alt="Teclado Inalambrico Bluetooth Con Air Mouse" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="indexce1a.html?route=product/product&amp;path=20&amp;product_id=33">Teclado Inalambrico Bluetooth Con Air Mouse</a>
-                          </div>
-                          <div class="description">
-                            Imagine the advantages of going big without slowing down. The big 19&quot; 941BW monitor combines wide aspect ratio with
-                            fast pixel response time, for bigger images, more room to work and crisp motion. In addition, the exclusive
-                            MagicBright 2, Mag..</div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $242.00 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('33');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('33');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('33');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Product -->
-                    <div>
-                      <div class="row">
-                        <div class="image col-sm-3">
-
-
-                          <a href="index6f63.html?route=product/product&amp;path=20&amp;product_id=47">
-                            <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-3-400x400.jpg"
-                             alt="Teclado Inalambrico Bluetooth Con Air Mouse" />
-                          </a>
-                        </div>
-
-                        <div class="name-desc col-sm-6">
-                          <div class="name">
-                            <a href="index6f63.html?route=product/product&amp;path=20&amp;product_id=47">Teclado Inalambrico Bluetooth Con Air Mouse</a>
-                          </div>
-                          <div class="description">
-                            Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor
-                            features best-in-class performance and presentation features on a huge wide-aspect screen while letting
-                            you work as com..</div>
-                          <div class="rating">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                          </div>
-                        </div>
-
-                        <div class="actions col-sm-3">
-                          <div>
-                            <div class="price">
-                              $122.00 </div>
-
-                            <div class="add-to-cart">
-                              <a onclick="cart.add('47');" class="button">Add to Cart</a>
-                            </div>
-
-                            <ul>
-                              <li>
-                                <a onclick="compare.add('47');">Add to compare</a>
-                              </li>
-                              <li>
-                                <a onclick="wishlist.add('47');">Add to wishlist</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
                   <!-- Products grid -->
                   <div class="product-grid" class="active">
                     <div class="row">
-                      <div class="col-sm-4 col-xs-6">
+                      <!-- Yabbb Modification -->
 
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
+                      <?php foreach (getProductsByCategory() as $product): ?>
 
-                            <div class="image ">
+                         <?php  echo "<div class='col-sm-3 col-xs-6'>
 
-                              <a href="index3f41.html?route=product/product&amp;path=20&amp;product_id=44">
+                                      <!-- Product -->
+                                      <div class='product clearfix product-hover'>
+                                          <div class='left'>
 
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-4-400x400.jpg"
-                                 alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="index3f41.html?route=product/product&amp;path=20&amp;product_id=44">Funda Para Ebook 7&quot; 128GB full HD</a>
-                            </div>
+                                              <div class='image'>
 
-                            <div class="right-side">
-                              <a onclick="cart.add('44');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
+                                                  <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
 
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
+                                                      <img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+                                                          alt=".$product->getProductName()."
+                                                          class='' />
+                                                  </a>
+                                              </div>
+                                          </div>
+                                          <div class='right'>
+                                              <div class='name'>
+                                                  <a href='emazon/product?route=product/".$product->getProductCode()."'>'".$product->getProductName()."</a>
+                                              </div>
 
-                              <div class="price">
-                                $1,202.00 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-xs-6">
+                                              <div class='right-side'>
+                                                  <a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
+                                                      <i class='icon-basket-loaded'></i>
+                                                  </a>
+                                              </div>
 
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
+                                              <div class='left-side'>
+                                                  <div class='rating'>
+                                                      <i class='fa fa-star-o'></i>
+                                                      <i class='fa fa-star-o'></i>
+                                                      <i class='fa fa-star-o'></i>
+                                                      <i class='fa fa-star-o'></i>
+                                                      <i class='fa fa-star-o'></i>
+                                                  </div>
 
-                            <div class="image ">
+                                                  <div class='price'>
+                                                      $".number_format($product->getProductPrice(),2)."</div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>";
+                                 ?>
+                      <?php endforeach; ?>
 
-                              <a href="index17bf.html?route=product/product&amp;path=20&amp;product_id=28">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-12-400x400.jpg"
-                                 alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="index17bf.html?route=product/product&amp;path=20&amp;product_id=28">Funda Para Ebook 7&quot; 128GB full HD</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('28');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                $122.00 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-xs-6">
-
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-
-                            <div class="image ">
-
-                              <a href="index8d24.html?route=product/product&amp;path=20&amp;product_id=29">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-7-400x400.jpg"
-                                 alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="index8d24.html?route=product/product&amp;path=20&amp;product_id=29">Funda Para Ebook 7&quot; 128GB full HD</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('29');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                $337.99 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      <!-- Yabbb Modification Ends Here -->
                     </div>
-                    <div class="row">
-                      <div class="col-sm-4 col-xs-6">
 
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-
-                            <div class="image ">
-
-                              <a href="indexccba.html?route=product/product&amp;path=20&amp;product_id=48">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-15-400x400.jpg"
-                                 alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="indexccba.html?route=product/product&amp;path=20&amp;product_id=48">Funda Para Ebook 7&quot; 128GB full HD</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('48');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                $122.00 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-xs-6">
-
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-
-                            <div class="image ">
-
-                              <a href="index7956.html?route=product/product&amp;path=20&amp;product_id=34">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-17-400x400.jpg"
-                                 alt="Mp3 Sumergible Deportivo Slim Con 8GB" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="index7956.html?route=product/product&amp;path=20&amp;product_id=34">Mp3 Sumergible Deportivo Slim Con 8GB</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('34');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                $122.00 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-xs-6">
-
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-                            <div class="sale">Sale</div>
-
-                            <div class="image ">
-
-                              <a href="indexebf3.html?route=product/product&amp;path=20&amp;product_id=42">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                                 alt="Mp3 Sumergible Deportivo Slim Con 8GB" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="indexebf3.html?route=product/product&amp;path=20&amp;product_id=42">Mp3 Sumergible Deportivo Slim Con 8GB</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('42');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                <span class="price-new">$110.00</span>
-                                <span class="price-old">$122.00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4 col-xs-6">
-
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-
-                            <div class="image ">
-
-                              <a href="index3569.html?route=product/product&amp;path=20&amp;product_id=46">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                                 alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="index3569.html?route=product/product&amp;path=20&amp;product_id=46">Reloj Inteligente Smart Watch M26 Touch Bluetooh</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('46');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                $1,202.00 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-xs-6">
-
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-
-                            <div class="image ">
-
-                              <a href="indexf470.php?route=product/product&amp;path=20&amp;product_id=35">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-8-400x400.jpg"
-                                 alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="indexf470.php?route=product/product&amp;path=20&amp;product_id=35">Reloj Inteligente Smart Watch M26 Touch Bluetooh</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('35');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                $122.00 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-xs-6">
-
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-                            <div class="sale">Sale</div>
-
-                            <div class="image ">
-
-                              <a href="index8bbb.html?route=product/product&amp;path=20&amp;product_id=30">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-10-400x400.jpg"
-                                 alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="index8bbb.html?route=product/product&amp;path=20&amp;product_id=30">Reloj Inteligente Smart Watch M26 Touch Bluetooh</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('30');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                <span class="price-new">$98.00</span>
-                                <span class="price-old">$122.00</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4 col-xs-6">
-
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-
-                            <div class="image ">
-
-                              <a href="index4f81.html?route=product/product&amp;path=20&amp;product_id=43">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-2-400x400.jpg"
-                                 alt="Teclado Inalambrico Bluetooth Con Air Mouse" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="index4f81.html?route=product/product&amp;path=20&amp;product_id=43">Teclado Inalambrico Bluetooth Con Air Mouse</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('43');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                $602.00 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-xs-6">
-
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-
-                            <div class="image ">
-
-                              <a href="indexce1a.html?route=product/product&amp;path=20&amp;product_id=33">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-3-400x400.jpg"
-                                 alt="Teclado Inalambrico Bluetooth Con Air Mouse" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="indexce1a.html?route=product/product&amp;path=20&amp;product_id=33">Teclado Inalambrico Bluetooth Con Air Mouse</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('33');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                $242.00 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-xs-6">
-
-                        <!-- Product -->
-                        <div class="product clearfix product-hover">
-                          <div class="left">
-
-                            <div class="image ">
-
-                              <a href="index6f63.html?route=product/product&amp;path=20&amp;product_id=47">
-
-                                <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-3-400x400.jpg"
-                                 alt="Teclado Inalambrico Bluetooth Con Air Mouse" class="" />
-                              </a>
-                            </div>
-                          </div>
-                          <div class="right">
-                            <div class="name">
-                              <a href="index6f63.html?route=product/product&amp;path=20&amp;product_id=47">Teclado Inalambrico Bluetooth Con Air Mouse</a>
-                            </div>
-
-                            <div class="right-side">
-                              <a onclick="cart.add('47');" class="add-to-cart">
-                                <i class="icon-basket-loaded"></i>
-                              </a>
-                            </div>
-
-                            <div class="left-side">
-                              <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                              </div>
-
-                              <div class="price">
-                                $122.00 </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
 
                   <div class="row pagination-results">
@@ -1216,7 +151,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="col-sm-6 text-right">Showing 1 to 12 of 13 (2 Pages)</div>
+                    <!-- <div class="col-sm-6 text-right">Showing 1 to 12 of 13 (2 Pages)</div> -->
                   </div>
                   <script type="text/javascript">
                     function display(view) {
@@ -1913,439 +848,110 @@
               <div class="strip-line"></div>
               <div class="box-content products">
                 <div class="box-product">
-                  <div id="myCarousel231688296" class="carousel slide">
-                    <!-- Carousel items -->
-                    <div class="carousel-inner">
-                      <div class="active item">
-                        <div class="product-grid">
-                          <div class="row">
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-
-                                  <div class="image ">
-
-                                    <a href="/emazon/product?route=product/product_id=28">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-12-400x400.jpg"
-                                       alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="index6320.html?route=product/product&amp;product_id=28">Funda Para Ebook 7&quot; 128GB full HD</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('28');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      $122.00 </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-
-                                  <div class="image ">
-
-                                    <a href="indexb77e.html?route=product/product&amp;product_id=48">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-15-400x400.jpg"
-                                       alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="indexb77e.html?route=product/product&amp;product_id=48">Funda Para Ebook 7&quot; 128GB full HD</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('48');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      $122.00 </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-
-                                  <div class="image ">
-
-                                    <a href="index0f47.html?route=product/product&amp;product_id=29">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-7-400x400.jpg"
-                                       alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="index0f47.html?route=product/product&amp;product_id=29">Funda Para Ebook 7&quot; 128GB full HD</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('29');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      $337.99 </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-                                  <div class="sale">Sale</div>
-
-                                  <div class="image ">
-
-                                    <a href="indexbb02.html?route=product/product&amp;product_id=42">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-1-400x400.jpg"
-                                       alt="Mp3 Sumergible Deportivo Slim Con 8GB" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="indexbb02.html?route=product/product&amp;product_id=42">Mp3 Sumergible Deportivo Slim Con 8GB</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('42');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      <span class="price-new">$110.00</span>
-                                      <span class="price-old">$122.00</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 hidden-sm hidden-md">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-
-                                  <div class="image ">
-
-                                    <a href="indexc21e.html?route=product/product&amp;product_id=34">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-17-400x400.jpg"
-                                       alt="Mp3 Sumergible Deportivo Slim Con 8GB" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="indexc21e.html?route=product/product&amp;product_id=34">Mp3 Sumergible Deportivo Slim Con 8GB</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('34');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      $122.00 </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="product-grid">
-                          <div class="row">
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-
-                                  <div class="image ">
-
-                                    <a href="index9144.html?route=product/product&amp;product_id=40">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-14-400x400.jpg"
-                                       alt="Teclado Inalambrico Bluetooth Con Air Mouse" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="index9144.html?route=product/product&amp;product_id=40">Teclado Inalambrico Bluetooth Con Air Mouse</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('40');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      $123.20 </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-                                  <div class="sale">Sale</div>
-
-                                  <div class="image ">
-
-                                    <a href="indexf073.html?route=product/product&amp;product_id=30">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-10-400x400.jpg"
-                                       alt="Reloj Inteligente Smart Watch M26 Touch Bluetooh" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="indexf073.html?route=product/product&amp;product_id=30">Reloj Inteligente Smart Watch M26 Touch Bluetooh</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('30');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      <span class="price-new">$98.00</span>
-                                      <span class="price-old">$122.00</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-
-                                  <div class="image ">
-
-                                    <a href="indexd21c.html?route=product/product&amp;product_id=47">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-4-400x400.jpg"
-                                       alt="Teclado Inalambrico Bluetooth Con Air Mouse" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="indexd21c.html?route=product/product&amp;product_id=47">Teclado Inalambrico Bluetooth Con Air Mouse</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('47');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      $122.00 </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 ">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-
-                                  <div class="image ">
-
-                                    <a href="indexd94c.php?route=product/product&amp;product_id=44">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-4-400x400.jpg"
-                                       alt="Funda Para Ebook 7&quot; 128GB full HD" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="indexd94c.php?route=product/product&amp;product_id=44">Funda Para Ebook 7&quot; 128GB full HD</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('44');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      $1,202.00 </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-sm-25 col-xs-6  col-md-3 col-lg-25 col-sm-3 hidden-sm hidden-md">
-
-                              <!-- Product -->
-                              <div class="product clearfix product-hover">
-                                <div class="left">
-
-                                  <div class="image ">
-
-                                    <a href="indexb8ca.html?route=product/product&amp;product_id=43">
-
-                                      <img src="http://localhost/emazonResource/images/blank.gif" data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-2-400x400.jpg"
-                                       alt="Teclado Inalambrico Bluetooth Con Air Mouse" class="" />
-                                    </a>
-                                  </div>
-                                </div>
-                                <div class="right">
-                                  <div class="name">
-                                    <a href="indexb8ca.html?route=product/product&amp;product_id=43">Teclado Inalambrico Bluetooth Con Air Mouse</a>
-                                  </div>
-
-                                  <div class="right-side">
-                                    <a onclick="cart.add('43');" class="add-to-cart">
-                                      <i class="icon-basket-loaded"></i>
-                                    </a>
-                                  </div>
-
-                                  <div class="left-side">
-                                    <div class="rating">
-                                      <i class="fa fa-star active"></i>
-                                      <i class="fa fa-star active"></i>
-                                      <i class="fa fa-star active"></i>
-                                      <i class="fa fa-star active"></i>
-                                      <i class="fa fa-star-o"></i>
-                                    </div>
-
-                                    <div class="price">
-                                      $602.00 </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                	<div id="myCarousel112180834" class="carousel slide">
+                		<!-- Carousel items -->
+                		<div class="carousel-inner">
+            					<div class="active item"><div class="product-grid">
+            					<?php foreach (array_slice(getProducts(),0, 4) as $product): ?>
+
+            						 <?php  echo "<div class='col-sm-3 col-xs-6'>
+
+            													<!-- Product -->
+            													<div class='product clearfix product-hover'>
+            															<div class='left'>
+
+            																	<div class='image'>
+
+            																			<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
+
+            																					<img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+            																							alt=".$product->getProductName()."
+            																							class='' />
+            																			</a>
+            																	</div>
+            															</div>
+            															<div class='right'>
+            																	<div class='name'>
+            																			<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>".$product->getProductName()."</a>
+            																	</div>
+
+            																	<div class='right-side'>
+            																			<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
+            																					<i class='icon-basket-loaded'></i>
+            																			</a>
+            																	</div>
+
+            																	<div class='left-side'>
+            																			<div class='rating'>
+            																					<i class='fa fa-star-o'></i>
+            																					<i class='fa fa-star-o'></i>
+            																					<i class='fa fa-star-o'></i>
+            																					<i class='fa fa-star-o'></i>
+            																					<i class='fa fa-star-o'></i>
+            																			</div>
+
+            																			<div class='price'>
+            																					$".number_format($product->getProductPrice(),2)."</div>
+            																	</div>
+            															</div>
+            													</div>
+            											</div>";
+            										 ?>
+            					<?php endforeach; ?>
+            				</div>
+            			</div>
+
+            						<div class="item"><div class="product-grid">
+            						<?php foreach (array_slice(getProducts(),4) as $product): ?>
+
+            							 <?php  echo "<div class='col-sm-3 col-xs-6'>
+
+            														<!-- Product -->
+            														<div class='product clearfix product-hover'>
+            																<div class='left'>
+
+            																		<div class='image'>
+
+            																				<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>
+
+            																						<img src='http://localhost/emazonResource/images/blank.gif' data-echo=".$product->getProductFrontImage()."
+            																								alt=".$product->getProductName()."
+            																								class='' />
+            																				</a>
+            																		</div>
+            																</div>
+            																<div class='right'>
+            																		<div class='name'>
+            																				<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."'>".$product->getProductName()."</a>
+            																		</div>
+
+            																		<div class='right-side'>
+            																				<a href='/emazon/product?route=product/product_id=".$product->getProductCode()."' class='add-to-cart'>
+            																						<i class='icon-basket-loaded'></i>
+            																				</a>
+            																		</div>
+
+            																		<div class='left-side'>
+            																				<div class='rating'>
+            																						<i class='fa fa-star-o'></i>
+            																						<i class='fa fa-star-o'></i>
+            																						<i class='fa fa-star-o'></i>
+            																						<i class='fa fa-star-o'></i>
+            																						<i class='fa fa-star-o'></i>
+            																				</div>
+
+            																				<div class='price'>
+            																						$".number_format($product->getProductPrice(),2)."</div>
+            																		</div>
+            																</div>
+            														</div>
+            												</div>";
+            											 ?>
+            						<?php endforeach; ?>
+            					</div>
+            				</div>
+            				</div>
+            		</div>
                 </div>
               </div>
             </div>

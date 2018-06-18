@@ -8,6 +8,7 @@
 // ];
 
   // Fetch all Products
+
   function getProducts()
   {
     $tak = App::get('database')->selectAll("products");

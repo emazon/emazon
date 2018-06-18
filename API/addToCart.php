@@ -13,6 +13,9 @@
 
       $list[] = array("message" => $productCode . " has been Added to Your Cart");
       echo json_encode($list);
+    }else {
+      $list[] = array("message" => 'failed' . " has been Added to Your Cart");
+      echo json_encode($list);
     }
 
 

@@ -27,7 +27,7 @@
 										<button type="button" class="close" data-dismiss="alert">&times;</button>
 										Products marked with *** are not available in the desired quantity or not in stock!									</div>
 
-																									<form action="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=checkout/cart/edit" method="post" enctype="multipart/form-data">
+			<form action="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=checkout/cart/edit" method="post" enctype="multipart/form-data">
   <div class="table-responsive cart-info">
     <table class="table table-bordered">
       <thead>

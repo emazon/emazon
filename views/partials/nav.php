@@ -6,28 +6,111 @@ function getCartProducts()
   $tak = App::get('database')->selectAll("cart");
   $data= json_decode( json_encode($tak), true);
 
-  return $data;
+  $cartContainer = array_map(function ($cart){
+        //var_dump($product["productId"]);
+        return new \App\Models\Product\Cart($cart["cartProductCode"], $cart['quantity'],$cart['price']);
+  }, $data);
+
+  return $cartContainer;
 }
 
-function getCartTotal()
-{
-  $products = getCartProducts();
-  $sum = 0;
-  foreach ($products as $product) {
-    // code...
-    $sum += $product['price'];
+class SimpleImage {
+
+   var $image;
+   var $image_type;
+
+   function load($filename) {
+
+      $image_info = getimagesize($filename);
+      $this->image_type = $image_info[2];
+      if( $this->image_type == IMAGETYPE_JPEG ) {
+
+         $this->image = imagecreatefromjpeg($filename);
+      } elseif( $this->image_type == IMAGETYPE_GIF ) {
+
+         $this->image = imagecreatefromgif($filename);
+      } elseif( $this->image_type == IMAGETYPE_PNG ) {
+
+         $this->image = imagecreatefrompng($filename);
+      }
+   }
+   function save($filename, $image_type=IMAGETYPE_JPEG, $compression=75, $permissions=null) {
+
+      if( $image_type == IMAGETYPE_JPEG ) {
+         imagejpeg($this->image,$filename,$compression);
+      } elseif( $image_type == IMAGETYPE_GIF ) {
+
+         imagegif($this->image,$filename);
+      } elseif( $image_type == IMAGETYPE_PNG ) {
+
+         imagepng($this->image,$filename);
+      }
+      if( $permissions != null) {
+
+         chmod($filename,$permissions);
+      }
+   }
+   function output($image_type=IMAGETYPE_JPEG) {
+
+      if( $image_type == IMAGETYPE_JPEG ) {
+         imagejpeg($this->image);
+      } elseif( $image_type == IMAGETYPE_GIF ) {
+
+         imagegif($this->image);
+      } elseif( $image_type == IMAGETYPE_PNG ) {
+
+         imagepng($this->image);
+      }
+   }
+   function getWidth() {
+
+      return imagesx($this->image);
+   }
+   function getHeight() {
+
+      return imagesy($this->image);
+   }
+   function resizeToHeight($height) {
+
+      $ratio = $height / $this->getHeight();
+      $width = $this->getWidth() * $ratio;
+      $this->resize($width,$height);
+   }
+
+   function resizeToWidth($width) {
+      $ratio = $width / $this->getWidth();
+      $height = $this->getheight() * $ratio;
+      $this->resize($width,$height);
+   }
+
+   function scale($scale) {
+      $width = $this->getWidth() * $scale/100;
+      $height = $this->getheight() * $scale/100;
+      $this->resize($width,$height);
+   }
+
+   function resize($width,$height) {
+      $new_image = imagecreatetruecolor($width, $height);
+      imagecopyresampled($new_image, $this->image, 0, 0, 0, 0, $width, $height, $this->getWidth(), $this->getHeight());
+      $this->image = $new_image;
+   }
+
+}
+
+  function resize(){
+
+    $target_dir = "images/";
+    $target_file = "eMazon_Transparent_Me.png";
+
+    $image = new SimpleImage();
+    $image->load("eMazon_Transparent_Me.png");
+    $image->resize(47, 47);
+    $image->save($target_file);
+    return $image;
   }
-  return $sum;
-
-}
-
-function getCartTotalWithVatIncluded($subTotal)
-{
-  return $subTotal + $subTotal * 0.20 + 2;
-}
 
 
- ?>
+?>
 
 
 <!DOCTYPE html>
@@ -614,7 +697,7 @@ function getCartTotalWithVatIncluded($subTotal)
                                             <p>
                                                 <strong>My Cart</strong>
                                                 <br>
-                                                <span id="cart-total"><strong><?php echo count(getCartProducts());?> item(s) -  $<?php echo getCartTotalWithVatIncluded(getCartTotal()); ?></span></strong>
+                                                <span id="cart-total"><strong></span></strong>
                                             </p>
                                         </div>
 
@@ -623,9 +706,9 @@ function getCartTotalWithVatIncluded($subTotal)
                                           <div id="cart_content_ajax">
                                             <?php if(getCartProducts()): ?>
                                               <?php foreach(getCartProducts() as $cartItem):?>
-                                                <?php echo "<div id='cart_content_ajax'><div class='mini-cart-info'><table><tbody><tr><td class='image'><a href='#'><img src='http://localhost/emazonResource/images/Product_Images/cart_image.jpg' width='47px' height='47px' alt='Funda Para Ebook 7&quot; 128GB full HD' title='Funda Para Ebook 7&quot; 128GB full HD'></a></td><td class='name'><a href='#'>Funda Para Ebook 7 128GB full HD</a><div></div></td><td class='quantity'>x&nbsp;1</td><td class='total'>$122.00</td><td class='remove'><a href='javascript:;' 'onclick='removeFromCart()''  title='Remove'>x</a></td></tr></tbody></table></div></div>"?>
+                                                <?php echo "<div id='cart_content_ajax'><div class='mini-cart-info'><table><tbody><tr><td class='image'><a href='#'><img src='http://localhost/emazonResource/images/Product_Images/cart_image.jpg' width='47px' height='47px' alt='Funda Para Ebook 7&quot; 128GB full HD'></a></td><td class='name'><a href='#'>".$cartItem->getProductCode()."</a><div></div></td><td class='quantity'>x&nbsp;".$cartItem->getProductQuantity()."</td><td class='total'>".$cartItem->getProductPrice()."</td><td class='remove'></a></td></tr></tbody></table></div></div>"?>
                                               <?php endforeach; ?>
-                                              <?php echo "<div class='mini-cart-total'><table><tbody><tr><td class='right'>Sub-Total:</td><td class='right'>".getCartTotal()."</td></tr><tr><td class='right'>Eco Tax (-2.00):</td><td class='right'>$2.00</td></tr><tr><td class='right'>VAT (20%):</td><td class='right'>".getCartTotal() * 0.20 ."</td></tr><tr><td class='right'>Total:</td><td class='right'>".getCartTotalWithVatIncluded(getCartTotal()) ."</td></tr></tbody></table></div>"?>
+                                              <?php echo "<div class='mini-cart-total'><table><tbody><tr><td class='right'>Sub-Total:</td><td class='right'>".$cartItem->getCartTotal(getCartProducts())."</td></tr><tr><td class='right'>Eco Tax (-2.00):</td><td class='right'>$2.00</td></tr><tr><td class='right'>VAT (20%):</td><td class='right'>".$cartItem->getTaxedProductPrice(getCartProducts())."</td></tr><tr><td class='right'>Total:</td><td class='right'>".$cartItem->getCartTotalWithTaxIncluded(getCartProducts()) ."</td></tr></tbody></table></div>"?>
                                               <div class='checkout'><a href='/emazon/cart' class='button btn-default'>View Cart</a> &nbsp;<a href='/emazon/checkout' class='button'>Checkout</a></div>
                                             <?php endif;?>
                                             <?php if(!getCartProducts()){
@@ -791,10 +874,10 @@ function getCartTotalWithVatIncluded($subTotal)
                                                             <li class=''>
                                                                 <p class='close-menu'></p>
                                                                 <p class='open-menu'></p>
-                                                                <a href='/emazon/search_product?category=tv_audio'
+                                                                <a href='/emazon/search_product?category=ethio_fashion'
                                                                     class='clearfix'>
                                                                         <strong>
-                                                                            <img src="http://localhost/emazonResource/images/version-04/menu-01.png" alt="">TV &amp; Audios</strong>
+                                                                            <img src="http://localhost/emazonResource/images/version-04/menu-07.png" alt="">Ethio-Fashion</strong>
                                                                     </span>
                                                                 </a>
                                                             </li>
