@@ -2,7 +2,8 @@
 
   namespace App\Models\User;
 
-  class User
+
+  abstract class User implements TokenInterface
   {
 
     protected $username;

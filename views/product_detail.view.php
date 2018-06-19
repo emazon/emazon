@@ -76,7 +76,7 @@
 				      <div class="col-sm-12">
 				      						      <div class="product-image cloud-zoom">
 
-					     	 <a href="#" title="Teclado Inalambrico Bluetooth Con Air Mouse" id="ex1" class="open-popup-image"><img src=<?php echo $productsContainer[0]->getProductFrontImage(); ?> title=<?php echo $productsContainer[0]->getProductName(); ?>  id='image' itemprop='image' data-zoom-image=<?php echo $productsContainer[0]->getProductFrontImage(); ?> /></a>
+					     	 <a href="#" title="Teclado Inalambrico Bluetooth Con Air Mouse" id="ex1" class="open-popup-image"><img src=<?php echo $productsContainer[0]->getProductFrontImage(); ?> title=<?php echo $productsContainer[0]->getProductName(); ?>  id='image' itemprop='image' data-zoom-image=<?php echo $productsContainer[0]->getProductZoomedImage(); ?> /></a>
 					      </div>
 					  	 				      </div>
 
@@ -264,7 +264,7 @@
 															<div class="row">
 																<!-- Yabbb Modification -->
 
-																<?php foreach (array_slice(getRelatedProducts(), 0, 3) as $product): ?>
+																<?php foreach (array_slice(getRelatedProducts(), 0, 4) as $product): ?>
 
 																	 <?php  echo "<div class='col-sm-3 col-xs-6'>
 
@@ -322,7 +322,7 @@
 																	<div class="row">
 																		<!-- Yabbb Modification -->
 
-																		<?php foreach (array_slice(getRelatedProducts(), 3) as $product): ?>
+																		<?php foreach (array_slice(getRelatedProducts(), 4,8) as $product): ?>
 
 																			 <?php  echo "<div class='col-sm-3 col-xs-6'>
 
@@ -598,8 +598,14 @@ $('#button-cart').on('click', function() {
 						'<a href="{3}" target="{4}" data-notify="url"></a>' +
 					'</div>'
 				});
+				//alert(JSON.parse(json)[0].flicker);
+				//$('#cart_block #cart_content').load('index.php?route=common/cart/info #cart_content_ajax');
 
+				//$('#cart_block .cart-count').load('index.php?route=common/cart/info #total_count_ajax');
 			}
+			//alert(JSON.parse(json[0].count));
+			$('.mini-cart-info').after(JSON.parse(json)[0].flicker);
+
 		},
         error: function(xhr, ajaxOptions, thrownError) {
             alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -680,7 +686,7 @@ $('#review').delegate('.pagination a', 'click', function(e) {
     $('#review').fadeIn('slow');
 });
 
-$('#review').load('index027f.php?route=product/product/review&amp;product_id=47');
+//$('#review').load('index027f.php?route=product/product/review&amp;product_id=47');
 
 $('#button-review').on('click', function() {
     $.ajax({
@@ -845,7 +851,7 @@ $('#tabs a').tabs();
 																																				value="65" />
 																</div>
 																<label class="mfilter-tb-as-td" for="mfilter-cat_checkbox-1-65">
-																	Bluetooth &amp; Wireless Speakers																</label>
+																	Ethiopian Fashions																</label>
 																<div class="mfilter-tb-as-td mfilter-col-count"><span class="mfilter-counter">1</span></div>
 															</div>
 																																												<div class="mfilter-option mfilter-tb-as-tr">
@@ -1608,7 +1614,7 @@ MegaFilterOverrideFn[1]["afterRender"] = function( htmlResponse, htmlContent, js
 			</div>
 
 						<div class="item"><div class="product-grid">
-						<?php foreach (array_slice(getRelatedProducts(),4) as $product): ?>
+						<?php foreach (array_slice(getRelatedProducts(),9 , 13) as $product): ?>
 
 							 <?php  echo "<div class='col-sm-3 col-xs-6'>
 

@@ -128,13 +128,7 @@ class QueryBuilder
 
   }
 
-  public function cartItems($table)
-  {
-    $statment = $this -> pdo -> prepare("select D.productName FROM `$table` as C RIGHT JOIN `products` as D ON C.cartProductCode = D.productCode  ");
-    $statment -> execute();
-
-    return $statment -> fetchAll(PDO::FETCH_CLASS);
-  }
+  
 
 }
 

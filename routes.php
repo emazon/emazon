@@ -23,11 +23,12 @@ $router -> get('emazon/product/mega_filter/products', 'controllers/product_filte
 //route=account/wishlist
 $router -> get('emazon/wishlist', 'controllers/wishlist.php');
 
-$router -> get('emazon/search_autocomplete', 'API/search_autocomplete.php');
-$router -> get('emazon/subscribe', 'API/email_subscription.php');
+$router -> get('emazon/search_autocomplete', 'API/search_autocomplete.php'); // Auto Complete Search Reult API
+$router -> get('emazon/subscribe', 'API/email_subscription.php'); // Mail Subscription API
 $router -> get('emazon/product/mega_filter/getajaxinfo', 'API/product_mega_filter.php');
-$router -> get('emazon/addtoCart', 'API/addtoCart.php');
-
+$router -> get('emazon/addtoCart', 'API/addtoCart.php'); //Add To Cart API
+$router -> get('emazon/pay', 'API/payment.php'); //Payment
+$router -> post('emazon/pay', 'API/payment.php');
 
 $router -> get('emazon/search', 'controllers/search.php');
 $router -> get('emazon/search_product', 'controllers/productSearch.php');

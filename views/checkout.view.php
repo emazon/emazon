@@ -34,47 +34,43 @@
         </div>
                 <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title">Step 2: Billing Details</h4>
+            <h4 class="panel-title">Step 2: Payment Method</h4>
+
+						<div class="panel-body">
+							<form class="formgroup paypal" action="/emazon/pay" method="post" id="paypal_form" target="_blank"  >
+							<div class="form-group">
+									<input class="form-control" name="cmd" value="_xclick" hidden/>
+									<input class="form-control" name="no_note" value="1" hidden />
+									<input class="form-control"  name="lc" value="UK" hidden />
+									<input class="form-control" name="currency_code" value="GBP" hidden />
+									<input class="form-control" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest" hidden/>
+									<input class="form-control" name="first_name" value="Customer's First Name"  hidden/>
+									<input class="form-control" name="last_name" value="Customer's Last Name" hidden />
+									<input class="form-control" name="payer_email" value="customer@example.com" hidden />
+									<input class="form-control" name="item_number" value="123456" hidden/>
+									<input class="form-control" type="submit" id="clickccc" name="submit" value="Submit Payment"/>
+							</div>
+						</form>
           </div>
-          <div class="panel-collapse collapse" id="collapse-payment-address">
-            <div class="panel-body">
+          <div  id="collapse-payment-address">
 
 						</div>
           </div>
         </div>
                         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title">Step 3: Delivery Details</h4>
+            <h4 class="panel-title">Step 3: Confirm Order</h4>
+
           </div>
           <div class="panel-collapse collapse" id="collapse-shipping-address">
             <div class="panel-body"></div>
           </div>
         </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">Step 4: Delivery Method</h4>
-          </div>
-          <div class="panel-collapse collapse" id="collapse-shipping-method">
-            <div class="panel-body"></div>
-          </div>
-        </div>
-                <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">Step 5: Payment Method</h4>
-          </div>
-          <div class="panel-collapse collapse" id="collapse-payment-method">
-            <div class="panel-body"></div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">Step 6: Confirm Order</h4>
-          </div>
-          <div class="panel-collapse collapse" id="collapse-checkout-confirm">
-            <div class="panel-body"></div>
-          </div>
-        </div>
+
+
       </div>
+
+
 
 <script type="text/javascript"><!--
 $(document).on('change', 'input[name=\'account\']', function() {
@@ -88,7 +84,7 @@ $(document).on('change', 'input[name=\'account\']', function() {
 		if (this.value == 'register') {
 			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('Step 2: Account &amp; Billing Details');
 		} else {
-			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('Step 2: Billing Details');
+			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('Step 2: Payment Method');
 		}
 	}
 });
@@ -97,9 +93,9 @@ $(document).ready(function() {
     $.ajax({
         url: '/emazon/search',
         success: function(html) {
-            $('#collapse-payment-address .panel-body').html("<div class='radio'><label><input name='payment_address' value='existing' checked='checked' type='radio'>I want to use an existing address</label></div><div id='payment-existing'><select name='address_id' class='form-control'><option value='4' selected='selected'>Kirso sds, Ethiopia, Addis Ababa, Oromia, Ethiopia</option></select></div><div class='buttons clearfix'><div class='pull-right'><input value='Continue' id='button-payment-address' data-loading-text='Loading...' class='btn btn-primary' type='button'></div></div>");
+            $('#collapse-payment-address .panel-body').html("<div class='radio'><label><input name='payment_method'  checked='checked' type='radio'>Choose Your Payment Vendor</label></div><div id='payment-existing'><select name='address_id' class='form-control'><option value='4' selected='selected'>Paypal</option></select></div><div class='buttons clearfix'><div class='pull-right'><input value='Continue' id='button-payment-address' data-loading-text='Loading...' class='btn btn-primary' type='button'></div></div>");
 
-			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 2: Billing Details <i class="fa fa-caret-down"></i></a>');
+			$('#collapse-payment-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 2: Payment Method <i class="fa fa-caret-down"></i></a>');
 
 			$('a[href=\'#collapse-payment-address\']').trigger('click');
         },
@@ -107,6 +103,11 @@ $(document).ready(function() {
             alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
         }
     });
+
+		$('button').click(function()
+		{
+				alert('hello');
+		})
 });
 
 // Checkout
@@ -141,7 +142,7 @@ $(document).delegate('#button-account', 'click', function() {
 // Login
 $(document).delegate('#button-login', 'click', function() {
     $.ajax({
-        url: 'index.php?route=checkout/login/save',
+        url: '/emazon/home?route=checkout/login/save',
         type: 'post',
         data: $('#collapse-checkout-option :input'),
         dataType: 'json',
@@ -174,7 +175,7 @@ $(document).delegate('#button-login', 'click', function() {
 // Register
 $(document).delegate('#button-register', 'click', function() {
     $.ajax({
-        url: 'index.php?route=checkout/register/save',
+        url: '/emazon/home?route=checkout/register/save',
         type: 'post',
         data: $('#collapse-payment-address input[type=\'text\'], #collapse-payment-address input[type=\'date\'], #collapse-payment-address input[type=\'datetime-local\'], #collapse-payment-address input[type=\'time\'], #collapse-payment-address input[type=\'password\'], #collapse-payment-address input[type=\'hidden\'], #collapse-payment-address input[type=\'checkbox\']:checked, #collapse-payment-address input[type=\'radio\']:checked, #collapse-payment-address textarea, #collapse-payment-address select'),
         dataType: 'json',
@@ -221,22 +222,22 @@ $(document).delegate('#button-register', 'click', function() {
                                 success: function(html) {
                                     $('#collapse-shipping-address .panel-body').html(html);
 
-									$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
+									//$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
                                 },
                                 error: function(xhr, ajaxOptions, thrownError) {
                                     alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
                                 }
                             });
 
-							$('#collapse-shipping-method .panel-body').html(html);
+							//$('#collapse-shipping-method .panel-body').html(html);
 
-							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 4: Delivery Method <i class="fa fa-caret-down"></i></a>');
+							//$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 4: Delivery Method <i class="fa fa-caret-down"></i></a>');
 
-   							$('a[href=\'#collapse-shipping-method\']').trigger('click');
+   							//$('a[href=\'#collapse-shipping-method\']').trigger('click');
 
-							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
-							$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
-							$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+							//$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
+							//$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+							//$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
                         },
                         error: function(xhr, ajaxOptions, thrownError) {
                             alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -249,13 +250,13 @@ $(document).delegate('#button-register', 'click', function() {
                         success: function(html) {
                             $('#collapse-shipping-address .panel-body').html(html);
 
-							$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
+						//	$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
 
-							$('a[href=\'#collapse-shipping-address\']').trigger('click');
+						//	$('a[href=\'#collapse-shipping-address\']').trigger('click');
 
-							$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
-							$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
-							$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
+						//	$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
+						//	$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
+						//	$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
                         },
                         error: function(xhr, ajaxOptions, thrownError) {
                             alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
@@ -288,75 +289,50 @@ $(document).delegate('#button-register', 'click', function() {
 
 // Payment Address
 $(document).delegate('#button-payment-address', 'click', function() {
-    $.ajax({
-        url: '/emazon/search',
-        data: $('#collapse-payment-address input[type=\'text\'], #collapse-payment-address input[type=\'date\'], #collapse-payment-address input[type=\'datetime-local\'], #collapse-payment-address input[type=\'time\'], #collapse-payment-address input[type=\'password\'], #collapse-payment-address input[type=\'checkbox\']:checked, #collapse-payment-address input[type=\'radio\']:checked, #collapse-payment-address input[type=\'hidden\'], #collapse-payment-address textarea, #collapse-payment-address select'),
-        dataType: 'json',
-        beforeSend: function() {
-        	$('#button-payment-address').button('loading');
-		},
-        complete: function() {
-			$('#button-payment-address').button('reset');
-        },
-        success: function(json) {
-            $('.alert, .text-danger').remove();
-
-            if (json['redirect']) {
-                location = json['redirect'];
-            } else if (json['error']) {
-                if (json['error']['warning']) {
-                    $('#collapse-payment-address .panel-body').prepend('<div class="alert alert-warning">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
-                }
-
-				for (i in json['error']) {
-					var element = $('#input-payment-' + i.replace('_', '-'));
-
-					if ($(element).parent().hasClass('input-group')) {
-						$(element).parent().after('<div class="text-danger">' + json['error'][i] + '</div>');
-					} else {
-						$(element).after('<div class="text-danger">' + json['error'][i] + '</div>');
-					}
-				}
-
-				// Highlight any found errors	---- Delivery Detail --- By Yeab
-				$('.text-danger').parent().parent().addClass('has-error');
-            } else {
-                                $.ajax({
-                    url: '/emazon/search',
-                    dataType: 'html',
-                    success: function(html) {
-											  $('#collapse-shipping-address .panel-body').html("<div class='radio'><label><input name='payment_address' value='existing' checked='checked' type='radio'>I want to use an existing address</label></div><div id='shipping-existing'><select name='address_id' class='form-control'><option value='4' selected='selected'>Kirso sds, Ethiopia, Addis Ababa, Oromia, Ethiopia</option><option value='5'>Yab Yabbb, Addis Ababa, Addis Ababa, Oromia, Ethiopia</option></select></div><div  class='buttons clearfix'><div class='pull-right'><input value='Continue' id='button-shipping-address' data-loading-text='Loading...' class='btn btn-primary' type='button'></div></div>");
-
-
-						$('#collapse-shipping-address').parent().find('.panel-heading .panel-title').html('<a href="#collapse-shipping-address" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">Step 3: Delivery Details <i class="fa fa-caret-down"></i></a>');
-
-						$('a[href=\'#collapse-shipping-address\']').trigger('click');
-
-						$('#collapse-shipping-method').parent().find('.panel-heading .panel-title').html('Step 4: Delivery Method');
-						$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('Step 5: Payment Method');
-						$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
-                    },
-                    error: function(xhr, ajaxOptions, thrownError) {
-                        alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-                    }
-                });
-
-                $.ajax({
-                    url: '/emazon/search',
-                    dataType: 'html',
-                    success: function(html) {
-                        $('#collapse-payment-address .panel-body').html(html);
-                    },
-                    error: function(xhr, ajaxOptions, thrownError) {
-                        alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-                    }
-                });
-            }
-        },
-        error: function(xhr, ajaxOptions, thrownError) {
-            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-        }
-    });
+	alert('me');
+	$('#paypal_form').submit();
+    // $.ajax({
+    //     url: '/emazon/search',
+    //     data: $('#collapse-payment-address input[type=\'text\'], #collapse-payment-address input[type=\'date\'], #collapse-payment-address input[type=\'datetime-local\'], #collapse-payment-address input[type=\'time\'], #collapse-payment-address input[type=\'password\'], #collapse-payment-address input[type=\'checkbox\']:checked, #collapse-payment-address input[type=\'radio\']:checked, #collapse-payment-address input[type=\'hidden\'], #collapse-payment-address textarea, #collapse-payment-address select'),
+    //     dataType: 'json',
+    //     beforeSend: function() {
+    //     	$('#button-payment-address').button('loading');
+		// },
+    //     complete: function() {
+		// 	$('#button-payment-address').button('reset');
+    //     },
+    //     success: function(json) {
+    //         $('.alert, .text-danger').remove();
+		//
+    //         if (json['redirect']) {
+    //             location = json['redirect'];
+    //         } else if (json['error']) {
+    //             if (json['error']['warning']) {
+    //                 $('#collapse-payment-address .panel-body').prepend('<div class="alert alert-warning">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+    //             }
+		//
+		// 		for (i in json['error']) {
+		// 			var element = $('#input-payment-' + i.replace('_', '-'));
+		//
+		// 			if ($(element).parent().hasClass('input-group')) {
+		// 				$(element).parent().after('<div class="text-danger">' + json['error'][i] + '</div>');
+		// 			} else {
+		// 				$(element).after('<div class="text-danger">' + json['error'][i] + '</div>');
+		// 			}
+		// 		}
+		//
+		// 		// Highlight any found errors	---- Delivery Detail --- By Yeab
+		// 		$('.text-danger').parent().parent().addClass('has-error');
+    //         } else {
+		//
+		//
+		//
+    //         }
+    //     },
+    //     error: function(xhr, ajaxOptions, thrownError) {
+    //         alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+    //     }
+    // });
 });
 
 // Shipping Address ------ Shipping Address Handler After Continue Button Click
@@ -410,7 +386,7 @@ $(document).delegate('#button-shipping-address', 'click', function() {
 						$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('Step 6: Confirm Order');
 
                         $.ajax({
-                            url: 'index.php?route=checkout/shipping_address',
+                            url: '#',
                             dataType: 'html',
                             success: function(html) {
                                 $('#collapse-shipping-address .panel-body').html(html);
@@ -426,7 +402,7 @@ $(document).delegate('#button-shipping-address', 'click', function() {
                 });
 
                 $.ajax({
-                    url: 'index.php?route=checkout/payment_address',
+                    url: '/emazon/home?route=checkout/payment_address',
                     dataType: 'html',
                     success: function(html) {
                         $('#collapse-payment-address .panel-body').html(html);
@@ -446,7 +422,7 @@ $(document).delegate('#button-shipping-address', 'click', function() {
 // Guest   -- not
 $(document).delegate('#button-guest', 'click', function() {
     $.ajax({
-        url: 'index.php?route=checkout/guest/save',
+        url: '/emazon/home?route=checkout/guest/save',
         type: 'post',
         data: $('#collapse-payment-address input[type=\'text\'], #collapse-payment-address input[type=\'date\'], #collapse-payment-address input[type=\'datetime-local\'], #collapse-payment-address input[type=\'time\'], #collapse-payment-address input[type=\'checkbox\']:checked, #collapse-payment-address input[type=\'radio\']:checked, #collapse-payment-address input[type=\'hidden\'], #collapse-payment-address textarea, #collapse-payment-address select'),
         dataType: 'json',
@@ -482,7 +458,7 @@ $(document).delegate('#button-guest', 'click', function() {
 
                 if (shipping_address) {
                     $.ajax({
-                        url: 'index.php?route=checkout/shipping_method',
+                        url: '/emazon/home?route=checkout/shipping_method',
                         dataType: 'html',
                         complete: function() {
                             $('#button-guest').button('reset');
@@ -490,7 +466,7 @@ $(document).delegate('#button-guest', 'click', function() {
                         success: function(html) {
 							// Add the shipping address
                             $.ajax({
-                                url: 'index.php?route=checkout/guest_shipping',
+                                url: '/emazon/home?route=checkout/guest_shipping',
                                 dataType: 'html',
                                 success: function(html) {
                                     $('#collapse-shipping-address .panel-body').html(html);
@@ -517,7 +493,7 @@ $(document).delegate('#button-guest', 'click', function() {
                     });
                 } else {
                     $.ajax({
-                        url: 'index.php?route=checkout/guest_shipping',
+                        url: '/emazon/home?route=checkout/guest_shipping',
                         dataType: 'html',
                         complete: function() {
                             $('#button-guest').button('reset');
@@ -549,7 +525,7 @@ $(document).delegate('#button-guest', 'click', function() {
 // Guest Shipping
 $(document).delegate('#button-guest-shipping', 'click', function() {
     $.ajax({
-        url: 'index.php?route=checkout/guest_shipping/save',
+        url: '/emazon/home?route=checkout/guest_shipping/save',
         type: 'post',
         data: $('#collapse-shipping-address input[type=\'text\'], #collapse-shipping-address input[type=\'date\'], #collapse-shipping-address input[type=\'datetime-local\'], #collapse-shipping-address input[type=\'time\'], #collapse-shipping-address input[type=\'password\'], #collapse-shipping-address input[type=\'checkbox\']:checked, #collapse-shipping-address input[type=\'radio\']:checked, #collapse-shipping-address textarea, #collapse-shipping-address select'),
         dataType: 'json',
@@ -582,7 +558,7 @@ $(document).delegate('#button-guest-shipping', 'click', function() {
 				$('.text-danger').parent().addClass('has-error');
             } else {
                 $.ajax({
-                    url: 'index.php?route=checkout/shipping_method',
+                    url: '/emazon/home?route=checkout/shipping_method',
                     dataType: 'html',
                     complete: function() {
                         $('#button-guest-shipping').button('reset');
@@ -658,7 +634,7 @@ $(document).delegate('#button-shipping-method', 'click', function() {
 
 $(document).delegate('#button-payment-method', 'click', function() {
     $.ajax({
-        url: 'index.php?route=checkout/payment_method/save',
+        url: '/emazon/home?route=checkout/payment_method/save',
         type: 'post',
         data: $('#collapse-payment-method input[type=\'radio\']:checked, #collapse-payment-method input[type=\'checkbox\']:checked, #collapse-payment-method textarea'),
         dataType: 'json',
@@ -678,7 +654,7 @@ $(document).delegate('#button-payment-method', 'click', function() {
                 }
             } else {
                 $.ajax({
-                    url: 'index.php?route=checkout/confirm',
+                    url: '/emazon/home?route=checkout/confirm',
                     dataType: 'html',
                     complete: function() {
                         $('#button-payment-method').button('reset');

@@ -27,7 +27,7 @@
         //Product categories
         $tv_video = "TV & Video"; //60
         $headphones = "Headphones"; //63
-        $bluetooth_speakers = "Bluetooth & Wireless Speakers "; //65
+        $ethio_fashion = "Ethio-Fashion"; //65
         $camera_photo_video = "Camera, Photo & Video "; //61
         $computer_tabs = "Computers & Tablets "; //67
         $gaming_consoles = "Gaming Console "; //66
@@ -53,7 +53,7 @@
           array_push($all_products, getProductsByCategory($headphones));
         } else if($productIdentifier == 65)
         {
-          array_push($all_products, getProductsByCategory($bluetooth_speakers));
+          array_push($all_products, getProductsByCategory($ethio_fashion));
         } else if($productIdentifier == 67)
         {
           array_push($all_products, getProductsByCategory($computer_tabs));

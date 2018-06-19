@@ -12,6 +12,7 @@
     private $productQuantity;
     private $productImportDate;
     private $productFrontImage;
+    private $productZoomedImage;
     private $productCategory;
     private $productManufacturer;
     private $productCode;
@@ -21,7 +22,7 @@
 
 
     public function __construct($productName=NULL,$productQuantity=0,$productPrice=0.0,$productImportDate=NULL,$productDescription=NULL,$productCode=NULL,
-                                $productColor=NULL,$productSize=NULL,$productImage=NULL , $rating=0 ,  $manfacturedBy=NULL
+                                $productColor=NULL,$productSize=NULL,$productImage=NULL , $productZoomedImage = NULL, $rating=0 ,  $manfacturedBy=NULL
                                 )
     {
         $this -> productName = $productName;
@@ -32,6 +33,7 @@
         $this -> productCode = $productCode;
         $this -> productSize = $productSize;
         $this -> productFrontImage = $productImage;
+        $this -> productZoomedImage = $productZoomedImage;
         $this -> productRating = $rating;
         $this -> productManufacturer = $manfacturedBy;
     }
@@ -123,6 +125,16 @@
         return $this -> productFrontImage;
     }
     /* ------------- Product Front Image Ends */
+
+    public function setProductZoomedImage($pic)
+    {
+        $this -> productZoomedImage = $pic;
+    }
+
+    public function getProductZoomedImage()
+    {
+        return $this -> productZoomedImage;
+    }
 
     /* Product Category Set & Get  ------------ */
     public function setProductCategory($productCategory)

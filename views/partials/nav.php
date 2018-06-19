@@ -14,97 +14,117 @@ function getCartProducts()
   return $cartContainer;
 }
 
-class SimpleImage {
-
-   var $image;
-   var $image_type;
-
-   function load($filename) {
-
-      $image_info = getimagesize($filename);
-      $this->image_type = $image_info[2];
-      if( $this->image_type == IMAGETYPE_JPEG ) {
-
-         $this->image = imagecreatefromjpeg($filename);
-      } elseif( $this->image_type == IMAGETYPE_GIF ) {
-
-         $this->image = imagecreatefromgif($filename);
-      } elseif( $this->image_type == IMAGETYPE_PNG ) {
-
-         $this->image = imagecreatefrompng($filename);
-      }
-   }
-   function save($filename, $image_type=IMAGETYPE_JPEG, $compression=75, $permissions=null) {
-
-      if( $image_type == IMAGETYPE_JPEG ) {
-         imagejpeg($this->image,$filename,$compression);
-      } elseif( $image_type == IMAGETYPE_GIF ) {
-
-         imagegif($this->image,$filename);
-      } elseif( $image_type == IMAGETYPE_PNG ) {
-
-         imagepng($this->image,$filename);
-      }
-      if( $permissions != null) {
-
-         chmod($filename,$permissions);
-      }
-   }
-   function output($image_type=IMAGETYPE_JPEG) {
-
-      if( $image_type == IMAGETYPE_JPEG ) {
-         imagejpeg($this->image);
-      } elseif( $image_type == IMAGETYPE_GIF ) {
-
-         imagegif($this->image);
-      } elseif( $image_type == IMAGETYPE_PNG ) {
-
-         imagepng($this->image);
-      }
-   }
-   function getWidth() {
-
-      return imagesx($this->image);
-   }
-   function getHeight() {
-
-      return imagesy($this->image);
-   }
-   function resizeToHeight($height) {
-
-      $ratio = $height / $this->getHeight();
-      $width = $this->getWidth() * $ratio;
-      $this->resize($width,$height);
-   }
-
-   function resizeToWidth($width) {
-      $ratio = $width / $this->getWidth();
-      $height = $this->getheight() * $ratio;
-      $this->resize($width,$height);
-   }
-
-   function scale($scale) {
-      $width = $this->getWidth() * $scale/100;
-      $height = $this->getheight() * $scale/100;
-      $this->resize($width,$height);
-   }
-
-   function resize($width,$height) {
-      $new_image = imagecreatetruecolor($width, $height);
-      imagecopyresampled($new_image, $this->image, 0, 0, 0, 0, $width, $height, $this->getWidth(), $this->getHeight());
-      $this->image = $new_image;
-   }
-
+function getSubTotal()
+{
+  $instance = new  \App\Models\Product\Cart(NULL, NULL,NULL);
+  return $instance -> getCartTotal(getCartProducts());
 }
 
-  function resize(){
+function getTotalTax()
+{
+  $instance = new  \App\Models\Product\Cart(NULL, NULL,NULL);
+  return $instance -> getTaxedProductPrice(getCartProducts());
+}
 
-    $target_dir = "images/";
-    $target_file = "eMazon_Transparent_Me.png";
+function getTotalPriceWithTaxIncluded()
+{
+  $instance = new  \App\Models\Product\Cart(NULL, NULL,NULL);
+  return $instance -> getCartTotalWithTaxIncluded(getCartProducts());
+}
+//
+// class SimpleImage {
+//
+//    var $image;
+//    var $image_type;
+//
+//    function load($filename) {
+//
+//       $image_info = getimagesize($filename);
+//       $this->image_type = $image_info[2];
+//       if( $this->image_type == IMAGETYPE_JPEG ) {
+//
+//          $this->image = imagecreatefromjpeg($filename);
+//       } elseif( $this->image_type == IMAGETYPE_GIF ) {
+//
+//          $this->image = imagecreatefromgif($filename);
+//       } elseif( $this->image_type == IMAGETYPE_PNG ) {
+//
+//          $this->image = imagecreatefrompng($filename);
+//       }
+//    }
+//    function save($filename, $image_type=IMAGETYPE_JPEG, $compression=75, $permissions=null) {
+//
+//       if( $image_type == IMAGETYPE_JPEG ) {
+//          imagejpeg($this->image,$filename,$compression);
+//       } elseif( $image_type == IMAGETYPE_GIF ) {
+//
+//          imagegif($this->image,$filename);
+//       } elseif( $image_type == IMAGETYPE_PNG ) {
+//
+//          imagepng($this->image,$filename);
+//       }
+//       if( $permissions != null) {
+//
+//          chmod($filename,$permissions);
+//       }
+//    }
+//    function output($image_type=IMAGETYPE_JPEG) {
+//
+//       if( $image_type == IMAGETYPE_JPEG ) {
+//          imagejpeg($this->image);
+//       } elseif( $image_type == IMAGETYPE_GIF ) {
+//
+//          imagegif($this->image);
+//       } elseif( $image_type == IMAGETYPE_PNG ) {
+//
+//          imagepng($this->image);
+//       }
+//    }
+//    function getWidth() {
+//
+//       return imagesx($this->image);
+//    }
+//    function getHeight() {
+//
+//       return imagesy($this->image);
+//    }
+//    function resizeToHeight($height) {
+//
+//       $ratio = $height / $this->getHeight();
+//       $width = $this->getWidth() * $ratio;
+//       $this->resize($width,$height);
+//    }
+//
+//    function resizeToWidth($width) {
+//       $ratio = $width / $this->getWidth();
+//       $height = $this->getheight() * $ratio;
+//       $this->resize($width,$height);
+//    }
+//
+//    function scale($scale) {
+//       $width = $this->getWidth() * $scale/100;
+//       $height = $this->getheight() * $scale/100;
+//       $this->resize($width,$height);
+//    }
+//
+//    function resize($width,$height) {
+//       $new_image = imagecreatetruecolor($width, $height);
+//       imagecopyresampled($new_image, $this->image, 0, 0, 0, 0, $width, $height, $this->getWidth(), $this->getHeight());
+//       $this->image = $new_image;
+//    }
+//
+// }
 
-    $image = new SimpleImage();
-    $image->load("eMazon_Transparent_Me.png");
-    $image->resize(47, 47);
+  function resize($image_name){
+
+    $target_dir = "";
+    $image = explode('/', $image_name);
+    $image = array_pop($image);
+    $target_file = "C:/xampp/htdocs/emazonResource/images/resized/".$image;
+
+    $image = new \App\Core\Imager();
+    $image->load($image_name);
+    $image->resize(50, 50);
     $image->save($target_file);
     return $image;
   }
@@ -706,7 +726,7 @@ class SimpleImage {
                                           <div id="cart_content_ajax">
                                             <?php if(getCartProducts()): ?>
                                               <?php foreach(getCartProducts() as $cartItem):?>
-                                                <?php echo "<div id='cart_content_ajax'><div class='mini-cart-info'><table><tbody><tr><td class='image'><a href='#'><img src='http://localhost/emazonResource/images/Product_Images/cart_image.jpg' width='47px' height='47px' alt='Funda Para Ebook 7&quot; 128GB full HD'></a></td><td class='name'><a href='#'>".$cartItem->getProductCode()."</a><div></div></td><td class='quantity'>x&nbsp;".$cartItem->getProductQuantity()."</td><td class='total'>".$cartItem->getProductPrice()."</td><td class='remove'></a></td></tr></tbody></table></div></div>"?>
+                                                <?php echo "<div class='mini-cart-info'><table><tbody><tr><td class='image'><a href='#'><img src='http://localhost/emazonResource/images/Product_Images/cart_image.jpg' width='47px' height='47px' alt='Funda Para Ebook 7&quot; 128GB full HD'></a></td><td class='name'><a href='#'>".$cartItem->getProductCode()."</a><div></div></td><td class='quantity'>x&nbsp;".$cartItem->getProductQuantity()."</td><td class='total'>".$cartItem->getProductPrice()."</td><td class='remove'></a></td></tr></tbody></table></div>"?>
                                               <?php endforeach; ?>
                                               <?php echo "<div class='mini-cart-total'><table><tbody><tr><td class='right'>Sub-Total:</td><td class='right'>".$cartItem->getCartTotal(getCartProducts())."</td></tr><tr><td class='right'>Eco Tax (-2.00):</td><td class='right'>$2.00</td></tr><tr><td class='right'>VAT (20%):</td><td class='right'>".$cartItem->getTaxedProductPrice(getCartProducts())."</td></tr><tr><td class='right'>Total:</td><td class='right'>".$cartItem->getCartTotalWithTaxIncluded(getCartProducts()) ."</td></tr></tbody></table></div>"?>
                                               <div class='checkout'><a href='/emazon/cart' class='button btn-default'>View Cart</a> &nbsp;<a href='/emazon/checkout' class='button'>Checkout</a></div>

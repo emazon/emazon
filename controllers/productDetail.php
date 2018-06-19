@@ -14,6 +14,7 @@
           return new \App\Models\Product\Product($product["productName"], $product['productQuantity'],$product['productPrice'] ,
                                                  $product['productImportDate'], $product['productDescription'], $product['productCode'],
                                                  $product['productColor'], $product['productSize'], $product['productImage'],
+                                                 $product['productImageZoomed'],
                                                  $product['rating'], $product['manfacturedBy']);
     }, $data);
 
