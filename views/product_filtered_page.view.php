@@ -693,7 +693,7 @@
 
                     <div class="row">
 
-                      <?php foreach( query() as $product): ?>
+                      <?php foreach( array_slice(query(),4,12) as $product): ?>
 
                         <?php echo "<div class='col-sm-4  col-xs-6'>
 
@@ -1510,7 +1510,7 @@
 			</div>
 
 						<div class="item"><div class="product-grid">
-						<?php foreach (array_slice(getRelatedProducts(),4) as $product): ?>
+						<?php foreach (array_slice(getRelatedProducts(),4,8) as $product): ?>
 
 							 <?php  echo "<div class='col-sm-3 col-xs-6'>
 

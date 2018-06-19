@@ -326,9 +326,9 @@
                                                                       <div class="border clearfix">
                                                                           <div class="left">
                                                                               <div class="image">
-                                                                                  <a href="/emazon/product?route=product/product_id=ema_125_bitz">
+                                                                                  <a href="/emazon/product?route=product/product_id=ema_0341">
                                                                                       <img src="http://localhost/emazonResource/images/blank.gif"
-                                                                                          data-echo="http://localhost/emazonResource/images/Product_Images/item-img-1-7-600x600.jpg"
+                                                                                          data-echo="http://localhost/emazonResource/images/product_gallery_images/ethio_fashion_16/normal.jpg"
                                                                                       />
                                                                                   </a>
                                                                               </div>
@@ -348,7 +348,7 @@
 
                                                                           <div class="right">
                                                                               <div class="name">
-                                                                                  <a href="/emazon/product?route=product/product_id=ema_125_bitz">Bitz 2018 Headphones</a>
+                                                                                  <a href="/emazon/product?route=product/product_id=ema_125_bitz">Cultural Habesha Dress #7</a>
                                                                               </div>
                                                                               <div class="rating">
                                                                                   <i class="fa fa-star-o"></i>
@@ -358,18 +358,18 @@
                                                                                   <i class="fa fa-star-o"></i>
                                                                               </div>
 
-                                                                              <div class="price">$145.00</div>
+                                                                              <div class="price">$500.00</div>
                                                                               <div class="description">
 
-                                                                                <ul>
+                                                                                <!-- <ul>
                                                                                   <li><strong>POWERFUL BASS: </strong>  Delivers dynamic, crystal-clear sound and deep powerful bass with Soft silicone, ergonomic earbuds block outside noise and Perfect in-ear seal blocks out external noise.</li>
                                                                                   <li><strong>Easy TO USE: </strong> Integrated microphone and smart remote for enhanced usability and Optimised for mp3, iPod, iPhone, CD players and portable gaming systems.</li>
                                                                                   <li><strong>UNIVERSAL : </strong> Ideal for Samsung Mobiles , Clear sound and Earburds for a comfortable fit handsfree calls.</li>
                                                                                   <li><strong>EASY COMFORTABLE : </strong> Lightweight and comfortable, this enables you to carry on conversations while you continue to do other things.</li>
                                                                                   <li><strong>PREMIUM COMFORT : </strong> Ear adaptors in different sizes for excellent ear canal fit and ambient noise attenuation Intuitive design - highly-aesthetic, ergonomic design.</li>
-
+                                                                                </ul> -->
                                                                               </div>
-                                                                              <a href="/emazon/product?route=product/product_id=ema_125_bitz"
+                                                                              <a href="/emazon/product?route=product/product_id=ema_0341"
                                                                                   class="button">Add to Cart</a>
                                                                           </div>
                                                                       </div>
@@ -465,7 +465,7 @@
 
                                                              <!-- Yabbb Modification -->
 
-                                                             <?php foreach (getProducts() as $product): ?>
+                                                             <?php foreach (array_slice(getProducts(),0,8) as $product): ?>
 
                                                                 <?php  echo "<div class='col-sm-3 col-xs-6'>
 
@@ -574,7 +574,7 @@
 
                                                                <!-- Yabbb Modification -->
 
-                                                               <?php foreach (getProducts() as $product): ?>
+                                                               <?php foreach (array_slice(getProducts(),0,8)as $product): ?>
 
                                                                   <?php  echo "<div class='col-sm-3 col-xs-6'>
 
@@ -680,7 +680,7 @@
 
                                                                <!-- Yabbb Modification -->
 
-                                                               <?php foreach (getProducts() as $product): ?>
+                                                               <?php foreach (array_slice(getProducts(),0,8) as $product): ?>
 
                                                                   <?php  echo "<div class='col-sm-3 col-xs-6'>
 
@@ -874,7 +874,7 @@
 
                                                        <!-- Yabbb Modification -->
 
-                                                       <?php foreach (getTopSellingProducts() as $product): ?>
+                                                       <?php foreach (array_slice(getProducts(),0,4) as $product): ?>
 
                                                           <?php  echo "<div class='col-sm-3 col-xs-6'>
 
@@ -916,7 +916,7 @@
                                                                                        $".number_format($product->getProductPrice(),2)."</div>
                                                                                </div>
                                                                            </div>
-                                                                       </div>
+                                                                       </div><br/>
                                                                    </div>";
                                                                   ?>
                                                        <?php endforeach; ?>

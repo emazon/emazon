@@ -500,7 +500,7 @@ function getTotalPriceWithTaxIncluded()
                                     <div class="megamenu-pattern">
                                         <div class="container">
                                             <ul class="megamenu shift-up">
-                                                <li class=''>
+                                                <li class='header_catagory'>
                                                     <p class='close-menu'></p>
                                                     <p class='open-menu'></p>
                                                     <a href="#" class='clearfix'>
@@ -510,7 +510,7 @@ function getTotalPriceWithTaxIncluded()
                                                         </span>
                                                     </a>
                                                 </li>
-                                                <li class=''>
+                                                <li class='header_catagory'>
                                                     <p class='close-menu'></p>
                                                     <p class='open-menu'></p>
                                                     <a href='#' class='clearfix'>
@@ -520,7 +520,7 @@ function getTotalPriceWithTaxIncluded()
                                                         </span>
                                                     </a>
                                                 </li>
-                                                <li class=''>
+                                                <li class='header_catagory'>
                                                     <p class='close-menu'></p>
                                                     <p class='open-menu'></p>
                                                     <a href='#' class='clearfix'>
@@ -530,7 +530,7 @@ function getTotalPriceWithTaxIncluded()
                                                         </span>
                                                     </a>
                                                 </li>
-                                                <li class=''>
+                                                <li class='header_catagory'>
                                                     <p class='close-menu'></p>
                                                     <p class='open-menu'></p>
                                                     <a href='#' class='clearfix'>
@@ -540,7 +540,7 @@ function getTotalPriceWithTaxIncluded()
                                                         </span>
                                                     </a>
                                                 </li>
-                                                <li class=''>
+                                                <li class='header_catagory'>
                                                     <p class='close-menu'></p>
                                                     <p class='open-menu'></p>
                                                     <a href='#' class='clearfix'>
@@ -550,7 +550,7 @@ function getTotalPriceWithTaxIncluded()
                                                         </span>
                                                     </a>
                                                 </li>
-                                                <li class=''>
+                                                <li class='header_catagory'>
                                                     <p class='close-menu'></p>
                                                     <p class='open-menu'></p>
                                                     <a href='#' class='clearfix'>
@@ -894,7 +894,7 @@ function getTotalPriceWithTaxIncluded()
                                                             <li class=''>
                                                                 <p class='close-menu'></p>
                                                                 <p class='open-menu'></p>
-                                                                <a href='/emazon/search_product?category=ethio_fashion'
+                                                                <a href='/emazon/product/mega_filter/products?mfp=path[65]'
                                                                     class='clearfix'>
                                                                         <strong>
                                                                             <img src="http://localhost/emazonResource/images/version-04/menu-07.png" alt="">Ethio-Fashion</strong>

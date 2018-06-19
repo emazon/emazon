@@ -902,7 +902,7 @@
             			</div>
 
             						<div class="item"><div class="product-grid">
-            						<?php foreach (array_slice(getProducts(),4) as $product): ?>
+            						<?php foreach (array_slice(getProducts(),4 , 8) as $product): ?>
 
             							 <?php  echo "<div class='col-sm-3 col-xs-6'>
 
