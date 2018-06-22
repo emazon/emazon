@@ -31,10 +31,11 @@ function create_token($uid, $username ,$token_duration = 24 /* Hours */) {
  function validate_token($token) {
     try {
        $payload = JWT::decode($token, $this->secret, array('HS256'));
+       var_dump($payload);
        if (!$payload) return FALSE;
        return json_decode(json_encode($payload));
     } catch (\Firebase\JWT\ExpiredException $e) {
-       //die(var_dump($e));
+       die(var_dump($e));
        return false;
     }
  }

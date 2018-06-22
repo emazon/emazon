@@ -17,6 +17,7 @@ $router -> post('emazon/login', 'controllers/login.php');
 $router -> get('emazon/signup', 'controllers/signup.php');
 $router -> get('emazon/products','controllers/index.php');
 $router -> get('emazon/checkout', 'controllers/checkout.php');
+$router -> get('eMazon/checkout_success', 'controllers/checkout_success.php');
 $router -> get('emazon/orders', 'controllers/orders.php');
 $router -> get('emazon/cart', 'controllers/shopping_cart.php');
 $router -> get('emazon/product/mega_filter/products', 'controllers/product_filter_result.php');
@@ -27,8 +28,15 @@ $router -> get('emazon/search_autocomplete', 'API/search_autocomplete.php'); // 
 $router -> get('emazon/subscribe', 'API/email_subscription.php'); // Mail Subscription API
 $router -> get('emazon/product/mega_filter/getajaxinfo', 'API/product_mega_filter.php');
 $router -> get('emazon/addtoCart', 'API/addtoCart.php'); //Add To Cart API
+
 $router -> get('emazon/pay', 'API/payment.php'); //Payment
 $router -> post('emazon/pay', 'API/payment.php');
+
+$router -> get('emazon/pay/success', 'API/paymentSucess.php');
+$router -> post('emazon/pay/success', 'API/paymentSucess.php');
+
+$router -> get('emazon/productAdd', 'controllers/productAdd.php');
+$router -> post('emazon/productAdd', 'API/productAdd.php');
 
 $router -> get('emazon/search', 'controllers/search.php');
 $router -> get('emazon/search_product', 'controllers/productSearch.php');

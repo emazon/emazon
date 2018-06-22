@@ -43,7 +43,7 @@ class QueryBuilder
      $sql =  sprintf(
         'insert into %s (%s) values (%s)',
         $table ,
-        implode('. ', array_keys($parameters)),
+        implode(', ', array_keys($parameters)),
         ':'.implode(', :', array_keys($parameters))
       );
 
@@ -120,6 +120,14 @@ class QueryBuilder
     return $statment -> fetchAll(PDO::FETCH_CLASS);
   }
 
+  public function getProductCategoryName($table , $categoryName)
+  {
+    $statment = $this -> pdo -> prepare("select `productCategoryId` from `$table` where `productCategoryName`='$categoryName' LIMIT 1");
+    $statment -> execute();
+
+    return $statment -> fetchAll(PDO::FETCH_CLASS);
+  }
+
   public function addProductToCart($table , $productCode , $price, $quantity)
   {
     $statment = $this -> pdo -> prepare("insert into `$table`(cartProductCode , price, quantity) values('$productCode', '$price', '$quantity')");
@@ -128,7 +136,7 @@ class QueryBuilder
 
   }
 
-  
+
 
 }
 

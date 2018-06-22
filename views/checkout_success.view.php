@@ -24,8 +24,8 @@
 
 
 
-<p>Your order has been successfully processed!</p><p>You can view your order history by going to the <a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/account">my account</a> page and by clicking on <a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/order">history</a>.</p><p>If your purchase has an associated download, you can go to the account <a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/download">downloads</a> page to view them.</p><p>Please direct any questions you have to the <a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=information/contact">store owner</a>.</p><p>Thanks for shopping with us online!</p><div class="buttons">
-  <div class="pull-right"><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=common/home" class="btn btn-primary">Continue</a></div>
+<p>Your order has been successfully processed!</p><p>You can view your order history by going to the <a href="#">my account</a> page and by clicking on <a href="#">history</a>.</p><p>If your purchase has an associated download, you can go to the account <a href="#">downloads</a> page to view them.</p><p>Please direct any questions you have to the <a href="#">store owner</a>.</p><p>Thanks for shopping with us online!</p><div class="buttons">
+  <div class="pull-right"><a href="/emazon" class="btn btn-primary">Continue</a></div>
 </div>
 
 							</div>

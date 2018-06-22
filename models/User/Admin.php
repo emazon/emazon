@@ -4,6 +4,10 @@
 
   class Admin extends User
   {
+      //Username and password has been passed SBy Inheritance
+
+      
+
 
       public function addProduct()
       {

@@ -17,23 +17,22 @@
         $users= \App\Core\Utility::jsonEncodeThenDecode($userFetched);
 
         $usersContainer = array_map(function ($user){
-              //var_dump($product["productId"]);
               return new \App\Models\User\Customer($user["username"] , $user["password"]);
         }, $users);
 
-        $user = new \App\Models\User\User($_POST['username'], $_POST['password']);
+        $user = new \App\Models\User\Customer($_POST['username'], $_POST['password']);
         $loginStatus = $user -> isVerified($usersContainer);
 
         if($loginStatus)
         {
             $user -> setToken();
 
-            var_dump($user -> validateToken());
+            //var_dump($user -> validateToken());
             header("Location: http://localhost:8888/emazon");
 
 
         }else{
-          echo "Nothing";
+          var_dump("Sign in First");
         }
     }
 

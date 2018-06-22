@@ -209,10 +209,6 @@
     /* ------------- Product Size Ends */
 
 
-    public function getProducts()
-    {
-
-    }
 
 
   }

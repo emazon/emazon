@@ -1,17 +1,5 @@
 <?php
 
-// PayPal settings
-//$paypal_email = 'user@domain.com';
-$paypal_email = 'misrak.terefe@aau.edu.et';
-$return_url = 'http://localhost:8888/eMazon/checkout_success';
-$cancel_url = 'http://localhost:8888eMazon/checkout_success';
-$notify_url = 'http://localhost:8888/eMazon/checkout_success';
-
-$item_name = 'Cart Items';
-$item_amount = 1.00;
-
-// Include Functions
-include("payment_functions.php");
 
 // Check if paypal request or response
 if (!isset($_POST["txn_id"]) && !isset($_POST["txn_type"])){
@@ -69,24 +57,65 @@ if (!isset($_POST["txn_id"]) && !isset($_POST["txn_type"])){
 	$data['payer_email'] 		= $_POST['payer_email'];
 	$data['custom'] 			= $_POST['custom'];
 
-$valid_txnid = check_txnid($data['txn_id']);
-$valid_price = check_price($data['payment_amount'], $data['item_number']);
-// PAYMENT VALIDATED & VERIFIED!
-if ($valid_txnid && $valid_price) {
+	// post back to PayPal system to validate
+	$header = "POST /cgi-bin/webscr HTTP/1.0\r\n";
+	$header .= "Content-Type: application/x-www-form-urlencoded\r\n";
+	$header .= "Content-Length: " . strlen($req) . "\r\n\r\n";
 
-	$orderid = updatePayments($data);
+	$fp = fsockopen ('ssl://www.sandbox.paypal.com', 443, $errno, $errstr, 30);
 
-	if ($orderid) {
-		// Payment has been made & successfully inserted into the Database
+	if (!$fp) {
+		// HTTP ERROR
+
 	} else {
-		// Error inserting into DB
-		// E-mail admin or alert user
-		// mail('user@domain.com', 'PAYPAL POST - INSERT INTO DB WENT WRONG', print_r($data, true));
+		fputs($fp, $header . $req);
+		while (!feof($fp)) {
+			$res = fgets ($fp, 1024);
+			if (strcmp($res, "VERIFIED") == 0) {
+
+				// Used for debugging
+				// mail('user@domain.com', 'PAYPAL POST - VERIFIED RESPONSE', print_r($post, true));
+
+				// Validate payment (Check unique txnid & correct price)
+				$valid_txnid = check_txnid($data['txn_id']);
+				$valid_price = check_price($data['payment_amount'], $data['item_number']);
+				// PAYMENT VALIDATED & VERIFIED!
+				if ($valid_txnid && $valid_price) {
+
+					//$orderid = updatePayments($data);
+					$orderid = App::get('database')->insert('payments',
+
+					    [
+					    'tnxid' => $_POST['tnxid'],
+							'payment_amount' => $_POST['payment_amount'],
+							'payment_status' => $_POST['payment_status'],
+							'itemid' => $_POST['itemid']
+					    ]
+					  );
+
+					if ($orderid) {
+						// Payment has been made & successfully inserted into the Database
+					} else {
+						// Error inserting into DB
+						// E-mail admin or alert user
+						// mail('user@domain.com', 'PAYPAL POST - INSERT INTO DB WENT WRONG', print_r($data, true));
+					}
+				} else {
+					// Payment made but data has been changed
+					// E-mail admin or alert user
+				}
+
+			} else if (strcmp ($res, "INVALID") == 0) {
+
+				// PAYMENT INVALID & INVESTIGATE MANUALY!
+				// E-mail admin or alert user
+
+				// Used for debugging
+				//@mail("user@domain.com", "PAYPAL DEBUGGING", "Invalid Response<br />data = <pre>".print_r($post, true)."</pre>");
+			}
+		}
+	fclose ($fp);
 	}
-} else {
-	// Payment made but data has been changed
-	// E-mail admin or alert user
-}
 }
 
-?>
+ ?>

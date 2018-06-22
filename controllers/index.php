@@ -1,12 +1,5 @@
 <?php
 
-// $result = App::get('database') -> selectAll('todo');
-//
-//
-// $greet = [
-//   "gi" => "Hello"
-// ];
-
   // Fetch all Products
 
   function getProducts()
