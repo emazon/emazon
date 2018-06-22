@@ -5,6 +5,17 @@
     $product_code = (explode('/',$_GET['route']))[1];
     $product_code = substr($product_code , 11);
 
+    $tak = App::get('database')->updateProductViewCounter("mostViewedItems", $product_code);
+    $data= json_decode( json_encode($tak), true);
+
+    $counter = (count($data));
+    if($counter <= 0)
+    {
+        App::get('database')->updateProductViewByInsert("mostViewedItems", $product_code);
+    }else{
+        App::get('database')->updateProductViewByUpdate("mostViewedItems", $product_code);
+    }
+
     $tak = App::get('database')->getProduct("products" , $product_code);
     $data= json_decode( json_encode($tak), true);
 

@@ -4,7 +4,7 @@
 
   function getProducts()
   {
-    $tak = App::get('database')->selectAll("products");
+    $tak = App::get('database')->selectAllProductsReverse("products");
     $data= json_decode( json_encode($tak), true);
 
     $productsContainer = array_map(function ($product){

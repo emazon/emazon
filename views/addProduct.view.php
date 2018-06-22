@@ -56,11 +56,7 @@
                                         <label for="exampleFormControlInput6">Product Image</label>
                                         <input type="file" class="form-control" name="myfile" id="exampleFormControlInput6" placeholder="Product Image">
                                       </div>
-                                      <div class="form-group">
-                                        <label for="exampleFormControlInput7">Product Zoomed Image</label>
-                                        <input type="file" class="form-control" name="myfile2" id="exampleFormControlInput7" placeholder="Product Zoomed Image">
-                                      </div>
-                                      <div class="form-group">
+                                    	<div class="form-group">
                                         <label for="exampleFormControlInput8">Product Manfacturer</label>
                                         <input type="text" class="form-control" name="productManfacturer"  id="exampleFormControlInput8" placeholder="Product Manfacturer">
                                       </div>

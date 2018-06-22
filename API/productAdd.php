@@ -61,6 +61,9 @@
                 $tak = App::get('database')->selectAll("productcategory");
                 $data = json_decode( json_encode($tak), true);
 
+                $productCode = rand();
+                $productCode = "emazon_".$productCode;
+
                 App::get('database')->insert('products',
 
                     [
@@ -69,8 +72,9 @@
                       'productPrice' => $_POST['productPrice'],
                       'productDescription' =>$_POST['productDescription'],
                       'productSize' => $_POST['productSize'],
-                      'productImage' => "http://localhost/emazonResource/images/product_gallery_images/Stock/".$fileName,
-                      "productImageZoomed" => "http://localhost/emazonResource/images/product_gallery_images/Stock/".$fileName."_resized.".$fileExtension,
+                      'productCode' => $productCode,
+                      'productImage' => "http://localhost/emazonResource/images/product_gallery_images/Stock/".$fileName."_resized.".$fileExtension,
+                      "productImageZoomed" => "http://localhost/emazonResource/images/product_gallery_images/Stock/".$fileName,
                       'manfacturedBy' => $_POST['productManfacturer']
                     ]
                   );
@@ -83,6 +87,7 @@
             }
         }
     }
+
 
 
  ?>

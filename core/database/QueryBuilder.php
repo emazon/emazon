@@ -28,14 +28,41 @@ class QueryBuilder
 
   }
 
-  public function select($table)
+  public function selectAllProductsReverse($table)
   {
-    $statment = $this-> pdo -> prepare("select * from {$table}");
+    $statment = $this-> pdo -> prepare("select * from {$table} order by `productId` DESC");
 
     $statment -> execute();
 
-    return $statment;
+    return $statment -> fetchAll(PDO::FETCH_CLASS);
   }
+
+  public function updateProductViewCounter($table, $productCode)
+  {
+
+    $statment = $this -> pdo -> prepare("select * from  {$table} WHERE `productCode` = '$productCode' ");
+    $statment->execute();
+    return $statment -> fetchAll(PDO::FETCH_CLASS);
+
+  }
+
+  public function updateProductViewByInsert($table, $productCode)
+  {
+
+
+    // code...
+    $statment = $this -> pdo -> prepare("insert into {$table}(`productCode`,`Counter`) values('$productCode','1')");
+    $statment -> execute();
+  }
+
+
+  public function updateProductViewByUpdate($table, $productCode)
+  {
+    // code.
+    $statment = $this -> pdo -> prepare("update {$table} set `Counter`= `Counter` + 1 where `productCode` = '$productCode'");
+    $statment -> execute();
+  }
+
 
   public function insert($table , $parameters)
 

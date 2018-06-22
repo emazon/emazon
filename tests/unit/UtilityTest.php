@@ -21,6 +21,6 @@
 		public function testTokenCreate()
 		{
 				$secret = "2229e5d6baa0beb436ec4e2d0be262f08c7eab3d";
-				$this -> assertNotNull ($this -> token -> create_token(10,$this -> getUserName($this -> utility -> getUser())));
+				$this -> assertNotNull ($this -> token -> create_token(10,($this -> utility -> getUserName() )));
 		}
   }
