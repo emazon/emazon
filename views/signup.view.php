@@ -26,7 +26,7 @@
 
 
       <p>If you already have an account with us, please login at the <a href="/emazon/login">login page</a>.</p>
-      <form action="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/register" method="post" enctype="multipart/form-data" class="form-horizontal">
+      <form action="/emazon/register" method="post" enctype="multipart/form-data" class="form-horizontal">
         <fieldset id="account">
           <legend>Your Personal Details</legend>
           <div class="form-group required" style="display: none;">
@@ -63,32 +63,14 @@
               <input type="tel" name="telephone" value="" placeholder="Telephone" id="input-telephone" class="form-control" />
                           </div>
           </div>
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="input-fax">Fax</label>
-            <div class="col-sm-10">
-              <input type="text" name="fax" value="" placeholder="Fax" id="input-fax" class="form-control" />
-            </div>
-          </div>
-                  </fieldset>
+          </fieldset>
         <fieldset id="address">
           <legend>Your Address</legend>
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="input-company">Company</label>
-            <div class="col-sm-10">
-              <input type="text" name="company" value="" placeholder="Company" id="input-company" class="form-control" />
-            </div>
-          </div>
           <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-address-1">Address 1</label>
+            <label class="col-sm-2 control-label" for="input-address-1">Address </label>
             <div class="col-sm-10">
-              <input type="text" name="address_1" value="" placeholder="Address 1" id="input-address-1" class="form-control" />
+              <input type="text" name="address" value="" placeholder="Address 1" id="input-address-1" class="form-control" />
                           </div>
-          </div>
-          <div class="form-group">
-            <label class="col-sm-2 control-label" for="input-address-2">Address 2</label>
-            <div class="col-sm-10">
-              <input type="text" name="address_2" value="" placeholder="Address 2" id="input-address-2" class="form-control" />
-            </div>
           </div>
           <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-city">City</label>
@@ -97,15 +79,9 @@
                           </div>
           </div>
           <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-postcode">Post Code</label>
-            <div class="col-sm-10">
-              <input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode" class="form-control" />
-                          </div>
-          </div>
-          <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-country">Country</label>
             <div class="col-sm-10">
-              <select name="country_id" id="input-country" class="form-control">
+              <select name="country" id="input-country" class="form-control">
                 <option value=""> --- Please Select --- </option>
                                                 <option value="244">Aaland Islands</option>
                                                                 <option value="1">Afghanistan</option>
@@ -363,16 +339,18 @@
                                               </select>
                           </div>
           </div>
-          <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-zone">Region / State</label>
-            <div class="col-sm-10">
-              <select name="zone_id" id="input-zone" class="form-control">
-              </select>
-                          </div>
-          </div>
 
         </fieldset>
-        <fieldset>
+				<fieldset>
+          <legend>Username</legend>
+          <div class="form-group required">
+            <label class="col-sm-2 control-label" for="input-username">Username</label>
+            <div class="col-sm-10">
+              <input type="text" name="username" value="" placeholder="Username" id="input-username" class="form-control" />
+                          </div>
+          </div>
+        </fieldset>
+				<fieldset>
           <legend>Your Password</legend>
           <div class="form-group required">
             <label class="col-sm-2 control-label" for="input-password">Password</label>
@@ -380,212 +358,16 @@
               <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" />
                           </div>
           </div>
-          <div class="form-group required">
-            <label class="col-sm-2 control-label" for="input-confirm">Password Confirm</label>
-            <div class="col-sm-10">
-              <input type="password" name="confirm" value="" placeholder="Password Confirm" id="input-confirm" class="form-control" />
-                          </div>
-          </div>
         </fieldset>
-        <fieldset>
-          <legend>Newsletter</legend>
-          <div class="form-group">
-            <label class="col-sm-2 control-label">Subscribe</label>
-            <div class="col-sm-10">
-                            <label class="radio-inline">
-                <input type="radio" name="newsletter" value="1" />
-                Yes</label>
-              <label class="radio-inline">
-                <input type="radio" name="newsletter" value="0" checked="checked" />
-                No</label>
-                          </div>
-          </div>
-        </fieldset>
-                        <div class="buttons">
-          <div class="pull-right">I have read and agree to the <a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=information/information/agree&amp;information_id=3" class="agree"><b>Privacy Policy</b></a>                        <input type="checkbox" name="agree" value="1" />
+
+      	<div class="buttons">
+          <div class="pull-right">I have read and agree to the <a href="#" class="agree"><b>Privacy Policy</b></a>                        <input type="checkbox" name="agree" value="1" />
                         &nbsp;
-            <input type="submit" value="Continue" class="btn btn-primary" />
+            <input type="submit" name="submit" value="Continue" class="btn btn-primary" />
           </div>
         </div>
               </form>
 
-<script type="text/javascript"><!--
-// Sort the custom fields
-$('#account .form-group[data-sort]').detach().each(function() {
-	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#account .form-group').length) {
-		$('#account .form-group').eq($(this).attr('data-sort')).before(this);
-	}
-
-	if ($(this).attr('data-sort') > $('#account .form-group').length) {
-		$('#account .form-group:last').after(this);
-	}
-
-	if ($(this).attr('data-sort') == $('#account .form-group').length) {
-		$('#account .form-group:last').after(this);
-	}
-
-	if ($(this).attr('data-sort') < -$('#account .form-group').length) {
-		$('#account .form-group:first').before(this);
-	}
-});
-
-$('#address .form-group[data-sort]').detach().each(function() {
-	if ($(this).attr('data-sort') >= 0 && $(this).attr('data-sort') <= $('#address .form-group').length) {
-		$('#address .form-group').eq($(this).attr('data-sort')).before(this);
-	}
-
-	if ($(this).attr('data-sort') > $('#address .form-group').length) {
-		$('#address .form-group:last').after(this);
-	}
-
-	if ($(this).attr('data-sort') == $('#address .form-group').length) {
-		$('#address .form-group:last').after(this);
-	}
-
-	if ($(this).attr('data-sort') < -$('#address .form-group').length) {
-		$('#address .form-group:first').before(this);
-	}
-});
-
-$('input[name=\'customer_group_id\']').on('change', function() {
-	$.ajax({
-		url: 'index.php?route=account/register/customfield&customer_group_id=' + this.value,
-		dataType: 'json',
-		success: function(json) {
-			$('.custom-field').hide();
-			$('.custom-field').removeClass('required');
-
-			for (i = 0; i < json.length; i++) {
-				custom_field = json[i];
-
-				$('#custom-field' + custom_field['custom_field_id']).show();
-
-				if (custom_field['required']) {
-					$('#custom-field' + custom_field['custom_field_id']).addClass('required');
-				}
-			}
-
-
-		},
-		error: function(xhr, ajaxOptions, thrownError) {
-			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-		}
-	});
-});
-
-$('input[name=\'customer_group_id\']:checked').trigger('change');
-//--></script>
-<script type="text/javascript"><!--
-$('button[id^=\'button-custom-field\']').on('click', function() {
-	var node = this;
-
-	$('#form-upload').remove();
-
-	$('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
-
-	$('#form-upload input[name=\'file\']').trigger('click');
-
-     if (typeof timer != 'undefined') {
-     	clearInterval(timer);
-     }
-
-	timer = setInterval(function() {
-		if ($('#form-upload input[name=\'file\']').val() != '') {
-			clearInterval(timer);
-
-			$.ajax({
-				url: 'index.php?route=tool/upload',
-				type: 'post',
-				dataType: 'json',
-				data: new FormData($('#form-upload')[0]),
-				cache: false,
-				contentType: false,
-				processData: false,
-				beforeSend: function() {
-					$(node).button('loading');
-				},
-				complete: function() {
-					$(node).button('reset');
-				},
-				success: function(json) {
-					$(node).parent().find('.text-danger').remove();
-
-					if (json['error']) {
-						$(node).parent().find('input').after('<div class="text-danger">' + json['error'] + '</div>');
-					}
-
-					if (json['success']) {
-						alert(json['success']);
-
-						$(node).parent().find('input').attr('value', json['code']);
-					}
-				},
-				error: function(xhr, ajaxOptions, thrownError) {
-					alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-				}
-			});
-		}
-	}, 500);
-});
-//--></script>
-<script type="text/javascript"><!--
-$('.date').datetimepicker({
-	pickTime: false
-});
-
-$('.time').datetimepicker({
-	pickDate: false
-});
-
-$('.datetime').datetimepicker({
-	pickDate: true,
-	pickTime: true
-});
-//--></script>
-<script type="text/javascript"><!--
-$('select[name=\'country_id\']').on('change', function() {
-	$.ajax({
-		url: 'index.php?route=account/account/country&country_id=' + this.value,
-		dataType: 'json',
-		beforeSend: function() {
-			$('select[name=\'country_id\']').after(' <i class="fa fa-circle-o-notch fa-spin"></i>');
-		},
-		complete: function() {
-			$('.fa-spin').remove();
-		},
-		success: function(json) {
-			if (json['postcode_required'] == '1') {
-				$('input[name=\'postcode\']').parent().parent().addClass('required');
-			} else {
-				$('input[name=\'postcode\']').parent().parent().removeClass('required');
-			}
-
-			html = '<option value=""> --- Please Select --- </option>';
-
-			if (json['zone'] && json['zone'] != '') {
-				for (i = 0; i < json['zone'].length; i++) {
-					html += '<option value="' + json['zone'][i]['zone_id'] + '"';
-
-					if (json['zone'][i]['zone_id'] == '') {
-						html += ' selected="selected"';
-					}
-
-					html += '>' + json['zone'][i]['name'] + '</option>';
-				}
-			} else {
-				html += '<option value="0" selected="selected"> --- None --- </option>';
-			}
-
-			$('select[name=\'zone_id\']').html(html);
-		},
-		error: function(xhr, ajaxOptions, thrownError) {
-			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-		}
-	});
-});
-
-$('select[name=\'country_id\']').trigger('change');
-//--></script>
 
 							</div>
 

@@ -163,7 +163,12 @@ class QueryBuilder
 
   }
 
-
+  public function updatePassword($table , $password, $email)
+  {
+    // code.
+    $statment = $this -> pdo -> prepare("update {$table} set `password`= '$password' where `email` = '$email'");
+    $statment -> execute();
+  }
 
 }
 

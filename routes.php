@@ -14,7 +14,15 @@ $router -> get('emazon', 'controllers/index.php');
 $router -> get('emazon/login', 'controllers/login.php');
 $router -> post('emazon/login', 'controllers/login.php');
 
-$router -> get('emazon/signup', 'controllers/signup.php');
+$router -> get('emazon/signup', 'controllers/signup.php'); //SignUp
+$router -> post('emazon/register', 'API/register.php');
+
+$router -> get('emazon/resetPassword', 'controllers/resetPassword.php'); // Reset Password
+$router -> post('emazon/forgotten', 'API/forgetPass.php'); // Email to User
+
+$router -> get('emazon/reset', 'controllers/reset.php');
+$router -> post('emazon/reset', 'API/reset.php');
+
 $router -> get('emazon/products','controllers/index.php');
 $router -> get('emazon/checkout', 'controllers/checkout.php');
 $router -> get('eMazon/checkout_success', 'controllers/checkout_success.php');

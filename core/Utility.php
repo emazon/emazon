@@ -24,7 +24,7 @@ class Utility
     return $base64;
   }
 
-  public static function sendEmail($receiver , $subject , $emailBody, $sender)
+  public static function sendEmail($receiver , $subject , $emailBody, $sender="yeab13me@gmail.com")
   {
     $header = "From: ".$sender;
     $header .= "MIME-Version: 1.0\r\n";
