@@ -27,7 +27,7 @@
 
       $image = new \App\Core\Imager();
       $image->load($image_name);
-      $image->resize(500, 500);
+      $image->resize(400, 400);
       $image->save($target_file);
       return $image;
     }
@@ -56,7 +56,7 @@
 
             if ($didUpload || $didUpload2)
             {
-                echo "The file " . basename($fileName) . " has been uploaded\n";
+                //echo "The file " . basename($fileName) . " has been uploaded\n";
 
                 $tak = App::get('database')->selectAll("productcategory");
                 $data = json_decode( json_encode($tak), true);

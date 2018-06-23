@@ -17,14 +17,14 @@
     /** @test */
     public function widthTest()
     {
-        $this -> assertEquals($this -> imager -> getWidth(), 500);
+        $this -> assertEquals($this -> imager -> getWidth(), 400);
     }
 
 
     /** @test */
     public function heightTest()
     {
-        $this -> assertEquals($this -> imager -> getHeight(), 500);
+        $this -> assertEquals($this -> imager -> getHeight(), 400);
     }
 
     /** @test*/

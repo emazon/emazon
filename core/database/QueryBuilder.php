@@ -5,6 +5,11 @@ class QueryBuilder
 
   protected $pdo;
 
+  public static function getClass()
+  {
+    return __CLASS__;
+  }
+
   public function __construct(PDO $pdo)
 
   {
@@ -48,8 +53,6 @@ class QueryBuilder
 
   public function updateProductViewByInsert($table, $productCode)
   {
-
-
     // code...
     $statment = $this -> pdo -> prepare("insert into {$table}(`productCode`,`Counter`) values('$productCode','1')");
     $statment -> execute();
