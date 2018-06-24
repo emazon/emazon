@@ -4,19 +4,11 @@
 
     function getProductsByCategory($category_name)
     {
-      $result = App::get('database')->getProductByCategory('products',$category_name);
-      $data= json_decode( json_encode($result), true);
 
-      //var_dump($data);
-      $productsContainer = array_map(function ($product){
-            //var_dump($product["productId"]);
-            return new \App\Models\Product\Product($product["productName"], $product['productQuantity'],$product['productPrice'] ,
-                                                   $product['productImportDate'], $product['productDescription'], $product['productCode'],
-                                                   $product['productColor'], $product['productSize'], $product['productImage'],
-                                                   $product['rating'], $product['manfacturedBy']);
-      }, $data);
-      //var_dump($productsContainer);
-      return $productsContainer;
+      $productInstance = new \App\Models\Product\Product(App::get('database'));
+      $products = $productInstance -> getProductByCategory($category_name);
+      return $products;
+
     }
 
     function fetchEachProduct($word)
@@ -86,21 +78,9 @@
 
     function getRelatedProducts()
     {
-
-
-      $tak = App::get('database')->selectAll("products");
-      $data= json_decode( json_encode($tak), true);
-
-      $productsContainer = array_map(function ($product){
-            //var_dump($product["productId"]);
-            return new \App\Models\Product\Product($product["productName"], $product['productQuantity'],$product['productPrice'] ,
-                                                   $product['productImportDate'], $product['productDescription'], $product['productCode'],
-                                                   $product['productColor'], $product['productSize'], $product['productImage'],
-                                                   $product['rating'], $product['manfacturedBy']);
-      }, $data);
-
-      return $productsContainer;
-
+        $productInstance = new \App\Models\Product\Product(App::get('database'));
+        $products = $productInstance -> getProducts();
+        return $products;
     }
 
     function query()

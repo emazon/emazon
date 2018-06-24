@@ -1,6 +1,8 @@
 <?php
 
   namespace App\Models\Product;
+  use App\Core\Utility;
+  use App\Models\Product\Product;
 
   class Product
   {
@@ -20,22 +22,14 @@
     private $productColor;
     private $productSize;
 
+    private $databaseInstance;
+    private $product;
 
-    public function __construct($productName=NULL,$productQuantity=0,$productPrice=0.0,$productImportDate=NULL,$productDescription=NULL,$productCode=NULL,
-                                $productColor=NULL,$productSize=NULL,$productImage=NULL , $productZoomedImage = NULL, $rating=0 ,  $manfacturedBy=NULL
-                                )
+    public function __construct($databaseInstance=NULL)
     {
-        $this -> productName = $productName;
-        $this -> productQuantity = $productQuantity;
-        $this -> productPrice = $productPrice;
-        $this -> productImportDate = $productImportDate;
-        $this -> productDescription = $productDescription;
-        $this -> productCode = $productCode;
-        $this -> productSize = $productSize;
-        $this -> productFrontImage = $productImage;
-        $this -> productZoomedImage = $productZoomedImage;
-        $this -> productRating = $rating;
-        $this -> productManufacturer = $manfacturedBy;
+
+        $this -> databaseInstance = $databaseInstance;
+
     }
 
 
@@ -208,7 +202,89 @@
     }
     /* ------------- Product Size Ends */
 
+    /* ------------------------------------------------------- Getter Setter Ends ------------------------------------------------*/
 
 
+    /** Fetch and Return All Products */
+    public function getProducts()
+    {
 
-  }
+        $databaseResults = $this -> databaseInstance -> selectAllProductsReverse("products");
+        $resultsDecoded= Utility::jsonEncodeThenDecode($databaseResults);
+
+        return $this -> productMapper($resultsDecoded);
+    }
+
+    /** Fetch and Return Top Selling Products */
+    public function getTopSellingProducts()
+    {
+        $databaseResults = $this -> databaseInstance -> queryTopSellingProducts("products" , "order");
+        $resultsDecoded= Utility::jsonEncodeThenDecode($databaseResults);
+
+        return $this -> productMapper($resultsDecoded);
+    }
+
+    /** Fetch and Return Products Based On Queried Product Catagory Name */
+    public function getProductByCategory($category_name)
+    {
+        $databaseResults = $this -> databaseInstance -> getProductByCategory('products',$category_name);
+        $resultsDecoded= Utility::jsonEncodeThenDecode($databaseResults);
+
+        return $this -> productMapper($resultsDecoded);
+    }
+
+    /** Updates the Product Queried Most Viewed Status By 1 */
+    public function updateProductViewCounter($product_code)
+    {
+
+          $databaseResults = $this -> databaseInstance -> updateProductViewCounter("mostViewedItems", $product_code);
+          $resultsDecoded= Utility::jsonEncodeThenDecode($databaseResults);
+
+          return count($resultsDecoded);
+    }
+
+    /** Fetch and Return Single Product Detail */
+    public function getProduct($product_code)
+    {
+          $databaseResults = $this -> databaseInstance -> getProduct("products" , $product_code);
+          $resultsDecoded= Utility::jsonEncodeThenDecode($databaseResults);
+
+          return $this -> productMapper($resultsDecoded);
+    }
+
+    /** Fetch and Return All Products that are Related [ Same Catagory ]*/
+    public function getRelatedProducts($product_code)
+    {
+
+        $databaseResults = $this -> databaseInstance -> getRelatedProducts("products" , $product_code);
+        $resultsDecoded= Utility::jsonEncodeThenDecode($databaseResults);
+
+        return ($this -> productMapper($resultsDecoded));
+    }
+
+    /** Maps and Return Instance of Products */
+    public function productMapper($products)
+    {
+        $productMapped = array_map(function ($product){
+
+              $this -> product = new Product();
+              $this -> product -> setProductName($product["productName"]);
+              $this -> product -> setProductQuantity($product['productQuantity']);
+              $this -> product -> setProductPrice($product['productPrice']);
+              $this -> product -> setProductImportDate($product['productImportDate']);
+              $this -> product -> setProductDescription($product['productDescription']);
+              $this -> product -> setProductCode($product['productCode']);
+              $this -> product -> setProductSize($product['productSize']);
+              $this -> product -> setProductFrontmage($product['productImage']);
+              $this -> product -> setProductZoomedImage($product['productImageZoomed']);
+              $this -> product -> setProductRating($product['rating']);
+              $this -> product -> setProductManufacturer($product['manfacturedBy']);
+
+              return $this -> product;
+
+        }, $products);
+
+        return $productMapped;
+    }
+
+}

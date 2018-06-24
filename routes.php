@@ -43,6 +43,7 @@ $router -> get('emazon/404', 'controllers/404.php'); // Page Not Found [ 404 Pag
 /* ---------------------------------------------------- Form Handler + Data Fetchers ------------------------------------------------------ */
 
 $router -> post('emazon/login', 'controllers/login.php'); // Login Form Handler
+$router -> post('emazon/signup', 'controller/signup.php'); //SignUp Form
 
 /* ---------------------------------------------------- Form Handler + Data Fetchers ------------------------------------------------------ */
 

@@ -1,5 +1,6 @@
 <?php
-
+    use App\Models\User\Admin;
+    use App\Core\Imager;
     $currentDir = getcwd();
     $uploadDirectory = "C:/xampp/htdocs/emazonResource/images/product_gallery_images/Stock/";
     $errors = []; // Store all foreseen and unforseen errors here
@@ -25,7 +26,7 @@
       $image = array_pop($image);
       $target_file = "C:/xampp/htdocs/emazonResource/images/product_gallery_images/Stock/".$image."_resized.".$fileExtension;
 
-      $image = new \App\Core\Imager();
+      $image = new Imager();
       $image->load($image_name);
       $image->resize(400, 400);
       $image->save($target_file);
@@ -56,36 +57,25 @@
 
             if ($didUpload || $didUpload2)
             {
-                //echo "The file " . basename($fileName) . " has been uploaded\n";
-
-                $tak = App::get('database')->selectAll("productcategory");
-                $data = json_decode( json_encode($tak), true);
 
                 $productCode = rand();
                 $productCode = "emazon_".$productCode;
 
-                App::get('database')->insert('products',
+                $adminInstance = new Admin(App::get('database'));
+                $productAddStatus = $adminInstance -> addProduct($_POST['productName'],$_POST['productQuantity'],
+                            $_POST['productPrice'], $_POST['productDescription'], $_POST['productSize'], $productCode,
+                            "http://localhost/emazonResource/images/product_gallery_images/Stock/".$fileName."_resized.".$fileExtension,
+                            "http://localhost/emazonResource/images/product_gallery_images/Stock/".$fileName, $_POST['productManfacturer']);
 
-                    [
-                      'productName' => $_POST['productName'],
-                      'productQuantity' =>  $_POST['productQuantity'],
-                      'productPrice' => $_POST['productPrice'],
-                      'productDescription' =>$_POST['productDescription'],
-                      'productSize' => $_POST['productSize'],
-                      'productCode' => $productCode,
-                      'productImage' => "http://localhost/emazonResource/images/product_gallery_images/Stock/".$fileName."_resized.".$fileExtension,
-                      "productImageZoomed" => "http://localhost/emazonResource/images/product_gallery_images/Stock/".$fileName,
-                      'manfacturedBy' => $_POST['productManfacturer']
-                    ]
-                  );
+                header('location:http://localhost:8888/emazon/products');
             } else {
-                //echo "An error occurred somewhere. Try again or contact the admin";
+
             }
         } else {
-            foreach ($errors as $error) {
-                //echo $error . "These are the errors" . "\n";
-            }
+            header('location:http://localhost:8888/emazon/productAdd');
         }
+    }else{
+      header('location:http://localhost:8888/emazon/productAdd');
     }
 
 

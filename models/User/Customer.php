@@ -121,23 +121,18 @@
     }
     /* ------------- Subscription Status Ends */
 
-
-    public function register($firstname, $lastname , $address , $phone , $email , $password)
+    public static function getClass()
     {
-
+      return __CLASS__;
     }
 
-    
-
+  
     public function updateProfile()
     {
 
     }
 
-    public function search()
-    {
 
-    }
 
 
   }

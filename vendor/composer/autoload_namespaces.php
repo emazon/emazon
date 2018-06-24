@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Postmark' => array($vendorDir . '/jjaffeux/postmark-inbound-php/lib'),
+    'Mockery' => array($vendorDir . '/mockery/mockery/library'),
 );

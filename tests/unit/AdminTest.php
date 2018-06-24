@@ -7,21 +7,15 @@
 
 		public function setUp()
     {
-			    $this -> user = new \App\Models\User\Admin('admin', 'admin');
+			    $this -> admin = new \App\Models\User\Admin();
+
 		}
 
-    /** @test */
-    public function testPreSetUsername()
-    {
-          $this -> assertEquals($this -> user -> getUserName(), 'admin');
-    }
+    public function test()
+		{
+				
+		}
 
-    /** @test */
-    public function testPreSetPassword()
-    {
-          $this -> assertEquals($this -> user -> getPassword(), 'admin');
-    }
 
-    
 
 	}

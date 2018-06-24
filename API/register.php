@@ -1,5 +1,7 @@
 <?php
 
+      use App\Core\Utility;
+
       if(isset($_POST['submit']))
       {
         App::get('database')->insert('users',
@@ -12,7 +14,7 @@
               'phone' =>$_POST['telephone'],
               'address' => $_POST['address'],
               'country' => $_POST['country'],
-              'password' => \App\Core\Utility::hashPassword($_POST['password']),
+              'password' => Utility::hashPassword($_POST['password']),
               'role' => 'Customer'
             ]
           );

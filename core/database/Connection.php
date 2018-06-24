@@ -8,7 +8,7 @@ class Connection
     {
         try
         {
-            //return new PDO('mysql:host=127.0.0.1;dbname=xilo;','root','');
+            //return new PDO
             return new PDO(
                 $config['connection'].';dbname='.$config['name'],
                 $config['username'],
@@ -20,7 +20,7 @@ class Connection
         }
     }
 
-    
+
 
 }
 

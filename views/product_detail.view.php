@@ -76,7 +76,7 @@
 				      <div class="col-sm-12">
 				      						      <div class="product-image cloud-zoom">
 
-					     	 <a href="#" title="Teclado Inalambrico Bluetooth Con Air Mouse" id="ex1" class="open-popup-image"><img src=<?php echo $productsContainer[0]->getProductFrontImage(); ?> title=<?php echo $productsContainer[0]->getProductName(); ?>  id='image' itemprop='image' data-zoom-image=<?php echo $productsContainer[0]->getProductZoomedImage(); ?> /></a>
+					     	 <a href="#" title="Teclado Inalambrico Bluetooth Con Air Mouse" id="ex1" class="open-popup-image"><img src=<?php echo $product[0]->getProductFrontImage(); ?> title=<?php echo $product[0]->getProductName(); ?>  id='image' itemprop='image' data-zoom-image=<?php echo $product[0]->getProductZoomedImage(); ?> /></a>
 					      </div>
 					  	 				      </div>
 
@@ -116,13 +116,13 @@
 
 			    <div class="col-sm-6 product-center clearfix">
 			     <div itemprop="offerDetails" itemscope itemtype="http://schema.org/Offer">
-			      <h2 class="product-name"><?php echo $productsContainer[0]->getProductName(); ?></h2>
+			      <h2 class="product-name"><?php echo $product[0]->getProductName(); ?></h2>
 			      			      <div class="description">
-			        			        <span>Brand:</span> <a href="#" itemprop="brand"><?php echo $productsContainer[0]->getProductManufacturer(); ?></a><br />
-			        			        <span >Product Code :</span> <span id='product-code'> <?php echo $productsContainer[0]->getProductCode(); ?></span><br />
+			        			        <span>Brand:</span> <a href="#" itemprop="brand"><?php echo $product[0]->getProductManufacturer(); ?></a><br />
+			        			        <span >Product Code :</span> <span id='product-code'> <?php echo $product[0]->getProductCode(); ?></span><br />
 			        			        <span>Availability:</span> In Stock</div>
 			      			      <div class="price">
-			        			        <span class="price-new">$<span itemprop="price" id="price-old"><?php echo number_format($productsContainer[0]->getProductPrice() , 2)?></span></span>
+			        			        <span class="price-new">$<span itemprop="price" id="price-old"><?php echo number_format($product[0]->getProductPrice() , 2)?></span></span>
 
 			        			        			      </div>
 			      			     </div>
@@ -179,7 +179,7 @@
     <div id="tabs" class="htabs">
   	<a href="#tab-description">Description</a><a href="#tab-attribute">Specification</a><a href="#tab-review">Reviews (0)</a>  </div>
     <div id="tab-description" class="tab-content" itemprop="description"><p>
-					<p><?php echo $productsContainer[0]->getProductDescription(); ?></p>
+					<p><?php echo $product[0]->getProductDescription(); ?></p>
 </div>
     <div id="tab-attribute" class="tab-content">
     <table class="attribute" cellspacing="0">

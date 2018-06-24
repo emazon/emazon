@@ -1,9 +1,10 @@
 <?php
 
   namespace App\Models\User;
+  use App\Core\TokenUtility;
+  use App\Core\Utility;
 
-
-  abstract class User implements TokenInterface
+  class User implements TokenInterface
   {
 
     protected $username;
@@ -27,7 +28,7 @@
 
     public function verifyPassword($password)
     {
-      return \App\Core\Utility::verify($password, $this -> getPassword());
+      return Utility::verify($password, $this -> getPassword());
     }
 
     public function isVerified($usersContainer)
@@ -39,7 +40,7 @@
         {
           if($user -> verifyPassword($this-> getPassword()))
           {
-              return true;
+              return $user;
           }
         }
 
@@ -51,7 +52,7 @@
     {
 
 
-        $otl = new \App\Core\TokenUtility();
+        $otl = new TokenUtility();
 
         setcookie("emazon", $otl->create_token(10,$this -> getUserName()));
     }
@@ -75,7 +76,7 @@
     public function validateToken()
     {
         try {
-          $otl = new \App\Core\TokenUtility();
+          $otl = new TokenUtility();
           return $otl -> validate_token($this -> getToken());
         } catch(\Firebase\JWT\ExpiredException $e){
           return false;

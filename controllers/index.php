@@ -1,53 +1,27 @@
 <?php
 
-  // Fetch all Products
-
+  /** Fetches  Products */
   function getProducts()
   {
-    $tak = App::get('database')->selectAllProductsReverse("products");
-    $data= json_decode( json_encode($tak), true);
-
-    $productsContainer = array_map(function ($product){
-          //var_dump($product["productId"]);
-          return new \App\Models\Product\Product($product["productName"], $product['productQuantity'],$product['productPrice'] ,
-                                                 $product['productImportDate'], $product['productDescription'], $product['productCode'],
-                                                 $product['productColor'], $product['productSize'], $product['productImage'],
-                                                 $product['rating'], $product['manfacturedBy']);
-    }, $data);
-
-    return $productsContainer;
+    $productInstance = new \App\Models\Product\Product(App::get('database'));
+    $products = $productInstance -> getProducts();
+    return $products;
   }
 
+  /** Fetches Top Selling Products */
   function getTopSellingProducts()
   {
-    $tak = App::get('database')->queryTopSellingProducts("products" , "order");
-    $data= json_decode( json_encode($tak), true);
+    $productInstance = new \App\Models\Product\Product(App::get('database'));
+    $products = $productInstance -> getTopSellingProducts();
+    return $products;
 
-    $topSaleProducts = array_map(function ($product){
-          //var_dump($product["productId"]);
-          return new \App\Models\Product\Product($product["productName"], $product['productQuantity'],$product['productPrice'] ,
-                                                 $product['productImportDate'], $product['productDescription'], $product['productCode'],
-                                                 $product['productColor'], $product['productSize'], $product['productImage'],
-                                                 $product['rating'], $product['manfacturedBy']);
-         }, $data);
-     return $topSaleProducts;
   }
 
-
+  /** Fetches Products */
   function getHotDealOfTheWeek()
   {
-    $tak = App::get('database')->selectAll("products");
-    $data= json_decode( json_encode($tak), true);
 
-    $productsContainer = array_map(function ($product){
-          //var_dump($product["productId"]);
-          return new \App\Models\Product\Product($product["productName"], $product['productQuantity'],$product['productPrice'] ,
-                                                 $product['productImportDate'], $product['productDescription'], $product['productCode'],
-                                                 $product['productColor'], $product['productSize'], $product['productImage'],
-                                                 $product['rating'], $product['manfacturedBy']);
-    }, $data);
-
-    return $productsContainer;
+    return getProducts();
   }
 
 

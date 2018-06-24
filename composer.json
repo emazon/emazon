@@ -16,6 +16,7 @@
 		"nesbot/carbon": "^1.29",
 		"jjaffeux/postmark-inbound-php": "^3.0",
     "firebase/php-jwt": "^3.0",
-		"facebook/webdriver": "^1.6"
+		"facebook/webdriver": "^1.6",
+		"mockery/mockery": "1.1.0"
 	}
 }
