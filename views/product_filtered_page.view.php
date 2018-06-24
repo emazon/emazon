@@ -829,7 +829,7 @@
                                     <input id="mfilter-cat_checkbox-1-65" type="checkbox" value="65" />
                                   </div>
                                   <label class="mfilter-tb-as-td" for="mfilter-cat_checkbox-1-65">
-                                    Bluetooth &amp; Wireless Speakers </label>
+                                    Ethiopian Fashions </label>
                                   <div class="mfilter-tb-as-td mfilter-col-count">
                                     <span class="mfilter-counter">1</span>
                                   </div>

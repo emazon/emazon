@@ -33,6 +33,13 @@ class QueryBuilder
 
   }
 
+  public function selectUserRole($table , $username)
+  {
+    $statment = $this -> pdo -> prepare("select role from {$table} where `username` = '$username' LIMIT 1");
+    $statment -> execute();
+    return $statment -> fetchAll(PDO::FETCH_CLASS);
+  }
+
   public function selectAllProductsReverse($table)
   {
     $statment = $this-> pdo -> prepare("select * from {$table} order by `productId` DESC");
@@ -162,8 +169,12 @@ class QueryBuilder
   {
     $statment = $this -> pdo -> prepare("insert into `$table`(cartProductCode , price, quantity) values('$productCode', '$price', '$quantity')");
     $statment -> execute();
+  }
 
-
+  public function addProductToWishlist($table , $productCode , $price, $quantity)
+  {
+    $statment = $this -> pdo -> prepare("insert into `$table`(cartProductCode , price, quantity) values('$productCode', '$price', '$quantity')");
+    $statment -> execute();
   }
 
   public function updatePassword($table , $password, $email)

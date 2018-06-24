@@ -3,6 +3,27 @@
 <?php require('partials/nav.php'); ?>
 
 <!-- - - - - - - - - - - - - - - - - - - - Header Ends - - - - - - - - - - - - - - - - - - - - - - - - - - -- >
+
+
+<!-- BREADCRUMB
+	================================================== -->
+<div class="breadcrumb full-width">
+	<div class="background-breadcrumb"></div>
+	<div class="background">
+		<div class="shadow"></div>
+		<div class="pattern">
+			<div class="container">
+				<div class="clearfix">
+					<ul>
+												<li><a href="/emazon">Home</a></li>
+												<li><a href="/emazon/myaccount">Account</a></li>
+												<li><a href="/emazon/login">Login</a></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- MAIN CONTENT
 	================================================== -->
 <div class="main-content full-width inner-page">
@@ -23,35 +44,29 @@
 
 
 
-<table class="table table-bordered table-hover">
-  <thead>
-    <tr>
-      <td class="text-center">Image</td>
-      <td class="text-left">Product Name</td>
-      <td class="text-left">Model</td>
-      <td class="text-right">Stock</td>
-      <td class="text-right">Unit Price</td>
-      <td class="text-right">Action</td>
-    </tr>
-  </thead>
-  <tbody>
-      <tr>
-      <td class="text-center">        <a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=product/product&amp;product_id=28"><img src="http://demo2.ninethemes.net/cyberwire/opencart/4/image/cache/catalog/Product%20Images/item-img-1-12-47x47.jpg" alt="Funda Para Ebook 7&quot; 128GB full HD" title="Funda Para Ebook 7&quot; 128GB full HD" /></a>
-        </td>
-      <td class="text-left"><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=product/product&amp;product_id=28">Funda Para Ebook 7&quot; 128GB full HD</a></td>
-      <td class="text-left">Product 1</td>
-      <td class="text-right">In Stock</td>
-      <td class="text-right">        <div class="price">
-                    $100.00                  </div>
-        </td>
-      <td class="text-right"><button type="button" onclick="cart.add('28');" data-toggle="tooltip" title="Add to Cart" class="btn btn-primary"><i class="fa fa-shopping-cart"></i></button>
-        <a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/wishlist&amp;remove=28" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-times"></i></a></td>
-    </tr>
-    </tbody>
-</table>
-<div class="buttons clearfix">
-  <div class="pull-right"><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/account" class="btn btn-primary">Continue</a></div>
-</div>
+<h2>My Account</h2>
+<ul class="list-unstyled">
+  <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/edit">Edit your account information</a></li>
+  <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/password">Change your password</a></li>
+  <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/address">Modify your address book entries</a></li>
+  <li><a href="/emazon/wishlist">Modify your wish list</a></li>
+</ul>
+
+
+<h2>My Orders</h2>
+<ul class="list-unstyled">
+  <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/order">View your order history</a></li>
+  <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/download">Downloads</a></li>
+    <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/reward">Your Reward Points</a></li>
+    <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/return">View your return requests</a></li>
+  <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/transaction">Your Transactions</a></li>
+  <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/recurring">Recurring payments</a></li>
+</ul>
+
+<h2>Newsletter</h2>
+<ul class="list-unstyled">
+  <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/newsletter">Subscribe / unsubscribe to newsletter</a></li>
+</ul>
 
 							</div>
 
@@ -90,7 +105,9 @@
 			</div>
 		</div>
 	</div>
-</div>	
-<!-- Main Body Ends -->
+</div>
+<!-- - - - - - - - - - - - - - - - - Footer Starts - - -  - - - - - - - - - - - - - - - - - - - - - - -->
 
 <?php require('partials/footer.php'); ?>
+
+<!-- - - - - - - - - - - - - - - - - - - - Footer Ends - - - - - - - - - - - - - - - - - - - - - - - - - - -- >

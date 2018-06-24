@@ -465,7 +465,7 @@
 
                                                              <!-- Yabbb Modification -->
 
-                                                             <?php foreach (array_slice(getProducts(),0,8) as $product): ?>
+                                                             <?php foreach (array_slice(getProducts(),0,12) as $product): ?>
 
                                                                 <?php  echo "<div class='col-sm-3 col-xs-6'>
 

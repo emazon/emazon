@@ -1,14 +1,6 @@
 <?php
 
 
-    //$user = new \App\Models\User\Customer("Yab","Password");
-
-    //var_dump($user -> getRole());
-
-    //$pass = \App\Core\Utility::hashPassword('password');
-    // var_dump($pass);
-    // var_dump(\App\Core\Utility::verify('password', $pass));
-
     if(isset($_POST['username']) && isset($_POST['password']))
     {
         //$userFetched = App::get('database')->verifyUser("users", $_POST['email'], $_POST['password']);

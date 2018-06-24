@@ -136,7 +136,7 @@
                                                         <a href="#">Video Games</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Bluetooth &amp; Wireless</a>
+                                                        <a href="/emazon/product/mega_filter/products?mfp=path[65]">Ethio-Fashions</a>
                                                     </li>
                                                 </ul>
                                             </div>

@@ -9,17 +9,12 @@
 
       public function __construct($productCatName)
       {
-        $this -> productCategoryName = $productCatName;
+          $this -> productCategoryName = $productCatName;
       }
 
       public function getProductCategoryName()
       {
-        return $this -> productCategoryName;
-      }
-
-      public function getProductsRelatedToProductCategory($categoryName)
-      {
-
+          return $this -> productCategoryName;
       }
 
     }

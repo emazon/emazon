@@ -43,7 +43,7 @@
         <div class="form-group" style="padding-bottom: 10px">
           <label class="control-label" for="input-password">Password</label>
           <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" />
-          <a href="#">Forgotten Password</a></div>
+          <a href="/emazon/resetPassword">Forgotten Password</a></div>
         <input type="submit" value="Login" class="btn btn-primary" />
               </form>
     </div>

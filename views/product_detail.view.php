@@ -155,7 +155,7 @@
      			          			          			        </div>
 
 			        <div class="links">
-			        	<a onclick="wishlist.add('47');">Add to Wish List</a>
+			        	<a onclick="addToWishlist()">Add to Wish List</a>
 			        	<!-- <a onclick="compare.add('47');">Compare this Product</a> -->
 			        </div>
 
@@ -426,101 +426,98 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 });
 //--></script>
 
-<!-- <script type="text/javascript">
+	<script type="text/javascript">
 
-	function addtoCart(para)
-	{
-		$.ajax({
-			url : '/emazon/addtoCart?productCode=' + para,
-			beforeSend : function()
-			{
-				$('#button-cart').button('loading');
-			}, complete: function()
-			{
-				$('#button-cart').button('reset');
-			},
-			success: function(json)
-			{
-				$('.alert, .text-danger').remove();
-				$('.form-group').removeClass('has-error');
+function addToWishlist()
+{
+	$.ajax({
+		url: '/emazon/addtowishlist?productCode=' + $('#product-code').text() + "&price=" + $('#price-old').text() + "&quantity=" +  $('#quantity_wanted').val(),
+		beforeSend: function() {
+			$('#button-cart').button('loading');
+		},
+		complete: function() {
+			$('#button-cart').button('reset');
+		},
+		success: function(json) {
+			//alert(JSON.parse(json)[0].message);
+			$('.alert, .text-danger').remove();
+			$('.form-group').removeClass('has-error');
 
-				if (json['error']) {
-					if (json['error']['option']) {
-						for (i in json['error']['option']) {
-							var element = $('#input-option' + i.replace('_', '-'));
+			if (json['error']) {
+				if (json['error']['option']) {
+					for (i in json['error']['option']) {
+						var element = $('#input-option' + i.replace('_', '-'));
 
-							if (element.parent().hasClass('input-group')) {
-								element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
-							} else {
-								element.after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
-							}
+						if (element.parent().hasClass('input-group')) {
+							element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
+						} else {
+							element.after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
 						}
 					}
-
-					if (json['error']['recurring']) {
-						$('select[name=\'recurring_id\']').after('<div class="text-danger">' + json['error']['recurring'] + '</div>');
-					}
-
-					// Highlight any found errors
-					$('.text-danger').parent().addClass('has-error');
 				}
 
-				if (json) {
-					$.notify({
-						message: json['success'],
-						target: '_blank'
-					},{
-						// settings
-						element: 'body',
-						position: null,
-						type: "info",
-						allow_dismiss: true,
-						newest_on_top: false,
-						placement: {
-							from: "top",
-							align: "right"
-						},
-						offset: 20,
-						spacing: 10,
-						z_index: 2031,
-						delay: 5000,
-						timer: 1000,
-						url_target: '_blank',
-						mouse_over: null,
-						animate: {
-							enter: 'animated fadeInDown',
-							exit: 'animated fadeOutUp'
-						},
-						onShow: null,
-						onShown: null,
-						onClose: null,
-						onClosed: null,
-						icon_type: 'class',
-						template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-success" role="alert">' +
-							'<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
-							'<span data-notify="message"><i class="fa fa-check-circle"></i>&nbsp; {2}</span>' +
-							'<div class="progress" data-notify="progressbar">' +
-								'<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
-							'</div>' +
-							'<a href="{3}" target="{4}" data-notify="url"></a>' +
-						'</div>'
-					});
-
-
-
-					$('#cart_block .cart-count').load('1');
+				if (json['error']['recurring']) {
+					$('select[name=\'recurring_id\']').after('<div class="text-danger">' + json['error']['recurring'] + '</div>');
 				}
-			},
-	        error: function(xhr, ajaxOptions, thrownError) {
-	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-	        }
-		});
+
+				// Highlight any found errors
+				$('.text-danger').parent().addClass('has-error');
+			}
+
+			if (json) {
+				$.notify({
+					message: JSON.parse(json)[0].message,
+					target: '_blank'
+				},{
+					// settings
+					element: 'body',
+					position: null,
+					type: "info",
+					allow_dismiss: true,
+					newest_on_top: false,
+					placement: {
+						from: "top",
+						align: "right"
+					},
+					offset: 20,
+					spacing: 10,
+					z_index: 2031,
+					delay: 5000,
+					timer: 100,
+					url_target: '_blank',
+					mouse_over: null,
+					animate: {
+						enter: 'animated fadeInDown',
+						exit: 'animated fadeOutUp'
+					},
+					onShow: null,
+					onShown: null,
+					onClose: null,
+					onClosed: null,
+					icon_type: 'class',
+					template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-success" role="alert">' +
+						'<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+						'<span data-notify="message"><i class="fa fa-check-circle"></i>&nbsp; {2}</span>' +
+						'<div class="progress" data-notify="progressbar">' +
+							'<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+						'</div>' +
+						'<a href="{3}" target="{4}" data-notify="url"></a>' +
+					'</div>'
+				});
+				//alert(JSON.parse(json)[0].flicker);
+				//$('#cart_block #cart_content').load('index.php?route=common/cart/info #cart_content_ajax');
+
+				//$('#cart_block .cart-count').load('index.php?route=common/cart/info #total_count_ajax');
+			}
+
+
+		},
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+	});
 	}
 
-</script> -->
-
-<!-- url: 'index.php?route=checkout/cart/add' -->
-	<script type="text/javascript"><!--
 $('#button-cart').on('click', function() {
 
 

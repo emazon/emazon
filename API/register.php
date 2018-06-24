@@ -12,7 +12,8 @@
               'phone' =>$_POST['telephone'],
               'address' => $_POST['address'],
               'country' => $_POST['country'],
-              'password' => \App\Core\Utility::hashPassword($_POST['password'])
+              'password' => \App\Core\Utility::hashPassword($_POST['password']),
+              'role' => 'Customer'
             ]
           );
           header('location:http://localhost:8888/emazon');
