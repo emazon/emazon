@@ -3,9 +3,9 @@
 // PayPal settings
 //$paypal_email = 'user@domain.com';
 $paypal_email = 'misrak.terefe@aau.edu.et';
-$return_url = 'http://localhost:8888/eMazon/checkout_success';
-$cancel_url = 'http://localhost:8888eMazon/checkout_success';
-$notify_url = 'http://localhost:8888/eMazon/checkout_success';
+$return_url = 'http://localhost:8888/emazon/checkout_success';
+$cancel_url = 'http://localhost:8888/emazon';
+$notify_url = 'http://localhost:8888/emazon';
 
 $item_name = 'Cart Items';
 $item_amount = 1.00;

@@ -51,28 +51,6 @@
 </div>
 
 
-
-							<!-- <div class="col-md-3" id="column-right">
-								<div class="box">
-  <div class="box-heading">Account</div>
-  <div class="strip-line"></div>
-  <div class="box-content">
-    <ul class="list-box">
-            <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/login">Login</a> / <a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/register">Register</a></li>
-      <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/forgotten">Forgotten Password</a></li>
-            <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/account">My Account</a></li>
-            <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/address">Address Book</a></li>
-      <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/wishlist">Wish List</a></li>
-      <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/order">Order History</a></li>
-      <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/download">Downloads</a></li>
-      <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/recurring">Recurring payments</a></li>
-      <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/reward">Reward Points</a></li>
-      <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/return">Returns</a></li>
-      <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/transaction">Transactions</a></li>
-      <li><a href="http://demo2.ninethemes.net/cyberwire/opencart/4/index.php?route=account/newsletter">Newsletter</a></li>
-          </ul>
-  </div>
-</div>							</div> -->
 													</div>
 					</div>
 

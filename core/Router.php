@@ -39,14 +39,15 @@ class Router
 
   {
 
-      
+
       if(array_key_exists($url, $this-> routes[$requestType]))
       {
 
           return $this-> routes[$requestType][$url];
       }
 
-      throw new Exception('No route defined for this URI');
+      //throw new Exception('No route defined for this URI');
+      return $this -> routes[$requestType]['emazon/404'];
   }
 
 }

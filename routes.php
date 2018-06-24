@@ -28,7 +28,7 @@ $router -> get('emazon/cart', 'controllers/shopping_cart.php'); // Cart
 $router -> get('emazon/checkout', 'controllers/checkout.php'); // Checkout
 $router -> get('emazon/orders', 'controllers/orders.php'); // Order
 $router -> get('emazon/product/mega_filter/products', 'controllers/product_filter_result.php'); // Product Category Filter
-$router -> get('eMazon/checkout_success', 'controllers/checkout_success.php'); // Checkout Success
+$router -> get('emazon/checkout_success', 'controllers/checkout_success.php'); // Checkout Success
 $router -> get('emazon/wishlist', 'controllers/wishlist.php'); // Wishlist
 $router -> get('emazon/productAdd', 'controllers/productAdd.php'); // Add Product
 $router -> get('emazon/resetPassword', 'controllers/resetPassword.php'); // Reset Password
@@ -36,6 +36,7 @@ $router -> get('emazon/reset', 'controllers/reset.php'); // Reset Password
 $router -> get('emazon/products','controllers/index.php');  // Homepage
 $router -> get('emazon/product', 'controllers/productDetail.php'); //Product Detail
 $router -> get('emazon/myaccount', 'controllers/my_account.php'); // My Account
+$router -> get('emazon/404', 'controllers/404.php'); // Page Not Found [ 404 Page]
 
 /* ---------------------------------------------------- Page Render ------------------------------------------------------ */
 
